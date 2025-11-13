@@ -7,3 +7,13 @@ C:\Users\admin\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\Ges
 C:\Users\admin\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommercialeDAL\obj\Debug\GestionCommercialeDAL.csproj.CopyComplete
 C:\Users\admin\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommercialeDAL\obj\Debug\GestionCommercialeDAL.dll
 C:\Users\admin\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommercialeDAL\obj\Debug\GestionCommercialeDAL.pdb
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommercialeDAL\bin\Debug\GestionCommercialeDAL.dll
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommercialeDAL\bin\Debug\GestionCommercialeDAL.pdb
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommercialeDAL\bin\Debug\GestionCommercialeBO.dll
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommercialeDAL\bin\Debug\GestionCommercialeBO.pdb
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommercialeDAL\obj\Debug\GestionCommercialeDAL.csproj.AssemblyReference.cache
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommercialeDAL\obj\Debug\GestionCommercialeDAL.csproj.CoreCompileInputs.cache
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommercialeDAL\obj\Debug\GestionC.FBDFF3D9.Up2Date
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommercialeDAL\obj\Debug\GestionCommercialeDAL.dll
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommercialeDAL\obj\Debug\GestionCommercialeDAL.pdb
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommercialeDAL\bin\Debug\GestionCommercialeDAL.dll.config

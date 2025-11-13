@@ -17,3 +17,25 @@ C:\Users\admin\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\Ges
 C:\Users\admin\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\obj\Debug\GestionCommerciale.pdb
 C:\Users\admin\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\obj\Debug\GestionCommerciale.ajouterProduits.resources
 C:\Users\admin\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\obj\Debug\GestionCommerciale.ListeProduits.resources
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\bin\Debug\GestionCommerciale.exe.config
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\bin\Debug\GestionCommerciale.exe
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\bin\Debug\GestionCommerciale.pdb
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\bin\Debug\GestionCommercialeBLL.dll
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\bin\Debug\GestionCommercialeBO.dll
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\bin\Debug\GestionCommercialeDAL.dll
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\bin\Debug\GestionCommercialeBLL.pdb
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\bin\Debug\GestionCommercialeBO.pdb
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\bin\Debug\GestionCommercialeDAL.pdb
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\obj\Debug\GestionCommerciale.csproj.AssemblyReference.cache
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\obj\Debug\GestionCommerciale.exe.config
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\obj\Debug\GestionCommerciale.ajouterProduits.resources
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\obj\Debug\GestionCommerciale.Connexion.resources
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\obj\Debug\GestionCommerciale.ListeProduits.resources
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\obj\Debug\GestionCommerciale.Properties.Resources.resources
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\obj\Debug\GestionCommerciale.csproj.GenerateResource.cache
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\obj\Debug\GestionCommerciale.csproj.CoreCompileInputs.cache
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\obj\Debug\GestionC.72E42DA0.Up2Date
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\obj\Debug\GestionCommerciale.exe
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\obj\Debug\GestionCommerciale.pdb
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\bin\Debug\GestionCommercialeBLL.dll.config
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommerciale\bin\Debug\GestionCommercialeDAL.dll.config

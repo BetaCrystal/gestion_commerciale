@@ -30,5 +30,11 @@ namespace GestionCommercialeBLL
         {
             return GestionCommercialeDAO.GetUtilisateurs();
         }
+
+        public static bool FindUser(Utilisateur utilisateur)
+        {
+            Authentification auth = new Authentification();
+            return auth.FindUser(utilisateur);
+        }
     }
 }
