@@ -16,3 +16,9 @@ C:\Users\admin\Desktop\Sauvegarde BTS\BTS_2_2025_2026\GestionCommerciale\Gestion
 C:\Users\admin\Desktop\Sauvegarde BTS\BTS_2_2025_2026\GestionCommerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.csproj.CoreCompileInputs.cache
 C:\Users\admin\Desktop\Sauvegarde BTS\BTS_2_2025_2026\GestionCommerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.dll
 C:\Users\admin\Desktop\Sauvegarde BTS\BTS_2_2025_2026\GestionCommerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.pdb
+C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeBO\bin\Debug\GestionCommercialeBO.dll
+C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeBO\bin\Debug\GestionCommercialeBO.pdb
+C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.dll
+C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.pdb

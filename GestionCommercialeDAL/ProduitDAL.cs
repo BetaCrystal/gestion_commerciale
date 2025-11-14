@@ -6,13 +6,14 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace GestionCommercialeDAL
 {
     public class ProduitDAL
     {
         private readonly string connectionString =
-            "Data Source=psl23-p16;Initial Catalog=Gestion_commerciale;Integrated Security=True;";
+            ConfigurationManager.ConnectionStrings["GestionCommerciale.Properties.Settings.Gestion_commercialeConnectionString"].ConnectionString;
 
         public List<Produit> GetProduits()
         {
