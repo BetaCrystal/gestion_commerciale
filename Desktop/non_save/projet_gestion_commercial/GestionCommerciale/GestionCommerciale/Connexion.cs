@@ -24,8 +24,10 @@ namespace GestionCommerciale
 
         private void btnConnexion_Click(object sender, EventArgs e)
         {
+            //A voir si on garde les sessions dans le futur
             Session session = new Session(false);
 
+            //On crée un nouvel utilisateur avec les informations saisies dans les champs de texte
             Utilisateur uti = new Utilisateur(textBoxIdentifiant.Text, textBoxMdp.Text);
             bool connexion = GestionUtilisateurs.FindUser(uti);
             if (connexion == false)
@@ -46,11 +48,6 @@ namespace GestionCommerciale
                 liste.Show();
                 this.Hide();
             }
-        }
-
-        private void Connexion_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

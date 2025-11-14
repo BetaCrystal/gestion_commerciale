@@ -63,5 +63,14 @@ namespace GestionCommerciale
             //recharger les produits pour afficher la nouvelle ligne
             ChargerProduits();
         }
+
+        private void btnDeconnexion_Click(object sender, EventArgs e)
+        {
+            //Comme dans la connexion, on ferme la page ListeProduits pour revenir sur la page Connexion sans fermer l'application
+            Connexion connexion = new Connexion();
+            connexion.FormClosed += (s, args) => this.Close();
+            connexion.Show();
+            this.Hide();
+        }
     }
 }

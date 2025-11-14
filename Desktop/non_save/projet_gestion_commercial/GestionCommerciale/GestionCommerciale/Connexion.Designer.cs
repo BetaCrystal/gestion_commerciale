@@ -41,10 +41,11 @@ namespace GestionCommerciale
             // 
             // btnConnexion
             // 
-            this.btnConnexion.Location = new System.Drawing.Point(215, 249);
-            this.btnConnexion.Margin = new System.Windows.Forms.Padding(2);
+            this.btnConnexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnConnexion.Location = new System.Drawing.Point(244, 235);
+            this.btnConnexion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnConnexion.Name = "btnConnexion";
-            this.btnConnexion.Size = new System.Drawing.Size(68, 31);
+            this.btnConnexion.Size = new System.Drawing.Size(100, 40);
             this.btnConnexion.TabIndex = 3;
             this.btnConnexion.Text = "Connexion";
             this.btnConnexion.UseVisualStyleBackColor = true;
@@ -53,38 +54,45 @@ namespace GestionCommerciale
             // lblIdentifiant
             // 
             this.lblIdentifiant.AutoSize = true;
-            this.lblIdentifiant.Location = new System.Drawing.Point(130, 140);
+            this.lblIdentifiant.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblIdentifiant.Location = new System.Drawing.Point(125, 101);
             this.lblIdentifiant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIdentifiant.Name = "lblIdentifiant";
-            this.lblIdentifiant.Size = new System.Drawing.Size(62, 13);
+            this.lblIdentifiant.Size = new System.Drawing.Size(92, 20);
             this.lblIdentifiant.TabIndex = 0;
             this.lblIdentifiant.Text = "Identifiant : ";
             // 
             // textBoxIdentifiant
             // 
-            this.textBoxIdentifiant.Location = new System.Drawing.Point(215, 140);
-            this.textBoxIdentifiant.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxIdentifiant.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBoxIdentifiant.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.textBoxIdentifiant.Location = new System.Drawing.Point(233, 101);
+            this.textBoxIdentifiant.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxIdentifiant.Name = "textBoxIdentifiant";
-            this.textBoxIdentifiant.Size = new System.Drawing.Size(76, 20);
+            this.textBoxIdentifiant.Size = new System.Drawing.Size(120, 23);
             this.textBoxIdentifiant.TabIndex = 1;
             // 
             // textBoxMdp
             // 
-            this.textBoxMdp.Location = new System.Drawing.Point(215, 189);
-            this.textBoxMdp.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxMdp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBoxMdp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.textBoxMdp.Location = new System.Drawing.Point(233, 163);
+            this.textBoxMdp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxMdp.Name = "textBoxMdp";
-            this.textBoxMdp.Size = new System.Drawing.Size(76, 20);
+            this.textBoxMdp.Size = new System.Drawing.Size(120, 23);
             this.textBoxMdp.TabIndex = 2;
+            this.textBoxMdp.UseSystemPasswordChar = true;
             // 
             // lblMdp
             // 
             this.lblMdp.AutoSize = true;
-            this.lblMdp.Location = new System.Drawing.Point(115, 189);
+            this.lblMdp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblMdp.Location = new System.Drawing.Point(105, 163);
             this.lblMdp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMdp.Name = "lblMdp";
-            this.lblMdp.Size = new System.Drawing.Size(76, 13);
+            this.lblMdp.Size = new System.Drawing.Size(113, 20);
             this.lblMdp.TabIndex = 0;
-            this.lblMdp.Text = "mot de passe :";
+            this.lblMdp.Text = "Mot de passe :";
             // 
             // errorProvider1
             // 
@@ -95,16 +103,18 @@ namespace GestionCommerciale
             this.AcceptButton = this.btnConnexion;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(240)))), ((int)(((byte)(247)))));
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.lblMdp);
             this.Controls.Add(this.textBoxMdp);
             this.Controls.Add(this.textBoxIdentifiant);
             this.Controls.Add(this.lblIdentifiant);
             this.Controls.Add(this.btnConnexion);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Connexion";
             this.Text = "Connexion";
-            this.Load += new System.EventHandler(this.Connexion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
