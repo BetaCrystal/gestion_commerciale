@@ -18,7 +18,7 @@ namespace GestionCommerciale
         {
             // Initialisation de la chaîne de connexion depuis App.config
             //Code donné par Copilot, permet de ne pas avoir à modifier le code de la couche BLL pour la connexion
-            var cs = ConfigurationManager.ConnectionStrings["Gestion_commerciale.Properties.Settings.ConnectionString"];
+            var cs = ConfigurationManager.ConnectionStrings["Gestion_commercialeDataSet"];
             if (cs != null)
             {
                 GestionUtilisateurs.SetchaineConnexion(cs);

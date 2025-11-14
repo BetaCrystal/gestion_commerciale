@@ -18,6 +18,8 @@ namespace GestionCommerciale
         public Connexion()
         {
             InitializeComponent();
+            GestionUtilisateurs.SetchaineConnexion(ConfigurationManager.ConnectionStrings
+            ["Gestion_commercialeDataSet"]);
         }
 
         private void btnConnexion_Click(object sender, EventArgs e)
@@ -29,7 +31,7 @@ namespace GestionCommerciale
             if (connexion == false)
             {
                 //Affiche un message d'erreur si l'identifiant ou le mot de passe est incorrect
-                errorProvider1.SetError(btnConnexion, "Identifiant ou mot de passe incorrect");
+                MessageBox.Show("Identifiant ou mot de passe incorrect", "Erreur de connexion", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {

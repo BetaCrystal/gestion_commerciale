@@ -32,7 +32,7 @@ namespace GestionCommercialeDAL
                 SqlConnection maConnexion = ConnexionBD.GetConnexionBD().GetSqlConnexion();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = maConnexion;
-                cmd.CommandText = "SELECT * FROM Authentification WHERE identifiant_utilisateur = @identifiant AND mot_de_passe_utilisateur = @mdp";
+                cmd.CommandText = "SELECT * FROM Authentification WHERE nom_utilisateur = @identifiant AND mot_de_passe_utilisateur = @mdp";
                 cmd.Parameters.AddWithValue("@identifiant", identifiant);
                 cmd.Parameters.AddWithValue("@mdp", mdp);
                 SqlDataReader reader = cmd.ExecuteReader();
