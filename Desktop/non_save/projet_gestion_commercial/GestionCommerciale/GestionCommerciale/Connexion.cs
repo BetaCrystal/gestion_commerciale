@@ -18,8 +18,7 @@ namespace GestionCommerciale
         public Connexion()
         {
             InitializeComponent();
-            GestionUtilisateurs.SetchaineConnexion(ConfigurationManager.ConnectionStrings
-            ["Gestion_commercialeDataSet"]);
+            GestionUtilisateurs.SetchaineConnexion(ConfigurationManager.ConnectionStrings["Gestion_commercialeDataSet"]);
         }
 
         private void btnConnexion_Click(object sender, EventArgs e)
