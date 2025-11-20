@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -43,28 +43,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CategorieBLL.cs" />
-<<<<<<< HEAD
-    <Compile Include="GestionUtilisateurs.cs" />
-    <Compile Include="ProduitBLL.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GestionUtilisateurs.cs" />
-    <Compile Include="Gestion_commericaleDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Gestion_commericaleDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-=======
     <Compile Include="ClientBLL.cs" />
     <Compile Include="GestionUtilisateurs.cs" />
     <Compile Include="ProduitBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
->>>>>>> f8d224008bb874cc497a689787bf50114e583130
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GestionCommercialeBO\GestionCommercialeBO.csproj">
@@ -76,26 +58,5 @@
       <Name>GestionCommercialeDAL</Name>
     </ProjectReference>
   </ItemGroup>
-<<<<<<< HEAD
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="Gestion_commericaleDataSet.xsc">
-      <DependentUpon>Gestion_commericaleDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Gestion_commericaleDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Gestion_commericaleDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Gestion_commericaleDataSet.xss">
-      <DependentUpon>Gestion_commericaleDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-=======
->>>>>>> f8d224008bb874cc497a689787bf50114e583130
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
