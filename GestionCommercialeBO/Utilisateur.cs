@@ -4,6 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ * Classe permettant de créer un utilisateur avec son identifiant et son mot de passe afin de vérifier
+ * s'il existe bien dans la base de données et permettre sa connexion.
+ */
+
 namespace GestionCommercialeBO
 {
     public class Utilisateur

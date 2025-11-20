@@ -46,6 +46,18 @@
     <Compile Include="GestionUtilisateurs.cs" />
     <Compile Include="ProduitBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GestionUtilisateurs.cs" />
+    <Compile Include="Gestion_commericaleDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gestion_commericaleDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GestionCommercialeBO\GestionCommercialeBO.csproj">
@@ -56,6 +68,24 @@
       <Project>{0d5b9d69-0bf5-4aee-b3ee-26e450fd1fb4}</Project>
       <Name>GestionCommercialeDAL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Gestion_commericaleDataSet.xsc">
+      <DependentUpon>Gestion_commericaleDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Gestion_commericaleDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gestion_commericaleDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gestion_commericaleDataSet.xss">
+      <DependentUpon>Gestion_commericaleDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

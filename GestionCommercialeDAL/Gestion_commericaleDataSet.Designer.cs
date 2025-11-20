@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace GestionCommerciale {
+namespace GestionCommercialeDAL {
     
     
     /// <summary>
@@ -20,9 +20,9 @@ namespace GestionCommerciale {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("Gestion_commercialeDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("Gestion_commericaleDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class Gestion_commercialeDataSet : global::System.Data.DataSet {
+    public partial class Gestion_commericaleDataSet : global::System.Data.DataSet {
         
         private AuthentificationDataTable tableAuthentification;
         
@@ -42,14 +42,9 @@ namespace GestionCommerciale {
         
         private global::System.Data.DataRelation relationPROD;
         
-        private global::System.Data.DataRelation relationFK__Devis__code_clie__44FF419A;
+        private global::System.Data.DataRelation relationFK__Devis__code_clie__75A278F5;
         
-        private global::System.Data.DataRelation relationFK__Devis__code_stat__45F365D3;
-        
-        private global::System.Data.DataRelation relationFK__Produit__code_ca__46E78A0C;
-        private global::System.Data.DataRelation relationFK__Devis__code_clie__4E88ABD4;
-        
-        private global::System.Data.DataRelation relationFK__Devis__code_stat__4F7CD00D;
+        private global::System.Data.DataRelation relationFK__Devis__code_stat__76969D2E;
         
         private global::System.Data.DataRelation relationFK__Produit__code_ca__4E88ABD4;
         
@@ -57,7 +52,7 @@ namespace GestionCommerciale {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public Gestion_commercialeDataSet() {
+        public Gestion_commericaleDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -68,7 +63,7 @@ namespace GestionCommerciale {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected Gestion_commercialeDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected Gestion_commericaleDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -232,7 +227,7 @@ namespace GestionCommerciale {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            Gestion_commercialeDataSet cln = ((Gestion_commercialeDataSet)(base.Clone()));
+            Gestion_commericaleDataSet cln = ((Gestion_commericaleDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -355,20 +350,17 @@ namespace GestionCommerciale {
             }
             this.relationDEV = this.Relations["DEV"];
             this.relationPROD = this.Relations["PROD"];
-            this.relationFK__Devis__code_clie__44FF419A = this.Relations["FK__Devis__code_clie__44FF419A"];
-            this.relationFK__Devis__code_stat__45F365D3 = this.Relations["FK__Devis__code_stat__45F365D3"];
-            this.relationFK__Produit__code_ca__46E78A0C = this.Relations["FK__Produit__code_ca__46E78A0C"];
-            this.relationFK__Devis__code_clie__4E88ABD4 = this.Relations["FK__Devis__code_clie__4E88ABD4"];
-            this.relationFK__Devis__code_stat__4F7CD00D = this.Relations["FK__Devis__code_stat__4F7CD00D"];
+            this.relationFK__Devis__code_clie__75A278F5 = this.Relations["FK__Devis__code_clie__75A278F5"];
+            this.relationFK__Devis__code_stat__76969D2E = this.Relations["FK__Devis__code_stat__76969D2E"];
             this.relationFK__Produit__code_ca__4E88ABD4 = this.Relations["FK__Produit__code_ca__4E88ABD4"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "Gestion_commercialeDataSet";
+            this.DataSetName = "Gestion_commericaleDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/Gestion_commercialeDataSet.xsd";
+            this.Namespace = "http://tempuri.org/Gestion_commericaleDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableAuthentification = new AuthentificationDataTable();
@@ -393,26 +385,14 @@ namespace GestionCommerciale {
                         this.tableProduit.code_produitColumn}, new global::System.Data.DataColumn[] {
                         this.tableContient.code_produitColumn}, false);
             this.Relations.Add(this.relationPROD);
-            this.relationFK__Devis__code_clie__44FF419A = new global::System.Data.DataRelation("FK__Devis__code_clie__44FF419A", new global::System.Data.DataColumn[] {
+            this.relationFK__Devis__code_clie__75A278F5 = new global::System.Data.DataRelation("FK__Devis__code_clie__75A278F5", new global::System.Data.DataColumn[] {
                         this.tableClient.code_clientColumn}, new global::System.Data.DataColumn[] {
                         this.tableDevis.code_clientColumn}, false);
-            this.Relations.Add(this.relationFK__Devis__code_clie__44FF419A);
-            this.relationFK__Devis__code_stat__45F365D3 = new global::System.Data.DataRelation("FK__Devis__code_stat__45F365D3", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Devis__code_clie__75A278F5);
+            this.relationFK__Devis__code_stat__76969D2E = new global::System.Data.DataRelation("FK__Devis__code_stat__76969D2E", new global::System.Data.DataColumn[] {
                         this.tableStatut.code_statutColumn}, new global::System.Data.DataColumn[] {
                         this.tableDevis.code_statutColumn}, false);
-            this.Relations.Add(this.relationFK__Devis__code_stat__45F365D3);
-            this.relationFK__Produit__code_ca__46E78A0C = new global::System.Data.DataRelation("FK__Produit__code_ca__46E78A0C", new global::System.Data.DataColumn[] {
-                        this.tableCategorie.code_categorieColumn}, new global::System.Data.DataColumn[] {
-                        this.tableProduit.code_categorieColumn}, false);
-            this.Relations.Add(this.relationFK__Produit__code_ca__46E78A0C);
-            this.relationFK__Devis__code_clie__4E88ABD4 = new global::System.Data.DataRelation("FK__Devis__code_clie__4E88ABD4", new global::System.Data.DataColumn[] {
-                        this.tableClient.code_clientColumn}, new global::System.Data.DataColumn[] {
-                        this.tableDevis.code_clientColumn}, false);
-            this.Relations.Add(this.relationFK__Devis__code_clie__4E88ABD4);
-            this.relationFK__Devis__code_stat__4F7CD00D = new global::System.Data.DataRelation("FK__Devis__code_stat__4F7CD00D", new global::System.Data.DataColumn[] {
-                        this.tableStatut.code_statutColumn}, new global::System.Data.DataColumn[] {
-                        this.tableDevis.code_statutColumn}, false);
-            this.Relations.Add(this.relationFK__Devis__code_stat__4F7CD00D);
+            this.Relations.Add(this.relationFK__Devis__code_stat__76969D2E);
             this.relationFK__Produit__code_ca__4E88ABD4 = new global::System.Data.DataRelation("FK__Produit__code_ca__4E88ABD4", new global::System.Data.DataColumn[] {
                         this.tableCategorie.code_categorieColumn}, new global::System.Data.DataColumn[] {
                         this.tableProduit.code_categorieColumn}, false);
@@ -472,7 +452,7 @@ namespace GestionCommerciale {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            Gestion_commercialeDataSet ds = new Gestion_commercialeDataSet();
+            Gestion_commericaleDataSet ds = new Gestion_commericaleDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -772,7 +752,7 @@ namespace GestionCommerciale {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Gestion_commercialeDataSet ds = new Gestion_commercialeDataSet();
+                Gestion_commericaleDataSet ds = new Gestion_commericaleDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1050,7 +1030,7 @@ namespace GestionCommerciale {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Gestion_commercialeDataSet ds = new Gestion_commercialeDataSet();
+                Gestion_commericaleDataSet ds = new Gestion_commericaleDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1504,7 +1484,7 @@ namespace GestionCommerciale {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Gestion_commercialeDataSet ds = new Gestion_commercialeDataSet();
+                Gestion_commericaleDataSet ds = new Gestion_commericaleDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1814,7 +1794,7 @@ namespace GestionCommerciale {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Gestion_commercialeDataSet ds = new Gestion_commercialeDataSet();
+                Gestion_commericaleDataSet ds = new Gestion_commericaleDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2020,8 +2000,7 @@ namespace GestionCommerciale {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public DevisRow AddDevisRow(System.DateTime date_devis, double taux_tva_devis, double montant_total_ht_devis, double taux_remise_global_devis, ClientRow parentClientRowByFK__Devis__code_clie__44FF419A, StatutRow parentStatutRowByFK__Devis__code_stat__45F365D3) {
-            public DevisRow AddDevisRow(System.DateTime date_devis, double taux_tva_devis, double montant_total_ht_devis, double taux_remise_global_devis, ClientRow parentClientRowByFK__Devis__code_clie__4E88ABD4, StatutRow parentStatutRowByFK__Devis__code_stat__4F7CD00D) {
+            public DevisRow AddDevisRow(System.DateTime date_devis, double taux_tva_devis, double montant_total_ht_devis, double taux_remise_global_devis, ClientRow parentClientRowByFK__Devis__code_clie__75A278F5, StatutRow parentStatutRowByFK__Devis__code_stat__76969D2E) {
                 DevisRow rowDevisRow = ((DevisRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2031,16 +2010,11 @@ namespace GestionCommerciale {
                         taux_remise_global_devis,
                         null,
                         null};
-                if ((parentClientRowByFK__Devis__code_clie__44FF419A != null)) {
-                    columnValuesArray[5] = parentClientRowByFK__Devis__code_clie__44FF419A[0];
+                if ((parentClientRowByFK__Devis__code_clie__75A278F5 != null)) {
+                    columnValuesArray[5] = parentClientRowByFK__Devis__code_clie__75A278F5[0];
                 }
-                if ((parentStatutRowByFK__Devis__code_stat__45F365D3 != null)) {
-                    columnValuesArray[6] = parentStatutRowByFK__Devis__code_stat__45F365D3[0];
-                if ((parentClientRowByFK__Devis__code_clie__4E88ABD4 != null)) {
-                    columnValuesArray[5] = parentClientRowByFK__Devis__code_clie__4E88ABD4[0];
-                }
-                if ((parentStatutRowByFK__Devis__code_stat__4F7CD00D != null)) {
-                    columnValuesArray[6] = parentStatutRowByFK__Devis__code_stat__4F7CD00D[0];
+                if ((parentStatutRowByFK__Devis__code_stat__76969D2E != null)) {
+                    columnValuesArray[6] = parentStatutRowByFK__Devis__code_stat__76969D2E[0];
                 }
                 rowDevisRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDevisRow);
@@ -2178,7 +2152,7 @@ namespace GestionCommerciale {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Gestion_commercialeDataSet ds = new Gestion_commercialeDataSet();
+                Gestion_commericaleDataSet ds = new Gestion_commericaleDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2354,7 +2328,6 @@ namespace GestionCommerciale {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ProduitRow AddProduitRow(string libelle_produit, double prix_vente_ht_produit, CategorieRow parentCategorieRowByFK__Produit__code_ca__46E78A0C) {
             public ProduitRow AddProduitRow(string libelle_produit, double prix_vente_ht_produit, CategorieRow parentCategorieRowByFK__Produit__code_ca__4E88ABD4) {
                 ProduitRow rowProduitRow = ((ProduitRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
@@ -2362,8 +2335,6 @@ namespace GestionCommerciale {
                         libelle_produit,
                         prix_vente_ht_produit,
                         null};
-                if ((parentCategorieRowByFK__Produit__code_ca__46E78A0C != null)) {
-                    columnValuesArray[3] = parentCategorieRowByFK__Produit__code_ca__46E78A0C[0];
                 if ((parentCategorieRowByFK__Produit__code_ca__4E88ABD4 != null)) {
                     columnValuesArray[3] = parentCategorieRowByFK__Produit__code_ca__4E88ABD4[0];
                 }
@@ -2492,7 +2463,7 @@ namespace GestionCommerciale {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Gestion_commercialeDataSet ds = new Gestion_commercialeDataSet();
+                Gestion_commericaleDataSet ds = new Gestion_commericaleDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2770,7 +2741,7 @@ namespace GestionCommerciale {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Gestion_commercialeDataSet ds = new Gestion_commercialeDataSet();
+                Gestion_commericaleDataSet ds = new Gestion_commericaleDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2916,11 +2887,6 @@ namespace GestionCommerciale {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ProduitRow[] GetProduitRows() {
-                if ((this.Table.ChildRelations["FK__Produit__code_ca__46E78A0C"] == null)) {
-                    return new ProduitRow[0];
-                }
-                else {
-                    return ((ProduitRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Produit__code_ca__46E78A0C"])));
                 if ((this.Table.ChildRelations["FK__Produit__code_ca__4E88ABD4"] == null)) {
                     return new ProduitRow[0];
                 }
@@ -3090,16 +3056,11 @@ namespace GestionCommerciale {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DevisRow[] GetDevisRows() {
-                if ((this.Table.ChildRelations["FK__Devis__code_clie__44FF419A"] == null)) {
+                if ((this.Table.ChildRelations["FK__Devis__code_clie__75A278F5"] == null)) {
                     return new DevisRow[0];
                 }
                 else {
-                    return ((DevisRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devis__code_clie__44FF419A"])));
-                if ((this.Table.ChildRelations["FK__Devis__code_clie__4E88ABD4"] == null)) {
-                    return new DevisRow[0];
-                }
-                else {
-                    return ((DevisRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devis__code_clie__4E88ABD4"])));
+                    return ((DevisRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devis__code_clie__75A278F5"])));
                 }
             }
         }
@@ -3280,14 +3241,10 @@ namespace GestionCommerciale {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ClientRow ClientRow {
                 get {
-                    return ((ClientRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devis__code_clie__44FF419A"])));
+                    return ((ClientRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devis__code_clie__75A278F5"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Devis__code_clie__44FF419A"]);
-                    return ((ClientRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devis__code_clie__4E88ABD4"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Devis__code_clie__4E88ABD4"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Devis__code_clie__75A278F5"]);
                 }
             }
             
@@ -3295,14 +3252,10 @@ namespace GestionCommerciale {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public StatutRow StatutRow {
                 get {
-                    return ((StatutRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devis__code_stat__45F365D3"])));
+                    return ((StatutRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devis__code_stat__76969D2E"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Devis__code_stat__45F365D3"]);
-                    return ((StatutRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devis__code_stat__4F7CD00D"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Devis__code_stat__4F7CD00D"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Devis__code_stat__76969D2E"]);
                 }
             }
             
@@ -3380,10 +3333,6 @@ namespace GestionCommerciale {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public CategorieRow CategorieRow {
                 get {
-                    return ((CategorieRow)(this.GetParentRow(this.Table.ParentRelations["FK__Produit__code_ca__46E78A0C"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Produit__code_ca__46E78A0C"]);
                     return ((CategorieRow)(this.GetParentRow(this.Table.ParentRelations["FK__Produit__code_ca__4E88ABD4"])));
                 }
                 set {
@@ -3442,16 +3391,11 @@ namespace GestionCommerciale {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DevisRow[] GetDevisRows() {
-                if ((this.Table.ChildRelations["FK__Devis__code_stat__45F365D3"] == null)) {
+                if ((this.Table.ChildRelations["FK__Devis__code_stat__76969D2E"] == null)) {
                     return new DevisRow[0];
                 }
                 else {
-                    return ((DevisRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devis__code_stat__45F365D3"])));
-                if ((this.Table.ChildRelations["FK__Devis__code_stat__4F7CD00D"] == null)) {
-                    return new DevisRow[0];
-                }
-                else {
-                    return ((DevisRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devis__code_stat__4F7CD00D"])));
+                    return ((DevisRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devis__code_stat__76969D2E"])));
                 }
             }
         }
@@ -3695,7 +3639,7 @@ namespace GestionCommerciale {
         }
     }
 }
-namespace GestionCommerciale.Gestion_commercialeDataSetTableAdapters {
+namespace GestionCommercialeDAL.Gestion_commericaleDataSetTableAdapters {
     
     
     /// <summary>
@@ -3856,7 +3800,7 @@ SELECT code_utilisateur, nom_utilisateur, mot_de_passe_utilisateur FROM Authenti
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::GestionCommerciale.Properties.Settings.Default.Gestion_commercialeConnectionString;
+            this._connection.ConnectionString = global::GestionCommercialeDAL.Properties.Settings.Default.Gestion_commericaleConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3874,7 +3818,7 @@ SELECT code_utilisateur, nom_utilisateur, mot_de_passe_utilisateur FROM Authenti
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Gestion_commercialeDataSet.AuthentificationDataTable dataTable) {
+        public virtual int Fill(Gestion_commericaleDataSet.AuthentificationDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -3887,9 +3831,9 @@ SELECT code_utilisateur, nom_utilisateur, mot_de_passe_utilisateur FROM Authenti
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Gestion_commercialeDataSet.AuthentificationDataTable GetData() {
+        public virtual Gestion_commericaleDataSet.AuthentificationDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Gestion_commercialeDataSet.AuthentificationDataTable dataTable = new Gestion_commercialeDataSet.AuthentificationDataTable();
+            Gestion_commericaleDataSet.AuthentificationDataTable dataTable = new Gestion_commericaleDataSet.AuthentificationDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -3897,14 +3841,14 @@ SELECT code_utilisateur, nom_utilisateur, mot_de_passe_utilisateur FROM Authenti
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Gestion_commercialeDataSet.AuthentificationDataTable dataTable) {
+        public virtual int Update(Gestion_commericaleDataSet.AuthentificationDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Gestion_commercialeDataSet dataSet) {
+        public virtual int Update(Gestion_commericaleDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Authentification");
         }
         
@@ -4199,7 +4143,7 @@ SELECT code_categorie, nom_categorie FROM Categorie WHERE (code_categorie = @cod
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::GestionCommerciale.Properties.Settings.Default.Gestion_commercialeConnectionString;
+            this._connection.ConnectionString = global::GestionCommercialeDAL.Properties.Settings.Default.Gestion_commericaleConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4216,7 +4160,7 @@ SELECT code_categorie, nom_categorie FROM Categorie WHERE (code_categorie = @cod
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Gestion_commercialeDataSet.CategorieDataTable dataTable) {
+        public virtual int Fill(Gestion_commericaleDataSet.CategorieDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4229,9 +4173,9 @@ SELECT code_categorie, nom_categorie FROM Categorie WHERE (code_categorie = @cod
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Gestion_commercialeDataSet.CategorieDataTable GetData() {
+        public virtual Gestion_commericaleDataSet.CategorieDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Gestion_commercialeDataSet.CategorieDataTable dataTable = new Gestion_commercialeDataSet.CategorieDataTable();
+            Gestion_commericaleDataSet.CategorieDataTable dataTable = new Gestion_commericaleDataSet.CategorieDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4239,14 +4183,14 @@ SELECT code_categorie, nom_categorie FROM Categorie WHERE (code_categorie = @cod
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Gestion_commercialeDataSet.CategorieDataTable dataTable) {
+        public virtual int Update(Gestion_commericaleDataSet.CategorieDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Gestion_commercialeDataSet dataSet) {
+        public virtual int Update(Gestion_commericaleDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Categorie");
         }
         
@@ -4592,7 +4536,7 @@ SELECT code_client, nom_client, num_telephone_client, num_fax_client, adresse_ma
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::GestionCommerciale.Properties.Settings.Default.Gestion_commercialeConnectionString;
+            this._connection.ConnectionString = global::GestionCommercialeDAL.Properties.Settings.Default.Gestion_commericaleConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4609,7 +4553,7 @@ SELECT code_client, nom_client, num_telephone_client, num_fax_client, adresse_ma
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Gestion_commercialeDataSet.ClientDataTable dataTable) {
+        public virtual int Fill(Gestion_commericaleDataSet.ClientDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4622,9 +4566,9 @@ SELECT code_client, nom_client, num_telephone_client, num_fax_client, adresse_ma
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Gestion_commercialeDataSet.ClientDataTable GetData() {
+        public virtual Gestion_commericaleDataSet.ClientDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Gestion_commercialeDataSet.ClientDataTable dataTable = new Gestion_commercialeDataSet.ClientDataTable();
+            Gestion_commericaleDataSet.ClientDataTable dataTable = new Gestion_commericaleDataSet.ClientDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4632,14 +4576,14 @@ SELECT code_client, nom_client, num_telephone_client, num_fax_client, adresse_ma
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Gestion_commercialeDataSet.ClientDataTable dataTable) {
+        public virtual int Update(Gestion_commericaleDataSet.ClientDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Gestion_commercialeDataSet dataSet) {
+        public virtual int Update(Gestion_commericaleDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Client");
         }
         
@@ -5236,7 +5180,7 @@ SELECT code_produit, code_devis, remise_produit, quantite_produit FROM Contient 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::GestionCommerciale.Properties.Settings.Default.Gestion_commercialeConnectionString;
+            this._connection.ConnectionString = global::GestionCommercialeDAL.Properties.Settings.Default.Gestion_commericaleConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5254,7 +5198,7 @@ SELECT code_produit, code_devis, remise_produit, quantite_produit FROM Contient 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Gestion_commercialeDataSet.ContientDataTable dataTable) {
+        public virtual int Fill(Gestion_commericaleDataSet.ContientDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5267,9 +5211,9 @@ SELECT code_produit, code_devis, remise_produit, quantite_produit FROM Contient 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Gestion_commercialeDataSet.ContientDataTable GetData() {
+        public virtual Gestion_commericaleDataSet.ContientDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Gestion_commercialeDataSet.ContientDataTable dataTable = new Gestion_commercialeDataSet.ContientDataTable();
+            Gestion_commericaleDataSet.ContientDataTable dataTable = new Gestion_commericaleDataSet.ContientDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5277,14 +5221,14 @@ SELECT code_produit, code_devis, remise_produit, quantite_produit FROM Contient 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Gestion_commercialeDataSet.ContientDataTable dataTable) {
+        public virtual int Update(Gestion_commericaleDataSet.ContientDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Gestion_commercialeDataSet dataSet) {
+        public virtual int Update(Gestion_commericaleDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Contient");
         }
         
@@ -5567,7 +5511,7 @@ SELECT code_devis, date_devis, taux_tva_devis, montant_total_ht_devis, taux_remi
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::GestionCommerciale.Properties.Settings.Default.Gestion_commercialeConnectionString;
+            this._connection.ConnectionString = global::GestionCommercialeDAL.Properties.Settings.Default.Gestion_commericaleConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5585,7 +5529,7 @@ SELECT code_devis, date_devis, taux_tva_devis, montant_total_ht_devis, taux_remi
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Gestion_commercialeDataSet.DevisDataTable dataTable) {
+        public virtual int Fill(Gestion_commericaleDataSet.DevisDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5598,9 +5542,9 @@ SELECT code_devis, date_devis, taux_tva_devis, montant_total_ht_devis, taux_remi
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Gestion_commercialeDataSet.DevisDataTable GetData() {
+        public virtual Gestion_commericaleDataSet.DevisDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Gestion_commercialeDataSet.DevisDataTable dataTable = new Gestion_commercialeDataSet.DevisDataTable();
+            Gestion_commericaleDataSet.DevisDataTable dataTable = new Gestion_commericaleDataSet.DevisDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5608,14 +5552,14 @@ SELECT code_devis, date_devis, taux_tva_devis, montant_total_ht_devis, taux_remi
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Gestion_commercialeDataSet.DevisDataTable dataTable) {
+        public virtual int Update(Gestion_commericaleDataSet.DevisDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Gestion_commercialeDataSet dataSet) {
+        public virtual int Update(Gestion_commericaleDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Devis");
         }
         
@@ -5897,7 +5841,7 @@ SELECT code_produit, libelle_produit, prix_vente_ht_produit, code_categorie FROM
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::GestionCommerciale.Properties.Settings.Default.Gestion_commercialeConnectionString;
+            this._connection.ConnectionString = global::GestionCommercialeDAL.Properties.Settings.Default.Gestion_commericaleConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5915,7 +5859,7 @@ SELECT code_produit, libelle_produit, prix_vente_ht_produit, code_categorie FROM
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Gestion_commercialeDataSet.ProduitDataTable dataTable) {
+        public virtual int Fill(Gestion_commericaleDataSet.ProduitDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5928,9 +5872,9 @@ SELECT code_produit, libelle_produit, prix_vente_ht_produit, code_categorie FROM
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Gestion_commercialeDataSet.ProduitDataTable GetData() {
+        public virtual Gestion_commericaleDataSet.ProduitDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Gestion_commercialeDataSet.ProduitDataTable dataTable = new Gestion_commercialeDataSet.ProduitDataTable();
+            Gestion_commericaleDataSet.ProduitDataTable dataTable = new Gestion_commericaleDataSet.ProduitDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5938,14 +5882,14 @@ SELECT code_produit, libelle_produit, prix_vente_ht_produit, code_categorie FROM
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Gestion_commercialeDataSet.ProduitDataTable dataTable) {
+        public virtual int Update(Gestion_commericaleDataSet.ProduitDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Gestion_commercialeDataSet dataSet) {
+        public virtual int Update(Gestion_commericaleDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Produit");
         }
         
@@ -6224,7 +6168,7 @@ SELECT code_produit, libelle_produit, prix_vente_ht_produit, code_categorie FROM
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::GestionCommerciale.Properties.Settings.Default.Gestion_commercialeConnectionString;
+            this._connection.ConnectionString = global::GestionCommercialeDAL.Properties.Settings.Default.Gestion_commericaleConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6241,7 +6185,7 @@ SELECT code_produit, libelle_produit, prix_vente_ht_produit, code_categorie FROM
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Gestion_commercialeDataSet.StatutDataTable dataTable) {
+        public virtual int Fill(Gestion_commericaleDataSet.StatutDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -6254,9 +6198,9 @@ SELECT code_produit, libelle_produit, prix_vente_ht_produit, code_categorie FROM
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Gestion_commercialeDataSet.StatutDataTable GetData() {
+        public virtual Gestion_commericaleDataSet.StatutDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Gestion_commercialeDataSet.StatutDataTable dataTable = new Gestion_commercialeDataSet.StatutDataTable();
+            Gestion_commericaleDataSet.StatutDataTable dataTable = new Gestion_commericaleDataSet.StatutDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -6264,14 +6208,14 @@ SELECT code_produit, libelle_produit, prix_vente_ht_produit, code_categorie FROM
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Gestion_commercialeDataSet.StatutDataTable dataTable) {
+        public virtual int Update(Gestion_commericaleDataSet.StatutDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Gestion_commercialeDataSet dataSet) {
+        public virtual int Update(Gestion_commericaleDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Statut");
         }
         
@@ -6618,7 +6562,7 @@ SELECT code_produit, libelle_produit, prix_vente_ht_produit, code_categorie FROM
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(Gestion_commercialeDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(Gestion_commericaleDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._categorieTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Categorie.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -6691,7 +6635,7 @@ SELECT code_produit, libelle_produit, prix_vente_ht_produit, code_categorie FROM
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(Gestion_commercialeDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(Gestion_commericaleDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._categorieTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Categorie.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -6757,7 +6701,7 @@ SELECT code_produit, libelle_produit, prix_vente_ht_produit, code_categorie FROM
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(Gestion_commercialeDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(Gestion_commericaleDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._contientTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Contient.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -6847,7 +6791,7 @@ SELECT code_produit, libelle_produit, prix_vente_ht_produit, code_categorie FROM
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(Gestion_commercialeDataSet dataSet) {
+        public virtual int UpdateAll(Gestion_commericaleDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

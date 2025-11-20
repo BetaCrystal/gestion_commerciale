@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GestionCommerciale.Properties {
+namespace GestionCommercialeBLL.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -26,33 +26,11 @@ namespace GestionCommerciale.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=psl23-p06;Integrated Security=True")]
-        public string ConnectionString {
-            get {
-                return ((string)(this["ConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=PSL23-P16;Initial Catalog=Gestion_commerciale;Integrated Security=Tru" +
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=Gestion_commericale;Integrated Security=Tru" +
             "e;Encrypt=False")]
         public string Gestion_commericaleConnectionString {
             get {
                 return ((string)(this["Gestion_commericaleConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=Gestion_commerciale;Integrated Security=Tru" +
-            "e;Encrypt=False")]
-        public string Gestion_commercialeConnectionString {
-            get {
-                return ((string)(this["Gestion_commercialeConnectionString"]));
             }
         }
     }
