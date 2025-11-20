@@ -42,7 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Authentification.cs" />
     <Compile Include="CategorieDAL.cs" />
+    <Compile Include="ClientDAL.cs" />
     <Compile Include="ConnexionBD.cs" />
     <Compile Include="GestionCommercialeDAO.cs" />
     <Compile Include="ProduitDAL.cs" />

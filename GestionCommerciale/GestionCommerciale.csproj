@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connexion.Designer.cs">
+      <DependentUpon>Connexion.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -69,6 +75,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Gestion_commercialeDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ListeClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListeClients.Designer.cs">
+      <DependentUpon>ListeClients.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListeProduits.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,8 +98,14 @@
     <EmbeddedResource Include="ajouterProduits.resx">
       <DependentUpon>ajouterProduits.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Connexion.resx">
+      <DependentUpon>Connexion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListeClients.resx">
+      <DependentUpon>ListeClients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListeProduits.resx">
       <DependentUpon>ListeProduits.cs</DependentUpon>
@@ -126,6 +144,9 @@
     <None Include="Gestion_commercialeDataSet.xss">
       <DependentUpon>Gestion_commercialeDataSet.xsd</DependentUpon>
     </None>
+    <None Include="Properties\DataSources\GestionCommercialeBO.Categorie.datasource" />
+    <None Include="Properties\DataSources\GestionCommercialeBO.Client.datasource" />
+    <None Include="Properties\DataSources\GestionCommercialeBO.Produit.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

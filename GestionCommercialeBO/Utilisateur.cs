@@ -11,7 +11,7 @@ namespace GestionCommercialeBO
         private string identifiant;
         private string mdp;
 
-        public Utilisateur (string identifiant, string mdp)
+        public Utilisateur(string identifiant, string mdp)
         {
             this.identifiant = identifiant;
             this.mdp = mdp;

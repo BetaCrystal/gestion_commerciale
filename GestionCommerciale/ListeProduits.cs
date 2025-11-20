@@ -59,7 +59,7 @@ namespace GestionCommerciale
 
                 if (result == DialogResult.Yes)
                 {
-                    produitBLL.SupprimerProduit(produit.code_produit);
+                    produitBLL.SupprimerProduit(produit.CodeProduit);
                     ChargerProduits();
                 }
             }
@@ -67,7 +67,7 @@ namespace GestionCommerciale
             if (dtgProduit.Columns[e.ColumnIndex].Name == "Modifier")
             {
                 Produit produit = (Produit)dtgProduit.Rows[e.RowIndex].DataBoundItem;
-                int codeProduit = produit.code_produit;
+                int codeProduit = produit.CodeProduit;
 
                 modifierProduit formModifier = new modifierProduit(codeProduit);
                 formModifier.ShowDialog();

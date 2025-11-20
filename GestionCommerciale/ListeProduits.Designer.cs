@@ -34,6 +34,8 @@ namespace GestionCommerciale
             this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet1 = new GestionCommerciale.DataSet1();
             this.btnProduit = new System.Windows.Forms.Button();
+            this.categorieTableAdapter1 = new GestionCommerciale.Gestion_commercialeDataSetTableAdapters.CategorieTableAdapter();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.colLibelle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPrix = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCategorie = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,6 +44,7 @@ namespace GestionCommerciale
             ((System.ComponentModel.ISupportInitialize)(this.dtgProduit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dtgProduit
@@ -54,12 +57,12 @@ namespace GestionCommerciale
             this.colCategorie,
             this.Modifier,
             this.Supprimer});
-            this.dtgProduit.DataSource = this.dataSet1BindingSource;
-            this.dtgProduit.Location = new System.Drawing.Point(33, 23);
+            this.dtgProduit.DataSource = this.bindingSource1;
+            this.dtgProduit.Location = new System.Drawing.Point(12, 40);
             this.dtgProduit.Name = "dtgProduit";
             this.dtgProduit.RowHeadersWidth = 51;
             this.dtgProduit.RowTemplate.Height = 24;
-            this.dtgProduit.Size = new System.Drawing.Size(755, 193);
+            this.dtgProduit.Size = new System.Drawing.Size(758, 193);
             this.dtgProduit.TabIndex = 0;
             this.dtgProduit.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgProduit_CellContentClick);
             // 
@@ -83,9 +86,17 @@ namespace GestionCommerciale
             this.btnProduit.UseVisualStyleBackColor = true;
             this.btnProduit.Click += new System.EventHandler(this.btnProduit_Click);
             // 
+            // categorieTableAdapter1
+            // 
+            this.categorieTableAdapter1.ClearBeforeFill = true;
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(GestionCommercialeBO.Produit);
+            // 
             // colLibelle
             // 
-            this.colLibelle.DataPropertyName = "libelle_produit";
+            this.colLibelle.DataPropertyName = "LibelleProduit";
             this.colLibelle.HeaderText = "Nom du produit";
             this.colLibelle.MinimumWidth = 6;
             this.colLibelle.Name = "colLibelle";
@@ -93,7 +104,7 @@ namespace GestionCommerciale
             // 
             // colPrix
             // 
-            this.colPrix.DataPropertyName = "prix_vente_ht_produit";
+            this.colPrix.DataPropertyName = "PrixVenteHT";
             this.colPrix.HeaderText = "Prix hors taxe";
             this.colPrix.MinimumWidth = 6;
             this.colPrix.Name = "colPrix";
@@ -101,7 +112,7 @@ namespace GestionCommerciale
             // 
             // colCategorie
             // 
-            this.colCategorie.DataPropertyName = "nom_categorie";
+            this.colCategorie.DataPropertyName = "CategorieProduit";
             this.colCategorie.HeaderText = "Catégorie";
             this.colCategorie.MinimumWidth = 6;
             this.colCategorie.Name = "colCategorie";
@@ -138,6 +149,7 @@ namespace GestionCommerciale
             ((System.ComponentModel.ISupportInitialize)(this.dtgProduit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -148,6 +160,8 @@ namespace GestionCommerciale
         private System.Windows.Forms.BindingSource dataSet1BindingSource;
         private DataSet1 dataSet1;
         private System.Windows.Forms.Button btnProduit;
+        private Gestion_commercialeDataSetTableAdapters.CategorieTableAdapter categorieTableAdapter1;
+        private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.DataGridViewTextBoxColumn colLibelle;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPrix;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCategorie;

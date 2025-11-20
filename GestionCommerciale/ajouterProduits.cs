@@ -52,9 +52,9 @@ namespace GestionCommerciale
 
             Produit p = new Produit
             {
-                libelle_produit = nomProduit,
-                prix_vente_ht_produit = prixHt,
-                code_categorie = Convert.ToInt32(cbxProduit.SelectedValue)
+                LibelleProduit = nomProduit,
+                PrixVenteHT = prixHt,
+                CategorieProduit = new Categorie(Convert.ToInt32(cbxProduit.SelectedValue), cbxProduit.Text)
             };
 
             try
