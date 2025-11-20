@@ -1,6 +1,0 @@
-C:\Users\admin\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommercialeBO\bin\Debug\GestionCommercialeBO.dll
-C:\Users\admin\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommercialeBO\bin\Debug\GestionCommercialeBO.pdb
-C:\Users\admin\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.csproj.AssemblyReference.cache
-C:\Users\admin\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.csproj.CoreCompileInputs.cache
-C:\Users\admin\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.dll
-C:\Users\admin\Desktop\non_save\projet_gestion_commercial\GestionCommerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.pdb
