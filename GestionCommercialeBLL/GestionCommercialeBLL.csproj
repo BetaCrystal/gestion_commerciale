@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CategorieBLL.cs" />
+<<<<<<< HEAD
     <Compile Include="GestionUtilisateurs.cs" />
     <Compile Include="ProduitBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -58,6 +59,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+=======
+    <Compile Include="ClientBLL.cs" />
+    <Compile Include="GestionUtilisateurs.cs" />
+    <Compile Include="ProduitBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GestionCommercialeBO\GestionCommercialeBO.csproj">
@@ -69,6 +76,7 @@
       <Name>GestionCommercialeDAL</Name>
     </ProjectReference>
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <None Include="app.config" />
     <None Include="Gestion_commericaleDataSet.xsc">
@@ -87,5 +95,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

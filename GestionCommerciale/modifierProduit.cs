@@ -34,9 +34,15 @@ namespace GestionCommerciale
             Produit produit = produitBLL.GetProduitById(_codeProduit);
             if (produit != null)
             {
+<<<<<<< HEAD
                 txtNomProduit.Text = produit.libelle_produit;
                 txtPrixHtProduit.Text = produit.prix_vente_ht_produit.ToString();
                 cbxProduit.SelectedValue = produit.code_categorie;
+=======
+                txtNomProduit.Text = produit.LibelleProduit;
+                txtPrixHtProduit.Text = produit.PrixVenteHT.ToString();
+                cbxProduit.SelectedValue = produit.CategorieProduit.CodeCategorie;
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
             }
 
         }
@@ -57,10 +63,17 @@ namespace GestionCommerciale
 
             Produit produit = new Produit
             {
+<<<<<<< HEAD
                 code_produit = _codeProduit,
                 libelle_produit = txtNomProduit.Text.Trim(),
                 prix_vente_ht_produit = prixHt,
                 code_categorie = Convert.ToInt32(cbxProduit.SelectedValue)
+=======
+                CodeProduit = _codeProduit,
+                LibelleProduit = txtNomProduit.Text.Trim(),
+                PrixVenteHT = prixHt,
+                CategorieProduit = new Categorie(Convert.ToInt32(cbxProduit.SelectedValue), cbxProduit.Text)
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
             };
 
             try

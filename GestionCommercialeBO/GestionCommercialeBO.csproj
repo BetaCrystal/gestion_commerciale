@@ -41,8 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Produit.cs" />
     <Compile Include="Connexion.cs" />
+=======
+    <Compile Include="Categorie.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="Connexion.cs" />
+    <Compile Include="Produit.cs" />
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
     <Compile Include="Session.cs" />
     <Compile Include="Utilisateur.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

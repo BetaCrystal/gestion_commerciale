@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
 using System.Configuration;
 using GestionCommercialeBLL;
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
 
 namespace GestionCommerciale
 {
@@ -18,6 +21,7 @@ namespace GestionCommerciale
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new ListeProduits());
             // Initialisation de la chaîne de connexion depuis App.config 
             // (Pour se connexter à la base de données)
@@ -35,6 +39,8 @@ namespace GestionCommerciale
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
             Application.Run(new Connexion());
         }
     }

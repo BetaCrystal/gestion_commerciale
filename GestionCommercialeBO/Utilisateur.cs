@@ -4,11 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+<<<<<<< HEAD
 /*
  * Classe permettant de créer un utilisateur avec son identifiant et son mot de passe afin de vérifier
  * s'il existe bien dans la base de données et permettre sa connexion.
  */
 
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
 namespace GestionCommercialeBO
 {
     public class Utilisateur
@@ -16,7 +19,11 @@ namespace GestionCommercialeBO
         private string identifiant;
         private string mdp;
 
+<<<<<<< HEAD
         public Utilisateur (string identifiant, string mdp)
+=======
+        public Utilisateur(string identifiant, string mdp)
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
         {
             this.identifiant = identifiant;
             this.mdp = mdp;

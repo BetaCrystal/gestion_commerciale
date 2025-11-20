@@ -47,11 +47,14 @@ namespace GestionCommerciale {
         private global::System.Data.DataRelation relationFK__Devis__code_stat__45F365D3;
         
         private global::System.Data.DataRelation relationFK__Produit__code_ca__46E78A0C;
+<<<<<<< HEAD
         private global::System.Data.DataRelation relationFK__Devis__code_clie__4E88ABD4;
         
         private global::System.Data.DataRelation relationFK__Devis__code_stat__4F7CD00D;
         
         private global::System.Data.DataRelation relationFK__Produit__code_ca__4E88ABD4;
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -358,9 +361,12 @@ namespace GestionCommerciale {
             this.relationFK__Devis__code_clie__44FF419A = this.Relations["FK__Devis__code_clie__44FF419A"];
             this.relationFK__Devis__code_stat__45F365D3 = this.Relations["FK__Devis__code_stat__45F365D3"];
             this.relationFK__Produit__code_ca__46E78A0C = this.Relations["FK__Produit__code_ca__46E78A0C"];
+<<<<<<< HEAD
             this.relationFK__Devis__code_clie__4E88ABD4 = this.Relations["FK__Devis__code_clie__4E88ABD4"];
             this.relationFK__Devis__code_stat__4F7CD00D = this.Relations["FK__Devis__code_stat__4F7CD00D"];
             this.relationFK__Produit__code_ca__4E88ABD4 = this.Relations["FK__Produit__code_ca__4E88ABD4"];
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -405,6 +411,7 @@ namespace GestionCommerciale {
                         this.tableCategorie.code_categorieColumn}, new global::System.Data.DataColumn[] {
                         this.tableProduit.code_categorieColumn}, false);
             this.Relations.Add(this.relationFK__Produit__code_ca__46E78A0C);
+<<<<<<< HEAD
             this.relationFK__Devis__code_clie__4E88ABD4 = new global::System.Data.DataRelation("FK__Devis__code_clie__4E88ABD4", new global::System.Data.DataColumn[] {
                         this.tableClient.code_clientColumn}, new global::System.Data.DataColumn[] {
                         this.tableDevis.code_clientColumn}, false);
@@ -417,6 +424,8 @@ namespace GestionCommerciale {
                         this.tableCategorie.code_categorieColumn}, new global::System.Data.DataColumn[] {
                         this.tableProduit.code_categorieColumn}, false);
             this.Relations.Add(this.relationFK__Produit__code_ca__4E88ABD4);
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2021,7 +2030,10 @@ namespace GestionCommerciale {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DevisRow AddDevisRow(System.DateTime date_devis, double taux_tva_devis, double montant_total_ht_devis, double taux_remise_global_devis, ClientRow parentClientRowByFK__Devis__code_clie__44FF419A, StatutRow parentStatutRowByFK__Devis__code_stat__45F365D3) {
+<<<<<<< HEAD
             public DevisRow AddDevisRow(System.DateTime date_devis, double taux_tva_devis, double montant_total_ht_devis, double taux_remise_global_devis, ClientRow parentClientRowByFK__Devis__code_clie__4E88ABD4, StatutRow parentStatutRowByFK__Devis__code_stat__4F7CD00D) {
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
                 DevisRow rowDevisRow = ((DevisRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2036,11 +2048,14 @@ namespace GestionCommerciale {
                 }
                 if ((parentStatutRowByFK__Devis__code_stat__45F365D3 != null)) {
                     columnValuesArray[6] = parentStatutRowByFK__Devis__code_stat__45F365D3[0];
+<<<<<<< HEAD
                 if ((parentClientRowByFK__Devis__code_clie__4E88ABD4 != null)) {
                     columnValuesArray[5] = parentClientRowByFK__Devis__code_clie__4E88ABD4[0];
                 }
                 if ((parentStatutRowByFK__Devis__code_stat__4F7CD00D != null)) {
                     columnValuesArray[6] = parentStatutRowByFK__Devis__code_stat__4F7CD00D[0];
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
                 }
                 rowDevisRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDevisRow);
@@ -2355,7 +2370,10 @@ namespace GestionCommerciale {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ProduitRow AddProduitRow(string libelle_produit, double prix_vente_ht_produit, CategorieRow parentCategorieRowByFK__Produit__code_ca__46E78A0C) {
+<<<<<<< HEAD
             public ProduitRow AddProduitRow(string libelle_produit, double prix_vente_ht_produit, CategorieRow parentCategorieRowByFK__Produit__code_ca__4E88ABD4) {
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
                 ProduitRow rowProduitRow = ((ProduitRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2364,8 +2382,11 @@ namespace GestionCommerciale {
                         null};
                 if ((parentCategorieRowByFK__Produit__code_ca__46E78A0C != null)) {
                     columnValuesArray[3] = parentCategorieRowByFK__Produit__code_ca__46E78A0C[0];
+<<<<<<< HEAD
                 if ((parentCategorieRowByFK__Produit__code_ca__4E88ABD4 != null)) {
                     columnValuesArray[3] = parentCategorieRowByFK__Produit__code_ca__4E88ABD4[0];
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
                 }
                 rowProduitRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowProduitRow);
@@ -2921,11 +2942,14 @@ namespace GestionCommerciale {
                 }
                 else {
                     return ((ProduitRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Produit__code_ca__46E78A0C"])));
+<<<<<<< HEAD
                 if ((this.Table.ChildRelations["FK__Produit__code_ca__4E88ABD4"] == null)) {
                     return new ProduitRow[0];
                 }
                 else {
                     return ((ProduitRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Produit__code_ca__4E88ABD4"])));
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
                 }
             }
         }
@@ -3095,11 +3119,14 @@ namespace GestionCommerciale {
                 }
                 else {
                     return ((DevisRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devis__code_clie__44FF419A"])));
+<<<<<<< HEAD
                 if ((this.Table.ChildRelations["FK__Devis__code_clie__4E88ABD4"] == null)) {
                     return new DevisRow[0];
                 }
                 else {
                     return ((DevisRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devis__code_clie__4E88ABD4"])));
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
                 }
             }
         }
@@ -3284,10 +3311,13 @@ namespace GestionCommerciale {
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK__Devis__code_clie__44FF419A"]);
+<<<<<<< HEAD
                     return ((ClientRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devis__code_clie__4E88ABD4"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK__Devis__code_clie__4E88ABD4"]);
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
                 }
             }
             
@@ -3299,10 +3329,13 @@ namespace GestionCommerciale {
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK__Devis__code_stat__45F365D3"]);
+<<<<<<< HEAD
                     return ((StatutRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devis__code_stat__4F7CD00D"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK__Devis__code_stat__4F7CD00D"]);
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
                 }
             }
             
@@ -3384,10 +3417,13 @@ namespace GestionCommerciale {
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK__Produit__code_ca__46E78A0C"]);
+<<<<<<< HEAD
                     return ((CategorieRow)(this.GetParentRow(this.Table.ParentRelations["FK__Produit__code_ca__4E88ABD4"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK__Produit__code_ca__4E88ABD4"]);
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
                 }
             }
             
@@ -3447,11 +3483,14 @@ namespace GestionCommerciale {
                 }
                 else {
                     return ((DevisRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devis__code_stat__45F365D3"])));
+<<<<<<< HEAD
                 if ((this.Table.ChildRelations["FK__Devis__code_stat__4F7CD00D"] == null)) {
                     return new DevisRow[0];
                 }
                 else {
                     return ((DevisRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devis__code_stat__4F7CD00D"])));
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
                 }
             }
         }

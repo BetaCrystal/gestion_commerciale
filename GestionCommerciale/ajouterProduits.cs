@@ -6,17 +6,23 @@ using System.ComponentModel;
 using System.Data;
 using System.Data;
 using System.Data.SqlClient;
+<<<<<<< HEAD
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
 using System.Data.SqlClient;
 using System.Data;
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
 
 namespace GestionCommerciale
 {
@@ -36,6 +42,7 @@ namespace GestionCommerciale
             cbxProduit.DataSource = categorieBLL.ChargerCategories();
             cbxProduit.DisplayMember = "nom_categorie";
             cbxProduit.ValueMember = "code_categorie";
+<<<<<<< HEAD
         private void ChargerCategoriesDansComboBox()
         {
             string connectionString = "Data Source=psl23-p06;Initial Catalog=GestionCommerciale;Integrated Security=True";
@@ -65,6 +72,8 @@ namespace GestionCommerciale
         private void ajouterProduits_Load(object sender, EventArgs e)
         {
             ChargerCategoriesDansComboBox();
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
         }
 
         private void btnAjouterProduit_Click(object sender, EventArgs e)
@@ -87,9 +96,15 @@ namespace GestionCommerciale
 
             Produit p = new Produit
             {
+<<<<<<< HEAD
                 libelle_produit = nomProduit,
                 prix_vente_ht_produit = prixHt,
                 code_categorie = Convert.ToInt32(cbxProduit.SelectedValue)
+=======
+                LibelleProduit = nomProduit,
+                PrixVenteHT = prixHt,
+                CategorieProduit = new Categorie(Convert.ToInt32(cbxProduit.SelectedValue), cbxProduit.Text)
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
             };
 
             try
@@ -111,6 +126,7 @@ namespace GestionCommerciale
         private void btnRetour_Click(object sender, EventArgs e)
         {
             this.Close();
+<<<<<<< HEAD
                 // récupération des données depuis les contrôles du formulaire
                 string nomProduit = txtNomProduit.Text.Trim();
                 string prixTexte = txtPrixHtProduit.Text.Trim();
@@ -178,6 +194,8 @@ namespace GestionCommerciale
         private void btnRetour_Click(object sender, EventArgs e)
         {
 
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
         }
     }
 }

@@ -5,16 +5,22 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+<<<<<<< HEAD
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
 using System.Data.SqlClient;
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
 
 namespace GestionCommerciale
 {
@@ -32,6 +38,7 @@ namespace GestionCommerciale
 
             dtgProduit.AutoGenerateColumns = false;
             dtgProduit.DataSource = produits;
+<<<<<<< HEAD
             string connectionString = "Data Source=psl23-p06;Initial Catalog=GestionCommerciale;Integrated Security=True;";
             string query = @"
         SELECT 
@@ -59,6 +66,8 @@ namespace GestionCommerciale
                     MessageBox.Show("Erreur : " + ex.Message);
                 }
             }
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
         }
         private void FormListeProduits_Load(object sender, EventArgs e)
         {
@@ -68,7 +77,10 @@ namespace GestionCommerciale
 
         private void btnProduit_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             // ouvre le formulaire d'ajout de produit
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
             ajouterProduits formAjout = new ajouterProduits();
             formAjout.ShowDialog();
 
@@ -92,7 +104,11 @@ namespace GestionCommerciale
 
                 if (result == DialogResult.Yes)
                 {
+<<<<<<< HEAD
                     produitBLL.SupprimerProduit(produit.code_produit);
+=======
+                    produitBLL.SupprimerProduit(produit.CodeProduit);
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
                     ChargerProduits();
                 }
             }
@@ -100,7 +116,11 @@ namespace GestionCommerciale
             if (dtgProduit.Columns[e.ColumnIndex].Name == "Modifier")
             {
                 Produit produit = (Produit)dtgProduit.Rows[e.RowIndex].DataBoundItem;
+<<<<<<< HEAD
                 int codeProduit = produit.code_produit;
+=======
+                int codeProduit = produit.CodeProduit;
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
 
                 modifierProduit formModifier = new modifierProduit(codeProduit);
                 formModifier.ShowDialog();
@@ -111,6 +131,7 @@ namespace GestionCommerciale
         } 
         }
     }
+<<<<<<< HEAD
         private void btnDeconnexion_Click(object sender, EventArgs e)
         {
             //Comme dans la connexion, on ferme la page ListeProduits pour revenir sur la page Connexion sans fermer l'application
@@ -121,3 +142,5 @@ namespace GestionCommerciale
         }
     }
 }
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130

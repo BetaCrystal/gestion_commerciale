@@ -42,11 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="CategorieDAL.cs" />
+=======
+    <Compile Include="Authentification.cs" />
+    <Compile Include="CategorieDAL.cs" />
+    <Compile Include="ClientDAL.cs" />
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
     <Compile Include="ConnexionBD.cs" />
     <Compile Include="GestionCommercialeDAO.cs" />
     <Compile Include="ProduitDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="Authentification.cs" />
     <Compile Include="ConnexionBD.cs" />
     <Compile Include="GestionCommercialeDAO.cs" />
@@ -61,6 +68,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GestionCommercialeBO\GestionCommercialeBO.csproj">
@@ -68,6 +77,7 @@
       <Name>GestionCommercialeBO</Name>
     </ProjectReference>
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <None Include="app.config" />
     <None Include="Gestion_commericaleDataSet.xsc">
@@ -86,5 +96,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
+=======
+>>>>>>> f8d224008bb874cc497a689787bf50114e583130
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
