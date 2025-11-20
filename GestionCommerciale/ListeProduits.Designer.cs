@@ -31,6 +31,14 @@ namespace GestionCommerciale
         {
             this.components = new System.ComponentModel.Container();
             this.dtgProduit = new System.Windows.Forms.DataGridView();
+            this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet1 = new GestionCommerciale.DataSet1();
+            this.btnProduit = new System.Windows.Forms.Button();
+            this.colLibelle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPrix = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCategorie = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Modifier = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Supprimer = new System.Windows.Forms.DataGridViewButtonColumn();
             this.colLibelle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPrix = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCategorie = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,6 +58,37 @@ namespace GestionCommerciale
             this.dtgProduit.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colLibelle,
             this.colPrix,
+            this.colCategorie,
+            this.Modifier,
+            this.Supprimer});
+            this.dtgProduit.DataSource = this.dataSet1BindingSource;
+            this.dtgProduit.Location = new System.Drawing.Point(33, 23);
+            this.dtgProduit.Name = "dtgProduit";
+            this.dtgProduit.RowHeadersWidth = 51;
+            this.dtgProduit.RowTemplate.Height = 24;
+            this.dtgProduit.Size = new System.Drawing.Size(755, 193);
+            this.dtgProduit.TabIndex = 0;
+            this.dtgProduit.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgProduit_CellContentClick);
+            // 
+            // dataSet1BindingSource
+            // 
+            this.dataSet1BindingSource.DataSource = this.dataSet1;
+            this.dataSet1BindingSource.Position = 0;
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btnProduit
+            // 
+            this.btnProduit.Location = new System.Drawing.Point(310, 301);
+            this.btnProduit.Name = "btnProduit";
+            this.btnProduit.Size = new System.Drawing.Size(182, 48);
+            this.btnProduit.TabIndex = 1;
+            this.btnProduit.Text = "Ajouter un Produit";
+            this.btnProduit.UseVisualStyleBackColor = true;
+            this.btnProduit.Click += new System.EventHandler(this.btnProduit_Click);
             this.colCategorie});
             this.dtgProduit.DataSource = this.dataSet1BindingSource;
             this.dtgProduit.Location = new System.Drawing.Point(140, 33);
@@ -70,6 +109,7 @@ namespace GestionCommerciale
             // 
             // colPrix
             // 
+            this.colPrix.DataPropertyName = "prix_vente_ht_produit";
             this.colPrix.DataPropertyName = "prix_ht_produit";
             this.colPrix.HeaderText = "Prix hors taxe";
             this.colPrix.MinimumWidth = 6;
@@ -84,6 +124,31 @@ namespace GestionCommerciale
             this.colCategorie.Name = "colCategorie";
             this.colCategorie.Width = 125;
             // 
+            // Modifier
+            // 
+            this.Modifier.HeaderText = "Modifier";
+            this.Modifier.MinimumWidth = 6;
+            this.Modifier.Name = "Modifier";
+            this.Modifier.Text = "modifier";
+            this.Modifier.UseColumnTextForButtonValue = true;
+            this.Modifier.Width = 125;
+            // 
+            // Supprimer
+            // 
+            this.Supprimer.HeaderText = "Supprimer";
+            this.Supprimer.MinimumWidth = 6;
+            this.Supprimer.Name = "Supprimer";
+            this.Supprimer.Text = "supprimer";
+            this.Supprimer.UseColumnTextForButtonValue = true;
+            this.Supprimer.Width = 125;
+            // 
+            // ListeProduits
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnProduit);
+            this.Controls.Add(this.dtgProduit);
             // dataSet1BindingSource
             // 
             this.dataSet1BindingSource.DataSource = this.dataSet1;
@@ -139,6 +204,12 @@ namespace GestionCommerciale
         private System.Windows.Forms.DataGridView dtgProduit;
         private System.Windows.Forms.BindingSource dataSet1BindingSource;
         private DataSet1 dataSet1;
+        private System.Windows.Forms.Button btnProduit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colLibelle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colPrix;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCategorie;
+        private System.Windows.Forms.DataGridViewButtonColumn Modifier;
+        private System.Windows.Forms.DataGridViewButtonColumn Supprimer;
         private System.Windows.Forms.DataGridViewTextBoxColumn colLibelle;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPrix;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCategorie;

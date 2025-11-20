@@ -1,0 +1,269 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D5B9D69-0BF5-4AEE-B3EE-26E450FD1FB4}|GestionCommercialeDAL\\GestionCommercialeDAL.csproj|d:\\my documents\\lycee saint vincent\\exos cs\\bts2\\projet\\gestion_commerciale\\gestioncommercialedal\\produitdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D5B9D69-0BF5-4AEE-B3EE-26E450FD1FB4}|GestionCommercialeDAL\\GestionCommercialeDAL.csproj|solutionrelative:gestioncommercialedal\\produitdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FD3FA5D-8D7A-4823-973F-3A7A719B8F6C}|GestionCommerciale\\GestionCommerciale.csproj|D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\gestioncommerciale\\listeproduits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5FD3FA5D-8D7A-4823-973F-3A7A719B8F6C}|GestionCommerciale\\GestionCommerciale.csproj|solutionrelative:gestioncommerciale\\listeproduits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FD3FA5D-8D7A-4823-973F-3A7A719B8F6C}|GestionCommerciale\\GestionCommerciale.csproj|D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\gestioncommerciale\\listeproduits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FD3FA5D-8D7A-4823-973F-3A7A719B8F6C}|GestionCommerciale\\GestionCommerciale.csproj|solutionrelative:gestioncommerciale\\listeproduits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FD3FA5D-8D7A-4823-973F-3A7A719B8F6C}|GestionCommerciale\\GestionCommerciale.csproj|D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\gestioncommerciale\\ajouterproduits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FD3FA5D-8D7A-4823-973F-3A7A719B8F6C}|GestionCommerciale\\GestionCommerciale.csproj|solutionrelative:gestioncommerciale\\ajouterproduits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FD3FA5D-8D7A-4823-973F-3A7A719B8F6C}|GestionCommerciale\\GestionCommerciale.csproj|D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\gestioncommerciale\\ajouterproduits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5FD3FA5D-8D7A-4823-973F-3A7A719B8F6C}|GestionCommerciale\\GestionCommerciale.csproj|solutionrelative:gestioncommerciale\\ajouterproduits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC0E273-6558-4F0E-AC56-1F6B73D4FBC0}|GestionCommercialeBLL\\GestionCommercialeBLL.csproj|D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\gestioncommercialebll\\produitbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC0E273-6558-4F0E-AC56-1F6B73D4FBC0}|GestionCommercialeBLL\\GestionCommercialeBLL.csproj|solutionrelative:gestioncommercialebll\\produitbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA481A-DDB9-49EE-8CCC-F619640AF4FE}|GestionCommercialeBO\\GestionCommercialeBO.csproj|D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\gestioncommercialebo\\produit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA481A-DDB9-49EE-8CCC-F619640AF4FE}|GestionCommercialeBO\\GestionCommercialeBO.csproj|solutionrelative:gestioncommercialebo\\produit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D5B9D69-0BF5-4AEE-B3EE-26E450FD1FB4}|GestionCommercialeDAL\\GestionCommercialeDAL.csproj|D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\gestioncommercialedal\\gestioncommercialedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D5B9D69-0BF5-4AEE-B3EE-26E450FD1FB4}|GestionCommercialeDAL\\GestionCommercialeDAL.csproj|solutionrelative:gestioncommercialedal\\gestioncommercialedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D5B9D69-0BF5-4AEE-B3EE-26E450FD1FB4}|GestionCommercialeDAL\\GestionCommercialeDAL.csproj|D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\gestioncommercialedal\\connexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D5B9D69-0BF5-4AEE-B3EE-26E450FD1FB4}|GestionCommercialeDAL\\GestionCommercialeDAL.csproj|solutionrelative:gestioncommercialedal\\connexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D5B9D69-0BF5-4AEE-B3EE-26E450FD1FB4}|GestionCommercialeDAL\\GestionCommercialeDAL.csproj|D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\gestioncommercialedal\\categoriedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D5B9D69-0BF5-4AEE-B3EE-26E450FD1FB4}|GestionCommercialeDAL\\GestionCommercialeDAL.csproj|solutionrelative:gestioncommercialedal\\categoriedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA481A-DDB9-49EE-8CCC-F619640AF4FE}|GestionCommercialeBO\\GestionCommercialeBO.csproj|D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\gestioncommercialebo\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA481A-DDB9-49EE-8CCC-F619640AF4FE}|GestionCommercialeBO\\GestionCommercialeBO.csproj|solutionrelative:gestioncommercialebo\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FD3FA5D-8D7A-4823-973F-3A7A719B8F6C}|GestionCommerciale\\GestionCommerciale.csproj|D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\gestioncommerciale\\modifierproduit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FD3FA5D-8D7A-4823-973F-3A7A719B8F6C}|GestionCommerciale\\GestionCommerciale.csproj|solutionrelative:gestioncommerciale\\modifierproduit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FD3FA5D-8D7A-4823-973F-3A7A719B8F6C}|GestionCommerciale\\GestionCommerciale.csproj|D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\gestioncommerciale\\modifierproduit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5FD3FA5D-8D7A-4823-973F-3A7A719B8F6C}|GestionCommerciale\\GestionCommerciale.csproj|solutionrelative:gestioncommerciale\\modifierproduit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC0E273-6558-4F0E-AC56-1F6B73D4FBC0}|GestionCommercialeBLL\\GestionCommercialeBLL.csproj|D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\gestioncommercialebll\\categoriebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC0E273-6558-4F0E-AC56-1F6B73D4FBC0}|GestionCommercialeBLL\\GestionCommercialeBLL.csproj|solutionrelative:gestioncommercialebll\\categoriebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC0E273-6558-4F0E-AC56-1F6B73D4FBC0}|GestionCommercialeBLL\\GestionCommercialeBLL.csproj|D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\gestioncommercialebll\\gestionutilisateurs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC0E273-6558-4F0E-AC56-1F6B73D4FBC0}|GestionCommercialeBLL\\GestionCommercialeBLL.csproj|solutionrelative:gestioncommercialebll\\gestionutilisateurs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProduitDAL.cs",
+              "DocumentMoniker": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommercialeDAL\\ProduitDAL.cs",
+              "RelativeDocumentMoniker": "GestionCommercialeDAL\\ProduitDAL.cs",
+              "ToolTip": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommercialeDAL\\ProduitDAL.cs",
+              "RelativeToolTip": "GestionCommercialeDAL\\ProduitDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAACSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T13:11:49.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Produit.cs",
+              "DocumentMoniker": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommercialeBO\\Produit.cs",
+              "RelativeDocumentMoniker": "GestionCommercialeBO\\Produit.cs",
+              "ToolTip": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommercialeBO\\Produit.cs",
+              "RelativeToolTip": "GestionCommercialeBO\\Produit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T14:09:43.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProduitBLL.cs",
+              "DocumentMoniker": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommercialeBLL\\ProduitBLL.cs",
+              "RelativeDocumentMoniker": "GestionCommercialeBLL\\ProduitBLL.cs",
+              "ToolTip": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommercialeBLL\\ProduitBLL.cs",
+              "RelativeToolTip": "GestionCommercialeBLL\\ProduitBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T13:12:42.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ListeProduits.cs [Design]",
+              "DocumentMoniker": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommerciale\\ListeProduits.cs",
+              "RelativeDocumentMoniker": "GestionCommerciale\\ListeProduits.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\GestionCommerciale\\GestionCommerciale\\ListeProduits.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T11:10:37.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ListeProduits.cs",
+              "DocumentMoniker": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommerciale\\ListeProduits.cs",
+              "RelativeDocumentMoniker": "GestionCommerciale\\ListeProduits.cs",
+              "ToolTip": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommerciale\\ListeProduits.cs",
+              "RelativeToolTip": "GestionCommerciale\\ListeProduits.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwDAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T14:58:29.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ajouterProduits.cs [Design]",
+              "DocumentMoniker": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommerciale\\ajouterProduits.cs",
+              "RelativeDocumentMoniker": "GestionCommerciale\\ajouterProduits.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\GestionCommerciale\\GestionCommerciale\\ajouterProduits.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T15:52:01.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ajouterProduits.cs",
+              "DocumentMoniker": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommerciale\\ajouterProduits.cs",
+              "RelativeDocumentMoniker": "GestionCommerciale\\ajouterProduits.cs",
+              "ToolTip": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommerciale\\ajouterProduits.cs",
+              "RelativeToolTip": "GestionCommerciale\\ajouterProduits.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAEEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T15:52:05.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GestionCommercialeDAO.cs",
+              "DocumentMoniker": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommercialeDAL\\GestionCommercialeDAO.cs",
+              "RelativeDocumentMoniker": "GestionCommercialeDAL\\GestionCommercialeDAO.cs",
+              "ToolTip": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommercialeDAL\\GestionCommercialeDAO.cs",
+              "RelativeToolTip": "GestionCommercialeDAL\\GestionCommercialeDAO.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T13:10:31.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConnexionBD.cs",
+              "DocumentMoniker": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommercialeDAL\\ConnexionBD.cs",
+              "RelativeDocumentMoniker": "GestionCommercialeDAL\\ConnexionBD.cs",
+              "ToolTip": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommercialeDAL\\ConnexionBD.cs",
+              "RelativeToolTip": "GestionCommercialeDAL\\ConnexionBD.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T14:49:54.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategorieDAL.cs",
+              "DocumentMoniker": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommercialeDAL\\CategorieDAL.cs",
+              "RelativeDocumentMoniker": "GestionCommercialeDAL\\CategorieDAL.cs",
+              "ToolTip": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommercialeDAL\\CategorieDAL.cs",
+              "RelativeToolTip": "GestionCommercialeDAL\\CategorieDAL.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T13:40:43.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Utilisateur.cs",
+              "DocumentMoniker": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommercialeBO\\Utilisateur.cs",
+              "RelativeDocumentMoniker": "GestionCommercialeBO\\Utilisateur.cs",
+              "ToolTip": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommercialeBO\\Utilisateur.cs",
+              "RelativeToolTip": "GestionCommercialeBO\\Utilisateur.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T13:09:14.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "modifierProduit.cs",
+              "DocumentMoniker": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommerciale\\modifierProduit.cs",
+              "RelativeDocumentMoniker": "GestionCommerciale\\modifierProduit.cs",
+              "ToolTip": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommerciale\\modifierProduit.cs",
+              "RelativeToolTip": "GestionCommerciale\\modifierProduit.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAowBgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T10:18:40.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "modifierProduit.cs [Design]",
+              "DocumentMoniker": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommerciale\\modifierProduit.cs",
+              "RelativeDocumentMoniker": "GestionCommerciale\\modifierProduit.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Sauvegarde BTS\\BTS_2_2025_2026\\GestionCommerciale\\GestionCommerciale\\modifierProduit.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T13:55:32.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CategorieBLL.cs",
+              "DocumentMoniker": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommercialeBLL\\CategorieBLL.cs",
+              "RelativeDocumentMoniker": "GestionCommercialeBLL\\CategorieBLL.cs",
+              "ToolTip": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommercialeBLL\\CategorieBLL.cs",
+              "RelativeToolTip": "GestionCommercialeBLL\\CategorieBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T13:42:40.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GestionUtilisateurs.cs",
+              "DocumentMoniker": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommercialeBLL\\GestionUtilisateurs.cs",
+              "RelativeDocumentMoniker": "GestionCommercialeBLL\\GestionUtilisateurs.cs",
+              "ToolTip": "D:\\My Documents\\Lycee Saint Vincent\\Exos Cs\\BTS2\\Projet\\gestion_commerciale\\GestionCommercialeBLL\\GestionUtilisateurs.cs",
+              "RelativeToolTip": "GestionCommercialeBLL\\GestionUtilisateurs.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T13:12:21.684Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

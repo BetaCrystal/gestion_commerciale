@@ -1,3 +1,10 @@
+﻿using GestionCommercialeBLL;
+using GestionCommercialeBO;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +20,7 @@ namespace GestionCommerciale
 {
     public partial class ListeProduits : Form
     {
+        private ProduitBLL produitBLL = new ProduitBLL();
         public ListeProduits()
         {
             InitializeComponent();
@@ -20,6 +28,10 @@ namespace GestionCommerciale
 
         private void ChargerProduits()
         {
+            var produits = produitBLL.ChargerProduits();
+
+            dtgProduit.AutoGenerateColumns = false;
+            dtgProduit.DataSource = produits;
             string connectionString = "Data Source=psl23-p06;Initial Catalog=GestionCommerciale;Integrated Security=True;";
             string query = @"
         SELECT 
@@ -64,6 +76,41 @@ namespace GestionCommerciale
             ChargerProduits();
         }
 
+        private void dtgProduit_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // supprimer
+            if (dtgProduit.Columns[e.ColumnIndex].Name == "Supprimer" && e.RowIndex >= 0)
+            {
+                Produit produit = (Produit)dtgProduit.Rows[e.RowIndex].DataBoundItem;
+
+                DialogResult result = MessageBox.Show(
+                    "Voulez-vous vraiment supprimer ce produit ?",
+                    "Confirmation de suppression",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning
+                );
+
+                if (result == DialogResult.Yes)
+                {
+                    produitBLL.SupprimerProduit(produit.code_produit);
+                    ChargerProduits();
+                }
+            }
+            //modifier
+            if (dtgProduit.Columns[e.ColumnIndex].Name == "Modifier")
+            {
+                Produit produit = (Produit)dtgProduit.Rows[e.RowIndex].DataBoundItem;
+                int codeProduit = produit.code_produit;
+
+                modifierProduit formModifier = new modifierProduit(codeProduit);
+                formModifier.ShowDialog();
+
+                ChargerProduits();
+            }
+
+        } 
+        }
+    }
         private void btnDeconnexion_Click(object sender, EventArgs e)
         {
             //Comme dans la connexion, on ferme la page ListeProduits pour revenir sur la page Connexion sans fermer l'application

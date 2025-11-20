@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategorieBLL.cs" />
+    <Compile Include="GestionUtilisateurs.cs" />
+    <Compile Include="ProduitBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GestionUtilisateurs.cs" />
     <Compile Include="Gestion_commericaleDataSet.Designer.cs">
       <AutoGen>True</AutoGen>

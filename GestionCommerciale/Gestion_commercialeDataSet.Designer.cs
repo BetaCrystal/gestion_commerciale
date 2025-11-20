@@ -42,6 +42,11 @@ namespace GestionCommerciale {
         
         private global::System.Data.DataRelation relationPROD;
         
+        private global::System.Data.DataRelation relationFK__Devis__code_clie__44FF419A;
+        
+        private global::System.Data.DataRelation relationFK__Devis__code_stat__45F365D3;
+        
+        private global::System.Data.DataRelation relationFK__Produit__code_ca__46E78A0C;
         private global::System.Data.DataRelation relationFK__Devis__code_clie__4E88ABD4;
         
         private global::System.Data.DataRelation relationFK__Devis__code_stat__4F7CD00D;
@@ -350,6 +355,9 @@ namespace GestionCommerciale {
             }
             this.relationDEV = this.Relations["DEV"];
             this.relationPROD = this.Relations["PROD"];
+            this.relationFK__Devis__code_clie__44FF419A = this.Relations["FK__Devis__code_clie__44FF419A"];
+            this.relationFK__Devis__code_stat__45F365D3 = this.Relations["FK__Devis__code_stat__45F365D3"];
+            this.relationFK__Produit__code_ca__46E78A0C = this.Relations["FK__Produit__code_ca__46E78A0C"];
             this.relationFK__Devis__code_clie__4E88ABD4 = this.Relations["FK__Devis__code_clie__4E88ABD4"];
             this.relationFK__Devis__code_stat__4F7CD00D = this.Relations["FK__Devis__code_stat__4F7CD00D"];
             this.relationFK__Produit__code_ca__4E88ABD4 = this.Relations["FK__Produit__code_ca__4E88ABD4"];
@@ -385,6 +393,18 @@ namespace GestionCommerciale {
                         this.tableProduit.code_produitColumn}, new global::System.Data.DataColumn[] {
                         this.tableContient.code_produitColumn}, false);
             this.Relations.Add(this.relationPROD);
+            this.relationFK__Devis__code_clie__44FF419A = new global::System.Data.DataRelation("FK__Devis__code_clie__44FF419A", new global::System.Data.DataColumn[] {
+                        this.tableClient.code_clientColumn}, new global::System.Data.DataColumn[] {
+                        this.tableDevis.code_clientColumn}, false);
+            this.Relations.Add(this.relationFK__Devis__code_clie__44FF419A);
+            this.relationFK__Devis__code_stat__45F365D3 = new global::System.Data.DataRelation("FK__Devis__code_stat__45F365D3", new global::System.Data.DataColumn[] {
+                        this.tableStatut.code_statutColumn}, new global::System.Data.DataColumn[] {
+                        this.tableDevis.code_statutColumn}, false);
+            this.Relations.Add(this.relationFK__Devis__code_stat__45F365D3);
+            this.relationFK__Produit__code_ca__46E78A0C = new global::System.Data.DataRelation("FK__Produit__code_ca__46E78A0C", new global::System.Data.DataColumn[] {
+                        this.tableCategorie.code_categorieColumn}, new global::System.Data.DataColumn[] {
+                        this.tableProduit.code_categorieColumn}, false);
+            this.Relations.Add(this.relationFK__Produit__code_ca__46E78A0C);
             this.relationFK__Devis__code_clie__4E88ABD4 = new global::System.Data.DataRelation("FK__Devis__code_clie__4E88ABD4", new global::System.Data.DataColumn[] {
                         this.tableClient.code_clientColumn}, new global::System.Data.DataColumn[] {
                         this.tableDevis.code_clientColumn}, false);
@@ -2000,6 +2020,7 @@ namespace GestionCommerciale {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public DevisRow AddDevisRow(System.DateTime date_devis, double taux_tva_devis, double montant_total_ht_devis, double taux_remise_global_devis, ClientRow parentClientRowByFK__Devis__code_clie__44FF419A, StatutRow parentStatutRowByFK__Devis__code_stat__45F365D3) {
             public DevisRow AddDevisRow(System.DateTime date_devis, double taux_tva_devis, double montant_total_ht_devis, double taux_remise_global_devis, ClientRow parentClientRowByFK__Devis__code_clie__4E88ABD4, StatutRow parentStatutRowByFK__Devis__code_stat__4F7CD00D) {
                 DevisRow rowDevisRow = ((DevisRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
@@ -2010,6 +2031,11 @@ namespace GestionCommerciale {
                         taux_remise_global_devis,
                         null,
                         null};
+                if ((parentClientRowByFK__Devis__code_clie__44FF419A != null)) {
+                    columnValuesArray[5] = parentClientRowByFK__Devis__code_clie__44FF419A[0];
+                }
+                if ((parentStatutRowByFK__Devis__code_stat__45F365D3 != null)) {
+                    columnValuesArray[6] = parentStatutRowByFK__Devis__code_stat__45F365D3[0];
                 if ((parentClientRowByFK__Devis__code_clie__4E88ABD4 != null)) {
                     columnValuesArray[5] = parentClientRowByFK__Devis__code_clie__4E88ABD4[0];
                 }
@@ -2328,6 +2354,7 @@ namespace GestionCommerciale {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public ProduitRow AddProduitRow(string libelle_produit, double prix_vente_ht_produit, CategorieRow parentCategorieRowByFK__Produit__code_ca__46E78A0C) {
             public ProduitRow AddProduitRow(string libelle_produit, double prix_vente_ht_produit, CategorieRow parentCategorieRowByFK__Produit__code_ca__4E88ABD4) {
                 ProduitRow rowProduitRow = ((ProduitRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
@@ -2335,6 +2362,8 @@ namespace GestionCommerciale {
                         libelle_produit,
                         prix_vente_ht_produit,
                         null};
+                if ((parentCategorieRowByFK__Produit__code_ca__46E78A0C != null)) {
+                    columnValuesArray[3] = parentCategorieRowByFK__Produit__code_ca__46E78A0C[0];
                 if ((parentCategorieRowByFK__Produit__code_ca__4E88ABD4 != null)) {
                     columnValuesArray[3] = parentCategorieRowByFK__Produit__code_ca__4E88ABD4[0];
                 }
@@ -2887,6 +2916,11 @@ namespace GestionCommerciale {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ProduitRow[] GetProduitRows() {
+                if ((this.Table.ChildRelations["FK__Produit__code_ca__46E78A0C"] == null)) {
+                    return new ProduitRow[0];
+                }
+                else {
+                    return ((ProduitRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Produit__code_ca__46E78A0C"])));
                 if ((this.Table.ChildRelations["FK__Produit__code_ca__4E88ABD4"] == null)) {
                     return new ProduitRow[0];
                 }
@@ -3056,6 +3090,11 @@ namespace GestionCommerciale {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DevisRow[] GetDevisRows() {
+                if ((this.Table.ChildRelations["FK__Devis__code_clie__44FF419A"] == null)) {
+                    return new DevisRow[0];
+                }
+                else {
+                    return ((DevisRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devis__code_clie__44FF419A"])));
                 if ((this.Table.ChildRelations["FK__Devis__code_clie__4E88ABD4"] == null)) {
                     return new DevisRow[0];
                 }
@@ -3241,6 +3280,10 @@ namespace GestionCommerciale {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ClientRow ClientRow {
                 get {
+                    return ((ClientRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devis__code_clie__44FF419A"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Devis__code_clie__44FF419A"]);
                     return ((ClientRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devis__code_clie__4E88ABD4"])));
                 }
                 set {
@@ -3252,6 +3295,10 @@ namespace GestionCommerciale {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public StatutRow StatutRow {
                 get {
+                    return ((StatutRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devis__code_stat__45F365D3"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Devis__code_stat__45F365D3"]);
                     return ((StatutRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devis__code_stat__4F7CD00D"])));
                 }
                 set {
@@ -3333,6 +3380,10 @@ namespace GestionCommerciale {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public CategorieRow CategorieRow {
                 get {
+                    return ((CategorieRow)(this.GetParentRow(this.Table.ParentRelations["FK__Produit__code_ca__46E78A0C"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Produit__code_ca__46E78A0C"]);
                     return ((CategorieRow)(this.GetParentRow(this.Table.ParentRelations["FK__Produit__code_ca__4E88ABD4"])));
                 }
                 set {
@@ -3391,6 +3442,11 @@ namespace GestionCommerciale {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DevisRow[] GetDevisRows() {
+                if ((this.Table.ChildRelations["FK__Devis__code_stat__45F365D3"] == null)) {
+                    return new DevisRow[0];
+                }
+                else {
+                    return ((DevisRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devis__code_stat__45F365D3"])));
                 if ((this.Table.ChildRelations["FK__Devis__code_stat__4F7CD00D"] == null)) {
                     return new DevisRow[0];
                 }

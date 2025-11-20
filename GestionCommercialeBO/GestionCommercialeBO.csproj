@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Produit.cs" />
     <Compile Include="Connexion.cs" />
     <Compile Include="Session.cs" />
     <Compile Include="Utilisateur.cs" />
