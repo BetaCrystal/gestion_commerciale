@@ -47,15 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-=======
     <Compile Include="Connexion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Connexion.Designer.cs">
       <DependentUpon>Connexion.cs</DependentUpon>
     </Compile>
->>>>>>> f8d224008bb874cc497a689787bf50114e583130
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -66,14 +63,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-<<<<<<< HEAD
+    </Compile>
     <Compile Include="Connexion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Connexion.Designer.cs">
       <DependentUpon>Connexion.cs</DependentUpon>
-=======
->>>>>>> f8d224008bb874cc497a689787bf50114e583130
     </Compile>
     <Compile Include="ajouterProduits.cs">
       <SubType>Form</SubType>
@@ -86,18 +81,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Gestion_commercialeDataSet.xsd</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="Gestion_commericaleDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Gestion_commericaleDataSet.xsd</DependentUpon>
-=======
+    </Compile>
     <Compile Include="ListeClients.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ListeClients.Designer.cs">
       <DependentUpon>ListeClients.cs</DependentUpon>
->>>>>>> f8d224008bb874cc497a689787bf50114e583130
     </Compile>
     <Compile Include="ListeProduits.cs">
       <SubType>Form</SubType>
@@ -116,13 +109,12 @@
     <EmbeddedResource Include="ajouterProduits.resx">
       <DependentUpon>ajouterProduits.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Connexion.resx">
       <DependentUpon>Connexion.cs</DependentUpon>
     </EmbeddedResource>
-=======
     <EmbeddedResource Include="Connexion.resx">
       <DependentUpon>Connexion.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,7 +124,6 @@
     <EmbeddedResource Include="ListeClients.resx">
       <DependentUpon>ListeClients.cs</DependentUpon>
     </EmbeddedResource>
->>>>>>> f8d224008bb874cc497a689787bf50114e583130
     <EmbeddedResource Include="ListeProduits.resx">
       <DependentUpon>ListeProduits.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,7 +161,6 @@
     <None Include="Gestion_commercialeDataSet.xss">
       <DependentUpon>Gestion_commercialeDataSet.xsd</DependentUpon>
     </None>
-<<<<<<< HEAD
     <None Include="Gestion_commericaleDataSet.xsc">
       <DependentUpon>Gestion_commericaleDataSet.xsd</DependentUpon>
     </None>
@@ -182,11 +172,9 @@
     <None Include="Gestion_commericaleDataSet.xss">
       <DependentUpon>Gestion_commericaleDataSet.xsd</DependentUpon>
     </None>
-=======
     <None Include="Properties\DataSources\GestionCommercialeBO.Categorie.datasource" />
     <None Include="Properties\DataSources\GestionCommercialeBO.Client.datasource" />
     <None Include="Properties\DataSources\GestionCommercialeBO.Produit.datasource" />
->>>>>>> f8d224008bb874cc497a689787bf50114e583130
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
