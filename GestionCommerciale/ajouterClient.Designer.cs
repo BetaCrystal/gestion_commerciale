@@ -61,10 +61,10 @@
             this.btnAjout.Location = new System.Drawing.Point(316, 328);
             this.btnAjout.Name = "btnAjout";
             this.btnAjout.Size = new System.Drawing.Size(107, 53);
-            this.btnAjout.TabIndex = 9;
+            this.btnAjout.TabIndex = 13;
             this.btnAjout.Text = "Ajouter le client";
             this.btnAjout.UseVisualStyleBackColor = true;
-            this.btnAjout.Click += new System.EventHandler(this.button1_Click);
+            this.btnAjout.Click += new System.EventHandler(this.btnAjout_Click);
             // 
             // textBoxNom
             // 
@@ -99,7 +99,7 @@
             this.textBoxRueLivraison.Location = new System.Drawing.Point(244, 215);
             this.textBoxRueLivraison.Name = "textBoxRueLivraison";
             this.textBoxRueLivraison.Size = new System.Drawing.Size(100, 20);
-            this.textBoxRueLivraison.TabIndex = 5;
+            this.textBoxRueLivraison.TabIndex = 10;
             // 
             // textBoxNumLivraison
             // 
@@ -113,14 +113,14 @@
             this.textBoxCodeLivraison.Location = new System.Drawing.Point(423, 215);
             this.textBoxCodeLivraison.Name = "textBoxCodeLivraison";
             this.textBoxCodeLivraison.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCodeLivraison.TabIndex = 7;
+            this.textBoxCodeLivraison.TabIndex = 11;
             // 
             // textBoxVilleLivraison
             // 
             this.textBoxVilleLivraison.Location = new System.Drawing.Point(688, 215);
             this.textBoxVilleLivraison.Name = "textBoxVilleLivraison";
             this.textBoxVilleLivraison.Size = new System.Drawing.Size(100, 20);
-            this.textBoxVilleLivraison.TabIndex = 8;
+            this.textBoxVilleLivraison.TabIndex = 12;
             // 
             // textBoxVilleFacturation
             // 
@@ -155,7 +155,7 @@
             this.btnRetour.Location = new System.Drawing.Point(643, 357);
             this.btnRetour.Name = "btnRetour";
             this.btnRetour.Size = new System.Drawing.Size(75, 23);
-            this.btnRetour.TabIndex = 10;
+            this.btnRetour.TabIndex = 14;
             this.btnRetour.Text = "Retour";
             this.btnRetour.UseVisualStyleBackColor = true;
             // 
@@ -203,7 +203,6 @@
             this.label5.Size = new System.Drawing.Size(160, 13);
             this.label5.TabIndex = 0;
             this.label5.Text = "Numéro d\'adresse de facturation";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -213,7 +212,6 @@
             this.label6.Size = new System.Drawing.Size(143, 13);
             this.label6.TabIndex = 0;
             this.label6.Text = "Rue d\'adresse de facturation";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 

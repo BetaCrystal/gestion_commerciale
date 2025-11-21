@@ -19,11 +19,12 @@ namespace GestionCommerciale
         public ListeClients()
         {
             InitializeComponent();
-            this.Load += ListeClients_Load;
+            //this.Load += ListeClients_Load;
         }
 
         private void ListeClients_Load(object sender, EventArgs e)
         {
+            dtgClient.AllowUserToAddRows = false;
             ChargerClients();
         }
         private void ChargerClients()
@@ -55,6 +56,17 @@ namespace GestionCommerciale
                     MessageBox.Show("Client supprimé avec succès.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
+            // modifier
+            if (dtgClient.Columns[e.ColumnIndex].Name == "Modifier")
+            {
+                Client client = (Client)dtgClient.Rows[e.RowIndex].DataBoundItem;
+                int codeClient = client.CodeClient;
+
+                modifierClient formModifier = new modifierClient(codeClient);
+                formModifier.ShowDialog();
+
+                ChargerClients();
+            }
         }
 
         private void btnOuvrirProduit_Click(object sender, EventArgs e)
@@ -67,6 +79,14 @@ namespace GestionCommerciale
 
             liste.Show();
             this.Hide();
+        }
+
+        private void btnClient_Click(object sender, EventArgs e)
+        {
+            ajouterClient formAjout = new ajouterClient();
+            formAjout.ShowDialog();
+
+            ChargerClients();
         }
     }
 }
