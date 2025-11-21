@@ -12,12 +12,14 @@ namespace GestionCommerciale
 {
     public partial class modifierClient : Form
     {
-        public modifierClient()
+        private int _codeClient;
+        public modifierClient(int codeClient)
         {
             InitializeComponent();
+            _codeClient = codeClient;
         }
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
