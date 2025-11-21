@@ -70,6 +70,18 @@
     <Compile Include="ajouterProduits.Designer.cs">
       <DependentUpon>ajouterProduits.cs</DependentUpon>
     </Compile>
+    <Compile Include="ajouterClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajouterClient.Designer.cs">
+      <DependentUpon>ajouterClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifierClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifierClient.Designer.cs">
+      <DependentUpon>modifierClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gestion_commercialeDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -104,11 +116,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ajouterClient.resx">
+      <DependentUpon>ajouterClient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListeClients.resx">
       <DependentUpon>ListeClients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListeProduits.resx">
       <DependentUpon>ListeProduits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifierClient.resx">
+      <DependentUpon>modifierClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modifierProduit.resx">
       <DependentUpon>modifierProduit.cs</DependentUpon>
