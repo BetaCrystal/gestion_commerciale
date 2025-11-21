@@ -14,10 +14,17 @@ namespace GestionCommerciale
 {
     public partial class ListeClients : Form
     {
-        private ClientBLL clientBLL = new ClientBLL();
+        //Instance de la couche BLL
+        private readonly ClientBLL clientBLL = new ClientBLL();
         public ListeClients()
         {
             InitializeComponent();
+            this.Load += ListeClients_Load;
+        }
+
+        private void ListeClients_Load(object sender, EventArgs e)
+        {
+            ChargerClients();
         }
         private void ChargerClients()
         {
@@ -25,6 +32,41 @@ namespace GestionCommerciale
 
             dtgClient.AutoGenerateColumns = false;
             dtgClient.DataSource = clients;
+        }
+
+        // Action au click pour Suppresion d'un client avec demande de confirmation
+        private void dtgClient_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dtgClient.Columns[e.ColumnIndex].Name == "btnSupprimer" && e.RowIndex >= 0)
+            {
+                var client = (Client)dtgClient.Rows[e.RowIndex].DataBoundItem;
+
+                DialogResult result = MessageBox.Show(
+                    $"Voulez-vous vraiment supprimer le client '{client.NomClient}' ?",
+                    "Confirmation",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question
+                );
+
+                if (result == DialogResult.Yes)
+                {
+                    clientBLL.SupprimerClient(client.CodeClient);
+                    ChargerClients();
+                    MessageBox.Show("Client supprimé avec succès.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
+        private void btnOuvrirProduit_Click(object sender, EventArgs e)
+        {
+            ListeProduits liste = new ListeProduits();
+
+            // Lorsque ListeProduits est fermé, on ferme aussi la fenêtre de connexion
+            // (permet de terminer proprement l'application)
+            liste.FormClosed += (s, args) => this.Close();
+
+            liste.Show();
+            this.Hide();
         }
     }
 }

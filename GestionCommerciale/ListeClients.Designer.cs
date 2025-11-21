@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dtgClient = new System.Windows.Forms.DataGridView();
+            this.btnSupprimer = new System.Windows.Forms.DataGridViewButtonColumn();
             this.codeClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numTelephoneClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,13 +45,17 @@
             this.codePostalLivraisonClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.villeLivraisonClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnOuvrirProduit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgClient)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dtgClient
             // 
+            this.dtgClient.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgClient.AutoGenerateColumns = false;
+            this.dtgClient.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgClient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgClient.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codeClientDataGridViewTextBoxColumn,
@@ -65,128 +70,136 @@
             this.numAdresseLivraisonClientDataGridViewTextBoxColumn,
             this.rueLivraisonClientDataGridViewTextBoxColumn,
             this.codePostalLivraisonClientDataGridViewTextBoxColumn,
-            this.villeLivraisonClientDataGridViewTextBoxColumn});
+            this.villeLivraisonClientDataGridViewTextBoxColumn,
+            this.btnSupprimer});
             this.dtgClient.DataSource = this.clientBindingSource;
-            this.dtgClient.Location = new System.Drawing.Point(40, 92);
+            this.dtgClient.Location = new System.Drawing.Point(0, 121);
             this.dtgClient.Name = "dtgClient";
             this.dtgClient.RowHeadersWidth = 51;
             this.dtgClient.RowTemplate.Height = 24;
-            this.dtgClient.Size = new System.Drawing.Size(591, 150);
+            this.dtgClient.Size = new System.Drawing.Size(811, 198);
             this.dtgClient.TabIndex = 0;
+            this.dtgClient.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgClient_CellContentClick);
+            // 
+            // btnSupprimer
+            // 
+            this.btnSupprimer.HeaderText = "Supprimer";
+            this.btnSupprimer.MinimumWidth = 6;
+            this.btnSupprimer.Name = "btnSupprimer";
+            this.btnSupprimer.Text = "Supprimer";
+            this.btnSupprimer.UseColumnTextForButtonValue = true;
             // 
             // codeClientDataGridViewTextBoxColumn
             // 
             this.codeClientDataGridViewTextBoxColumn.DataPropertyName = "CodeClient";
-            this.codeClientDataGridViewTextBoxColumn.HeaderText = "CodeClient";
+            this.codeClientDataGridViewTextBoxColumn.HeaderText = "Code Client";
             this.codeClientDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.codeClientDataGridViewTextBoxColumn.Name = "codeClientDataGridViewTextBoxColumn";
-            this.codeClientDataGridViewTextBoxColumn.Width = 125;
             // 
             // nomClientDataGridViewTextBoxColumn
             // 
             this.nomClientDataGridViewTextBoxColumn.DataPropertyName = "NomClient";
-            this.nomClientDataGridViewTextBoxColumn.HeaderText = "NomClient";
+            this.nomClientDataGridViewTextBoxColumn.HeaderText = "Nom";
             this.nomClientDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nomClientDataGridViewTextBoxColumn.Name = "nomClientDataGridViewTextBoxColumn";
-            this.nomClientDataGridViewTextBoxColumn.Width = 125;
             // 
             // numTelephoneClientDataGridViewTextBoxColumn
             // 
             this.numTelephoneClientDataGridViewTextBoxColumn.DataPropertyName = "NumTelephoneClient";
-            this.numTelephoneClientDataGridViewTextBoxColumn.HeaderText = "NumTelephoneClient";
+            this.numTelephoneClientDataGridViewTextBoxColumn.HeaderText = "Num Telephone";
             this.numTelephoneClientDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.numTelephoneClientDataGridViewTextBoxColumn.Name = "numTelephoneClientDataGridViewTextBoxColumn";
-            this.numTelephoneClientDataGridViewTextBoxColumn.Width = 125;
             // 
             // numFaxClientDataGridViewTextBoxColumn
             // 
             this.numFaxClientDataGridViewTextBoxColumn.DataPropertyName = "NumFaxClient";
-            this.numFaxClientDataGridViewTextBoxColumn.HeaderText = "NumFaxClient";
+            this.numFaxClientDataGridViewTextBoxColumn.HeaderText = "Num Fax";
             this.numFaxClientDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.numFaxClientDataGridViewTextBoxColumn.Name = "numFaxClientDataGridViewTextBoxColumn";
-            this.numFaxClientDataGridViewTextBoxColumn.Width = 125;
             // 
             // adresseMailClientDataGridViewTextBoxColumn
             // 
             this.adresseMailClientDataGridViewTextBoxColumn.DataPropertyName = "AdresseMailClient";
-            this.adresseMailClientDataGridViewTextBoxColumn.HeaderText = "AdresseMailClient";
+            this.adresseMailClientDataGridViewTextBoxColumn.HeaderText = "Adresse Mail";
             this.adresseMailClientDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.adresseMailClientDataGridViewTextBoxColumn.Name = "adresseMailClientDataGridViewTextBoxColumn";
-            this.adresseMailClientDataGridViewTextBoxColumn.Width = 125;
             // 
             // numAdresseFacturationClientDataGridViewTextBoxColumn
             // 
             this.numAdresseFacturationClientDataGridViewTextBoxColumn.DataPropertyName = "NumAdresseFacturationClient";
-            this.numAdresseFacturationClientDataGridViewTextBoxColumn.HeaderText = "NumAdresseFacturationClient";
+            this.numAdresseFacturationClientDataGridViewTextBoxColumn.HeaderText = "Num Adresse Facturation";
             this.numAdresseFacturationClientDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.numAdresseFacturationClientDataGridViewTextBoxColumn.Name = "numAdresseFacturationClientDataGridViewTextBoxColumn";
-            this.numAdresseFacturationClientDataGridViewTextBoxColumn.Width = 125;
             // 
             // rueFacturationClientDataGridViewTextBoxColumn
             // 
             this.rueFacturationClientDataGridViewTextBoxColumn.DataPropertyName = "RueFacturationClient";
-            this.rueFacturationClientDataGridViewTextBoxColumn.HeaderText = "RueFacturationClient";
+            this.rueFacturationClientDataGridViewTextBoxColumn.HeaderText = "Rue Facturation";
             this.rueFacturationClientDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.rueFacturationClientDataGridViewTextBoxColumn.Name = "rueFacturationClientDataGridViewTextBoxColumn";
-            this.rueFacturationClientDataGridViewTextBoxColumn.Width = 125;
             // 
             // codePostalFacturationClientDataGridViewTextBoxColumn
             // 
             this.codePostalFacturationClientDataGridViewTextBoxColumn.DataPropertyName = "CodePostalFacturationClient";
-            this.codePostalFacturationClientDataGridViewTextBoxColumn.HeaderText = "CodePostalFacturationClient";
+            this.codePostalFacturationClientDataGridViewTextBoxColumn.HeaderText = "Code Postal Facturation";
             this.codePostalFacturationClientDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.codePostalFacturationClientDataGridViewTextBoxColumn.Name = "codePostalFacturationClientDataGridViewTextBoxColumn";
-            this.codePostalFacturationClientDataGridViewTextBoxColumn.Width = 125;
             // 
             // villeFacturationClientDataGridViewTextBoxColumn
             // 
             this.villeFacturationClientDataGridViewTextBoxColumn.DataPropertyName = "VilleFacturationClient";
-            this.villeFacturationClientDataGridViewTextBoxColumn.HeaderText = "VilleFacturationClient";
+            this.villeFacturationClientDataGridViewTextBoxColumn.HeaderText = "Ville Facturation";
             this.villeFacturationClientDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.villeFacturationClientDataGridViewTextBoxColumn.Name = "villeFacturationClientDataGridViewTextBoxColumn";
-            this.villeFacturationClientDataGridViewTextBoxColumn.Width = 125;
             // 
             // numAdresseLivraisonClientDataGridViewTextBoxColumn
             // 
             this.numAdresseLivraisonClientDataGridViewTextBoxColumn.DataPropertyName = "NumAdresseLivraisonClient";
-            this.numAdresseLivraisonClientDataGridViewTextBoxColumn.HeaderText = "NumAdresseLivraisonClient";
+            this.numAdresseLivraisonClientDataGridViewTextBoxColumn.HeaderText = "Num Adresse Livraison";
             this.numAdresseLivraisonClientDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.numAdresseLivraisonClientDataGridViewTextBoxColumn.Name = "numAdresseLivraisonClientDataGridViewTextBoxColumn";
-            this.numAdresseLivraisonClientDataGridViewTextBoxColumn.Width = 125;
             // 
             // rueLivraisonClientDataGridViewTextBoxColumn
             // 
             this.rueLivraisonClientDataGridViewTextBoxColumn.DataPropertyName = "RueLivraisonClient";
-            this.rueLivraisonClientDataGridViewTextBoxColumn.HeaderText = "RueLivraisonClient";
+            this.rueLivraisonClientDataGridViewTextBoxColumn.HeaderText = "Rue Livraison";
             this.rueLivraisonClientDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.rueLivraisonClientDataGridViewTextBoxColumn.Name = "rueLivraisonClientDataGridViewTextBoxColumn";
-            this.rueLivraisonClientDataGridViewTextBoxColumn.Width = 125;
             // 
             // codePostalLivraisonClientDataGridViewTextBoxColumn
             // 
             this.codePostalLivraisonClientDataGridViewTextBoxColumn.DataPropertyName = "CodePostalLivraisonClient";
-            this.codePostalLivraisonClientDataGridViewTextBoxColumn.HeaderText = "CodePostalLivraisonClient";
+            this.codePostalLivraisonClientDataGridViewTextBoxColumn.HeaderText = "Code Postal Livraison";
             this.codePostalLivraisonClientDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.codePostalLivraisonClientDataGridViewTextBoxColumn.Name = "codePostalLivraisonClientDataGridViewTextBoxColumn";
-            this.codePostalLivraisonClientDataGridViewTextBoxColumn.Width = 125;
             // 
             // villeLivraisonClientDataGridViewTextBoxColumn
             // 
             this.villeLivraisonClientDataGridViewTextBoxColumn.DataPropertyName = "VilleLivraisonClient";
-            this.villeLivraisonClientDataGridViewTextBoxColumn.HeaderText = "VilleLivraisonClient";
+            this.villeLivraisonClientDataGridViewTextBoxColumn.HeaderText = "Ville Livraison";
             this.villeLivraisonClientDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.villeLivraisonClientDataGridViewTextBoxColumn.Name = "villeLivraisonClientDataGridViewTextBoxColumn";
-            this.villeLivraisonClientDataGridViewTextBoxColumn.Width = 125;
             // 
             // clientBindingSource
             // 
             this.clientBindingSource.DataSource = typeof(GestionCommercialeBO.Client);
+            // 
+            // btnOuvrirProduit
+            // 
+            this.btnOuvrirProduit.Location = new System.Drawing.Point(65, 74);
+            this.btnOuvrirProduit.Name = "btnOuvrirProduit";
+            this.btnOuvrirProduit.Size = new System.Drawing.Size(86, 30);
+            this.btnOuvrirProduit.TabIndex = 1;
+            this.btnOuvrirProduit.Text = "Produit";
+            this.btnOuvrirProduit.UseVisualStyleBackColor = true;
+            this.btnOuvrirProduit.Click += new System.EventHandler(this.btnOuvrirProduit_Click);
             // 
             // ListeClients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnOuvrirProduit);
             this.Controls.Add(this.dtgClient);
             this.Name = "ListeClients";
             this.Text = "ListeClients";
@@ -199,6 +212,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dtgClient;
+        private System.Windows.Forms.BindingSource clientBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn codeClientDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomClientDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numTelephoneClientDataGridViewTextBoxColumn;
@@ -212,6 +226,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn rueLivraisonClientDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codePostalLivraisonClientDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn villeLivraisonClientDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource clientBindingSource;
+        private System.Windows.Forms.DataGridViewButtonColumn btnSupprimer;
+        private System.Windows.Forms.Button btnOuvrirProduit;
     }
 }

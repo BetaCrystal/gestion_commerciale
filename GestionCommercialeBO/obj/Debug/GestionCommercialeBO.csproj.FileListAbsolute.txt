@@ -22,3 +22,9 @@ C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeBO\obj\Debug\Gestion
 C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.csproj.CoreCompileInputs.cache
 C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.dll
 C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.pdb
+C:\Users\admin\Desktop\Projet\GestionCommerciale\GestionCommercialeBO\bin\Debug\GestionCommercialeBO.dll
+C:\Users\admin\Desktop\Projet\GestionCommerciale\GestionCommercialeBO\bin\Debug\GestionCommercialeBO.pdb
+C:\Users\admin\Desktop\Projet\GestionCommerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\Projet\GestionCommerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\Projet\GestionCommerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.dll
+C:\Users\admin\Desktop\Projet\GestionCommerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.pdb

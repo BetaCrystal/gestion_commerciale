@@ -34,3 +34,12 @@ C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeDAL\obj\Debug\Gestio
 C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeDAL\obj\Debug\GestionC.FBDFF3D9.Up2Date
 C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeDAL\obj\Debug\GestionCommercialeDAL.dll
 C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeDAL\obj\Debug\GestionCommercialeDAL.pdb
+C:\Users\admin\Desktop\Projet\GestionCommerciale\GestionCommercialeDAL\bin\Debug\GestionCommercialeDAL.dll
+C:\Users\admin\Desktop\Projet\GestionCommerciale\GestionCommercialeDAL\bin\Debug\GestionCommercialeDAL.pdb
+C:\Users\admin\Desktop\Projet\GestionCommerciale\GestionCommercialeDAL\bin\Debug\GestionCommercialeBO.dll
+C:\Users\admin\Desktop\Projet\GestionCommerciale\GestionCommercialeDAL\bin\Debug\GestionCommercialeBO.pdb
+C:\Users\admin\Desktop\Projet\GestionCommerciale\GestionCommercialeDAL\obj\Debug\GestionCommercialeDAL.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\Projet\GestionCommerciale\GestionCommercialeDAL\obj\Debug\GestionCommercialeDAL.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\Projet\GestionCommerciale\GestionCommercialeDAL\obj\Debug\GestionC.FBDFF3D9.Up2Date
+C:\Users\admin\Desktop\Projet\GestionCommerciale\GestionCommercialeDAL\obj\Debug\GestionCommercialeDAL.dll
+C:\Users\admin\Desktop\Projet\GestionCommerciale\GestionCommercialeDAL\obj\Debug\GestionCommercialeDAL.pdb

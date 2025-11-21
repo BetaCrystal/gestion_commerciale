@@ -75,6 +75,19 @@ namespace GestionCommerciale
                 ChargerProduits();
             }
 
-        } 
         }
+
+        private void btnOuvrirClient_Click(object sender, EventArgs e)
+        {
+            // Instancie le Form ListeClients
+            ListeClients listeClientsForm = new ListeClients();
+
+            //(permet de terminer proprement l'application)
+            listeClientsForm.FormClosed += (s, args) => this.Close();
+
+            // Ouvre le Form Client
+            listeClientsForm.Show();
+            this.Hide();
+        }
+    }
     }

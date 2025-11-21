@@ -36,6 +36,7 @@ namespace GestionCommerciale
             this.btnProduit = new System.Windows.Forms.Button();
             this.categorieTableAdapter1 = new GestionCommerciale.Gestion_commercialeDataSetTableAdapters.CategorieTableAdapter();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.btnOuvrirClient = new System.Windows.Forms.Button();
             this.colLibelle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPrix = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCategorie = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,6 +50,8 @@ namespace GestionCommerciale
             // 
             // dtgProduit
             // 
+            this.dtgProduit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgProduit.AutoGenerateColumns = false;
             this.dtgProduit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgProduit.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -58,7 +61,7 @@ namespace GestionCommerciale
             this.Modifier,
             this.Supprimer});
             this.dtgProduit.DataSource = this.bindingSource1;
-            this.dtgProduit.Location = new System.Drawing.Point(12, 40);
+            this.dtgProduit.Location = new System.Drawing.Point(0, 102);
             this.dtgProduit.Name = "dtgProduit";
             this.dtgProduit.RowHeadersWidth = 51;
             this.dtgProduit.RowTemplate.Height = 24;
@@ -93,6 +96,16 @@ namespace GestionCommerciale
             // bindingSource1
             // 
             this.bindingSource1.DataSource = typeof(GestionCommercialeBO.Produit);
+            // 
+            // btnOuvrirClient
+            // 
+            this.btnOuvrirClient.Location = new System.Drawing.Point(74, 50);
+            this.btnOuvrirClient.Name = "btnOuvrirClient";
+            this.btnOuvrirClient.Size = new System.Drawing.Size(84, 25);
+            this.btnOuvrirClient.TabIndex = 2;
+            this.btnOuvrirClient.Text = "Client";
+            this.btnOuvrirClient.UseVisualStyleBackColor = true;
+            this.btnOuvrirClient.Click += new System.EventHandler(this.btnOuvrirClient_Click);
             // 
             // colLibelle
             // 
@@ -141,6 +154,7 @@ namespace GestionCommerciale
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnOuvrirClient);
             this.Controls.Add(this.btnProduit);
             this.Controls.Add(this.dtgProduit);
             this.Name = "ListeProduits";
@@ -162,6 +176,7 @@ namespace GestionCommerciale
         private System.Windows.Forms.Button btnProduit;
         private Gestion_commercialeDataSetTableAdapters.CategorieTableAdapter categorieTableAdapter1;
         private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.Button btnOuvrirClient;
         private System.Windows.Forms.DataGridViewTextBoxColumn colLibelle;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPrix;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCategorie;
