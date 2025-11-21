@@ -10,7 +10,7 @@ namespace GestionCommercialeBO
     {
         private bool connexion = false;
 
-        public Connexion(bool connexion) 
+        public Connexion(bool connexion)
         {
             this.connexion = connexion;
         }

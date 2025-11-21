@@ -41,8 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Produit.cs" />
+    <Compile Include="Categorie.cs" />
+    <Compile Include="Client.cs" />
     <Compile Include="Connexion.cs" />
+    <Compile Include="Produit.cs" />
     <Compile Include="Session.cs" />
     <Compile Include="Utilisateur.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
