@@ -180,7 +180,7 @@
             // 
             // clientBindingSource
             // 
-            this.clientBindingSource.DataSource = typeof(GestionCommercialeBO.Client);
+            //this.clientBindingSource.DataSource = typeof(GestionCommercialeBO.Client);
             // 
             // ListeClients
             // 
