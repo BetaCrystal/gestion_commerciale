@@ -42,3 +42,7 @@ C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeBLL\obj\Debug\Gestio
 C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeBLL\obj\Debug\GestionC.0C713023.Up2Date
 C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeBLL\obj\Debug\GestionCommercialeBLL.dll
 C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeBLL\obj\Debug\GestionCommercialeBLL.pdb
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\GestionCommercialeBLL\obj\Debug\GestionCommercialeBLL.csproj.AssemblyReference.cache
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\GestionCommercialeBLL\obj\Debug\GestionCommercialeBLL.csproj.CoreCompileInputs.cache
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\GestionCommercialeBLL\obj\Debug\GestionCommercialeBLL.dll
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\GestionCommercialeBLL\obj\Debug\GestionCommercialeBLL.pdb

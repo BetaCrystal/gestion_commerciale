@@ -22,3 +22,7 @@ C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeBO\obj\Debug\Gestion
 C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.csproj.CoreCompileInputs.cache
 C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.dll
 C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.pdb
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.csproj.AssemblyReference.cache
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.csproj.CoreCompileInputs.cache
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.dll
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\GestionCommercialeBO\obj\Debug\GestionCommercialeBO.pdb

@@ -34,3 +34,7 @@ C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeDAL\obj\Debug\Gestio
 C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeDAL\obj\Debug\GestionC.FBDFF3D9.Up2Date
 C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeDAL\obj\Debug\GestionCommercialeDAL.dll
 C:\Users\admin\Desktop\GestionCommerciale\GestionCommercialeDAL\obj\Debug\GestionCommercialeDAL.pdb
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\GestionCommercialeDAL\obj\Debug\GestionCommercialeDAL.csproj.AssemblyReference.cache
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\GestionCommercialeDAL\obj\Debug\GestionCommercialeDAL.csproj.CoreCompileInputs.cache
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\GestionCommercialeDAL\obj\Debug\GestionCommercialeDAL.dll
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\GestionCommercialeDAL\obj\Debug\GestionCommercialeDAL.pdb

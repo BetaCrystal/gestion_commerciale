@@ -79,3 +79,5 @@ C:\Users\admin\Desktop\GestionCommerciale\GestionCommerciale\obj\Debug\GestionCo
 C:\Users\admin\Desktop\GestionCommerciale\GestionCommerciale\obj\Debug\GestionC.72E42DA0.Up2Date
 C:\Users\admin\Desktop\GestionCommerciale\GestionCommerciale\obj\Debug\GestionCommerciale.exe
 C:\Users\admin\Desktop\GestionCommerciale\GestionCommerciale\obj\Debug\GestionCommerciale.pdb
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\GestionCommerciale\obj\Debug\GestionCommerciale.exe
+D:\My Documents\Lycee Saint Vincent\Exos Cs\BTS2\Projet\gestion_commerciale\GestionCommerciale\obj\Debug\GestionCommerciale.pdb
