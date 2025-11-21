@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -10,7 +11,8 @@ namespace GestionCommercialeDAL
 {
     public class CategorieDAL
     {
-        private readonly string connectionString = "Data Source=psl23-p16;Initial Catalog=Gestion_commerciale;Integrated Security=True;";
+        private readonly string connectionString =
+            ConfigurationManager.ConnectionStrings["GestionCommerciale.Properties.Settings.Gestion_commercialeConnectionString"].ConnectionString;
 
         public DataTable GetCategories()
         {

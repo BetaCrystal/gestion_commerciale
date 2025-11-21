@@ -43,7 +43,7 @@ namespace GestionCommerciale
             // 
             this.btnConnexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnConnexion.Location = new System.Drawing.Point(244, 235);
-            this.btnConnexion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConnexion.Margin = new System.Windows.Forms.Padding(2);
             this.btnConnexion.Name = "btnConnexion";
             this.btnConnexion.Size = new System.Drawing.Size(100, 40);
             this.btnConnexion.TabIndex = 3;
@@ -67,17 +67,18 @@ namespace GestionCommerciale
             this.textBoxIdentifiant.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.textBoxIdentifiant.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.textBoxIdentifiant.Location = new System.Drawing.Point(233, 101);
-            this.textBoxIdentifiant.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxIdentifiant.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxIdentifiant.Name = "textBoxIdentifiant";
             this.textBoxIdentifiant.Size = new System.Drawing.Size(120, 23);
             this.textBoxIdentifiant.TabIndex = 1;
+            this.textBoxIdentifiant.TextChanged += new System.EventHandler(this.textBoxIdentifiant_TextChanged);
             // 
             // textBoxMdp
             // 
             this.textBoxMdp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.textBoxMdp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.textBoxMdp.Location = new System.Drawing.Point(233, 163);
-            this.textBoxMdp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxMdp.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxMdp.Name = "textBoxMdp";
             this.textBoxMdp.Size = new System.Drawing.Size(120, 23);
             this.textBoxMdp.TabIndex = 2;
@@ -112,7 +113,7 @@ namespace GestionCommerciale
             this.Controls.Add(this.btnConnexion);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Connexion";
             this.Text = "Connexion";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
