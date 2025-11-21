@@ -56,6 +56,17 @@ namespace GestionCommercialeDAL
             // On retourne notre liste comportant nos clients
             return clients;
         }
+        public void SupprimerClient(int codeClient)
+        {
+            string query = "DELETE FROM client WHERE code_client = @CodeClient";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            {
+                cmd.Parameters.AddWithValue("@CodeClient", codeClient);
+                conn.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
 
     }
 }
