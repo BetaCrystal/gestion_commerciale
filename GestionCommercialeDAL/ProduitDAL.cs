@@ -20,7 +20,7 @@ namespace GestionCommercialeDAL
             List<Produit> produits = new List<Produit>();
 
             string query = @"
-                SELECT p.code_produit, p.libelle_produit, p.prix_vente_ht_produit, c.nom_categorie
+                SELECT p.code_produit, p.libelle_produit, p.prix_vente_ht_produit, c.code_categorie, c.nom_categorie
                 FROM produit p
                 JOIN categorie c ON p.code_categorie = c.code_categorie";
 
@@ -34,10 +34,16 @@ namespace GestionCommercialeDAL
                 {
                     produits.Add(new Produit
                     {
-                        code_produit = Convert.ToInt32(reader["code_produit"]),
-                        libelle_produit = Convert.ToString(reader["libelle_produit"]),
-                        prix_vente_ht_produit = Convert.ToDecimal(reader["prix_vente_ht_produit"]),
-                        nom_categorie = Convert.ToString(reader["nom_categorie"])
+                        CodeProduit = Convert.ToInt32(reader["code_produit"]),
+                        LibelleProduit = Convert.ToString(reader["libelle_produit"]),
+                        PrixVenteHT = Convert.ToDecimal(reader["prix_vente_ht_produit"]),
+
+                        CategorieProduit = new Categorie
+                        {
+                            CodeCategorie = Convert.ToInt32(reader["code_categorie"]),
+                            NomCategorie = Convert.ToString(reader["nom_categorie"])
+                        }
+
                     });
                 }
             }
@@ -66,9 +72,9 @@ namespace GestionCommercialeDAL
             using (SqlConnection conn = new SqlConnection(connectionString))
             using (SqlCommand cmd = new SqlCommand(query, conn))
             {
-                cmd.Parameters.AddWithValue("@libelle", p.libelle_produit);
-                cmd.Parameters.AddWithValue("@prix", p.prix_vente_ht_produit);
-                cmd.Parameters.AddWithValue("@categorie", p.code_categorie);
+                cmd.Parameters.AddWithValue("@libelle", p.LibelleProduit);
+                cmd.Parameters.AddWithValue("@prix", p.PrixVenteHT);
+                cmd.Parameters.AddWithValue("@categorie", p.CategorieProduit.CodeCategorie);
 
                 conn.Open();
                 cmd.ExecuteNonQuery();
@@ -77,7 +83,12 @@ namespace GestionCommercialeDAL
         public Produit GetProduitById(int codeProduit)
         {
             Produit produit = null;
-            string query = "SELECT code_produit, libelle_produit, prix_vente_ht_produit, code_categorie FROM produit WHERE code_produit = @code";
+            string query = @"SELECT p.code_produit, p.libelle_produit, p.prix_vente_ht_produit, 
+                            c.code_categorie, c.nom_categorie
+                     FROM produit p
+                     JOIN categorie c ON p.code_categorie = c.code_categorie
+                     WHERE p.code_produit = @code";
+
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             using (SqlCommand cmd = new SqlCommand(query, conn))
@@ -90,10 +101,16 @@ namespace GestionCommercialeDAL
                     {
                         produit = new Produit
                         {
-                            code_produit = Convert.ToInt32(reader["code_produit"]),
-                            libelle_produit = Convert.ToString(reader["libelle_produit"]),
-                            prix_vente_ht_produit = Convert.ToDecimal(reader["prix_vente_ht_produit"]),
-                            code_categorie = Convert.ToInt32(reader["code_categorie"])
+                            CodeProduit = Convert.ToInt32(reader["code_produit"]),
+                            LibelleProduit = Convert.ToString(reader["libelle_produit"]),
+                            PrixVenteHT = Convert.ToDecimal(reader["prix_vente_ht_produit"]),
+
+                            CategorieProduit = new Categorie
+                            {
+                                CodeCategorie = Convert.ToInt32(reader["code_categorie"]),
+                                NomCategorie = Convert.ToString(reader["nom_categorie"])
+                            }
+
                         };
                     }
                 }
@@ -112,10 +129,10 @@ namespace GestionCommercialeDAL
             using (SqlConnection conn = new SqlConnection(connectionString))
             using (SqlCommand cmd = new SqlCommand(query, conn))
             {
-                cmd.Parameters.AddWithValue("@libelle", p.libelle_produit);
-                cmd.Parameters.AddWithValue("@prix", p.prix_vente_ht_produit);
-                cmd.Parameters.AddWithValue("@categorie", p.code_categorie);
-                cmd.Parameters.AddWithValue("@code", p.code_produit);
+                cmd.Parameters.AddWithValue("@libelle", p.LibelleProduit);
+                cmd.Parameters.AddWithValue("@prix", p.PrixVenteHT);
+                cmd.Parameters.AddWithValue("@categorie", p.CategorieProduit.CodeCategorie);
+                cmd.Parameters.AddWithValue("@code", p.CodeProduit);
 
                 conn.Open();
                 cmd.ExecuteNonQuery();
