@@ -158,6 +158,7 @@
             this.btnRetour.TabIndex = 14;
             this.btnRetour.Text = "Retour";
             this.btnRetour.UseVisualStyleBackColor = true;
+            this.btnRetour.Click += new System.EventHandler(this.btnRetour_Click);
             // 
             // label1
             // 
@@ -300,6 +301,7 @@
             this.Controls.Add(this.btnAjout);
             this.Name = "ajouterClient";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.ajouterClient_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

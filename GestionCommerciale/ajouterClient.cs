@@ -101,5 +101,15 @@ namespace GestionCommerciale
                 MessageBox.Show("Une erreur est survenue lors de l'ajout du client : " + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void ajouterClient_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRetour_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
