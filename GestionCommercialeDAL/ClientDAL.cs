@@ -56,8 +56,28 @@ namespace GestionCommercialeDAL
             // On retourne notre liste comportant nos clients
             return clients;
         }
+
+        // Vérifie si le client est lié à un devis
+        private bool EstLieAUnDevis(int codeClient)
+        {
+            string query = "SELECT COUNT(*) FROM Devis WHERE code_client = @code";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            {
+                cmd.Parameters.AddWithValue("@code", codeClient);
+                conn.Open();
+                int count = (int)cmd.ExecuteScalar();
+                return count > 0; // vrai si le client est lié à un devis
+            }
+        }
         public void SupprimerClient(int codeClient)
         {
+            //Si le client est liée a un devis alors on retroune une erreur
+            if (EstLieAUnDevis(codeClient))
+                throw new InvalidOperationException("Ce client est liée a un devis");
+
+            // Vu que aucun client est liée a un devis alors on supprime le client
             string query = "DELETE FROM client WHERE code_client = @CodeClient";
             using (SqlConnection conn = new SqlConnection(connectionString))
             using (SqlCommand cmd = new SqlCommand(query, conn))

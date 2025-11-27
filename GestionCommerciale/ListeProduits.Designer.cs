@@ -31,11 +31,11 @@ namespace GestionCommerciale
         {
             this.components = new System.ComponentModel.Container();
             this.dtgProduit = new System.Windows.Forms.DataGridView();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet1 = new GestionCommerciale.DataSet1();
             this.btnProduit = new System.Windows.Forms.Button();
             this.categorieTableAdapter1 = new GestionCommerciale.Gestion_commercialeDataSetTableAdapters.CategorieTableAdapter();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.btnOuvrirClient = new System.Windows.Forms.Button();
             this.colLibelle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPrix = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,9 +43,9 @@ namespace GestionCommerciale
             this.Modifier = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Supprimer = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgProduit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dtgProduit
@@ -68,6 +68,10 @@ namespace GestionCommerciale
             this.dtgProduit.Size = new System.Drawing.Size(758, 193);
             this.dtgProduit.TabIndex = 0;
             this.dtgProduit.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgProduit_CellContentClick);
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(GestionCommercialeBO.Produit);
             // 
             // dataSet1BindingSource
             // 
@@ -92,10 +96,6 @@ namespace GestionCommerciale
             // categorieTableAdapter1
             // 
             this.categorieTableAdapter1.ClearBeforeFill = true;
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = typeof(GestionCommercialeBO.Produit);
             // 
             // btnOuvrirClient
             // 
@@ -153,17 +153,19 @@ namespace GestionCommerciale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(240)))), ((int)(((byte)(247)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnOuvrirClient);
             this.Controls.Add(this.btnProduit);
             this.Controls.Add(this.dtgProduit);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.Name = "ListeProduits";
             this.Text = "Liste des produits";
             this.Load += new System.EventHandler(this.FormListeProduits_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgProduit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -101,4 +101,3 @@ C:\Users\admin\Desktop\Projet\GestionCommerciale\GestionCommerciale\obj\Debug\Ge
 C:\Users\admin\Desktop\Projet\GestionCommerciale\GestionCommerciale\obj\Debug\GestionC.72E42DA0.Up2Date
 C:\Users\admin\Desktop\Projet\GestionCommerciale\GestionCommerciale\obj\Debug\GestionCommerciale.exe
 C:\Users\admin\Desktop\Projet\GestionCommerciale\GestionCommerciale\obj\Debug\GestionCommerciale.pdb
-C:\Users\admin\Desktop\Projet\GestionCommerciale\GestionCommerciale\obj\Debug\GestionCommerciale.exe.config

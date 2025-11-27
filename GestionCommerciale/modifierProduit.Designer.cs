@@ -111,6 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(240)))), ((int)(((byte)(247)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnRetour);
             this.Controls.Add(this.btnModifierProduit);
@@ -120,6 +121,7 @@
             this.Controls.Add(this.cbxProduit);
             this.Controls.Add(this.txtPrixHtProduit);
             this.Controls.Add(this.txtNomProduit);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.Name = "modifierProduit";
             this.Text = "modifierProduit";
             this.Load += new System.EventHandler(this.modifierProduit_Load);

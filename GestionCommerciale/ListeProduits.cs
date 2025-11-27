@@ -21,17 +21,19 @@ namespace GestionCommerciale
             InitializeComponent();
         }
 
-        private void ChargerProduits()
-        {
-            var produits = produitBLL.ChargerProduits();
-
-            dtgProduit.AutoGenerateColumns = false;
-            dtgProduit.DataSource = produits;
-        }
         private void FormListeProduits_Load(object sender, EventArgs e)
         {
             dtgProduit.AllowUserToAddRows = false;
+            dtgProduit.AutoGenerateColumns = false;
+            dtgProduit.DataSource = bindingSource1;
             ChargerProduits();
+        }
+
+        //On vient charger nos produit afin de les afficher dans le datagridview
+        private void ChargerProduits()
+        {
+            var produits = produitBLL.ChargerProduits();
+            bindingSource1.DataSource = produits;
         }
 
         private void btnProduit_Click(object sender, EventArgs e)
@@ -45,11 +47,12 @@ namespace GestionCommerciale
 
         private void dtgProduit_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            // Récupère le produit correspondant à la ligne
+            Produit produit = (Produit)dtgProduit.Rows[e.RowIndex].DataBoundItem;
+            int codeProduit = produit.CodeProduit;
             // supprimer
             if (dtgProduit.Columns[e.ColumnIndex].Name == "Supprimer" && e.RowIndex >= 0)
             {
-                Produit produit = (Produit)dtgProduit.Rows[e.RowIndex].DataBoundItem;
-
                 DialogResult result = MessageBox.Show(
                     "Voulez-vous vraiment supprimer ce produit ?",
                     "Confirmation de suppression",
@@ -59,16 +62,22 @@ namespace GestionCommerciale
 
                 if (result == DialogResult.Yes)
                 {
-                    produitBLL.SupprimerProduit(produit.CodeProduit);
-                    ChargerProduits();
+                    try
+                    {
+                        produitBLL.SupprimerProduit(produit.CodeProduit);
+                        ChargerProduits();
+                        MessageBox.Show("Le produit a été supprimé avec succès.", "Suppression effectuée", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (InvalidOperationException ex)
+                    {
+                        MessageBox.Show(ex.Message, "Suppresion impossible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    
                 }
             }
             //modifier
             if (dtgProduit.Columns[e.ColumnIndex].Name == "Modifier")
             {
-                Produit produit = (Produit)dtgProduit.Rows[e.RowIndex].DataBoundItem;
-                int codeProduit = produit.CodeProduit;
-
                 modifierProduit formModifier = new modifierProduit(codeProduit);
                 formModifier.ShowDialog();
 
