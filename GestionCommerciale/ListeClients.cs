@@ -19,7 +19,7 @@ namespace GestionCommerciale
         public ListeClients()
         {
             InitializeComponent();
-            //this.Load += ListeClients_Load;
+            this.Load += ListeClients_Load;
         }
 
         private void ListeClients_Load(object sender, EventArgs e)
@@ -57,7 +57,7 @@ namespace GestionCommerciale
                 }
             }
             // modifier
-            if (dtgClient.Columns[e.ColumnIndex].Name == "Modifier")
+            if (dtgClient.Columns[e.ColumnIndex].Name == "btnModifier")
             {
                 Client client = (Client)dtgClient.Rows[e.RowIndex].DataBoundItem;
                 int codeClient = client.CodeClient;
