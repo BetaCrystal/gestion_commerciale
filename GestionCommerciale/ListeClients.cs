@@ -38,10 +38,11 @@ namespace GestionCommerciale
         // Action au click pour Suppresion d'un client avec demande de confirmation
         private void dtgClient_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            var client = (Client)dtgClient.Rows[e.RowIndex].DataBoundItem;
+            int codeClient = client.CodeClient;
             if (dtgClient.Columns[e.ColumnIndex].Name == "btnSupprimer" && e.RowIndex >= 0)
             {
-                var client = (Client)dtgClient.Rows[e.RowIndex].DataBoundItem;
-
+                
                 DialogResult result = MessageBox.Show(
                     $"Voulez-vous vraiment supprimer le client '{client.NomClient}' ?",
                     "Confirmation",
@@ -51,9 +52,17 @@ namespace GestionCommerciale
 
                 if (result == DialogResult.Yes)
                 {
-                    clientBLL.SupprimerClient(client.CodeClient);
-                    ChargerClients();
-                    MessageBox.Show("Client supprimé avec succès.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    try
+                    {
+                        clientBLL.SupprimerClient(client.CodeClient);
+                        ChargerClients();
+                        MessageBox.Show("Client supprimé avec succès.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (InvalidOperationException ex)
+                    {
+                        MessageBox.Show(ex.Message, "Suppression impossible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                   
                 }
             }
             // modifier

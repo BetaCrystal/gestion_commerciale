@@ -68,7 +68,7 @@ namespace GestionCommerciale
             this.lblLibelleProduit.AutoSize = true;
             this.lblLibelleProduit.Location = new System.Drawing.Point(174, 143);
             this.lblLibelleProduit.Name = "lblLibelleProduit";
-            this.lblLibelleProduit.Size = new System.Drawing.Size(105, 17);
+            this.lblLibelleProduit.Size = new System.Drawing.Size(98, 16);
             this.lblLibelleProduit.TabIndex = 3;
             this.lblLibelleProduit.Text = "Nom du produit";
             // 
@@ -77,7 +77,7 @@ namespace GestionCommerciale
             this.lblPrixHtProduit.AutoSize = true;
             this.lblPrixHtProduit.Location = new System.Drawing.Point(186, 202);
             this.lblPrixHtProduit.Name = "lblPrixHtProduit";
-            this.lblPrixHtProduit.Size = new System.Drawing.Size(93, 17);
+            this.lblPrixHtProduit.Size = new System.Drawing.Size(86, 16);
             this.lblPrixHtProduit.TabIndex = 4;
             this.lblPrixHtProduit.Text = "Prix hors taxe";
             // 
@@ -94,7 +94,7 @@ namespace GestionCommerciale
             this.lblCategorieProduit.AutoSize = true;
             this.lblCategorieProduit.Location = new System.Drawing.Point(210, 256);
             this.lblCategorieProduit.Name = "lblCategorieProduit";
-            this.lblCategorieProduit.Size = new System.Drawing.Size(69, 17);
+            this.lblCategorieProduit.Size = new System.Drawing.Size(66, 16);
             this.lblCategorieProduit.TabIndex = 6;
             this.lblCategorieProduit.Text = "Categorie";
             // 
@@ -112,6 +112,7 @@ namespace GestionCommerciale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(240)))), ((int)(((byte)(247)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnRetour);
             this.Controls.Add(this.lblCategorieProduit);
@@ -121,6 +122,7 @@ namespace GestionCommerciale
             this.Controls.Add(this.txtPrixHtProduit);
             this.Controls.Add(this.txtNomProduit);
             this.Controls.Add(this.btnAjouterProduit);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.Name = "ajouterProduits";
             this.Text = "Ajouter un produit";
             this.Load += new System.EventHandler(this.ajouterProduits_Load);
