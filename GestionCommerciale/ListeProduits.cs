@@ -1,0 +1,93 @@
+﻿using GestionCommercialeBLL;
+using GestionCommercialeBO;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace GestionCommerciale
+{
+    public partial class ListeProduits : Form
+    {
+        private ProduitBLL produitBLL = new ProduitBLL();
+        public ListeProduits()
+        {
+            InitializeComponent();
+        }
+
+        private void ChargerProduits()
+        {
+            var produits = produitBLL.ChargerProduits();
+
+            dtgProduit.AutoGenerateColumns = false;
+            dtgProduit.DataSource = produits;
+        }
+        private void FormListeProduits_Load(object sender, EventArgs e)
+        {
+            dtgProduit.AllowUserToAddRows = false;
+            ChargerProduits();
+        }
+
+        private void btnProduit_Click(object sender, EventArgs e)
+        {
+            ajouterProduits formAjout = new ajouterProduits();
+            formAjout.ShowDialog();
+
+            //recharger les produits pour afficher la nouvelle ligne
+            ChargerProduits();
+        }
+
+        private void dtgProduit_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // supprimer
+            if (dtgProduit.Columns[e.ColumnIndex].Name == "Supprimer" && e.RowIndex >= 0)
+            {
+                Produit produit = (Produit)dtgProduit.Rows[e.RowIndex].DataBoundItem;
+
+                DialogResult result = MessageBox.Show(
+                    "Voulez-vous vraiment supprimer ce produit ?",
+                    "Confirmation de suppression",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning
+                );
+
+                if (result == DialogResult.Yes)
+                {
+                    produitBLL.SupprimerProduit(produit.CodeProduit);
+                    ChargerProduits();
+                }
+            }
+            //modifier
+            if (dtgProduit.Columns[e.ColumnIndex].Name == "Modifier")
+            {
+                Produit produit = (Produit)dtgProduit.Rows[e.RowIndex].DataBoundItem;
+                int codeProduit = produit.CodeProduit;
+
+                modifierProduit formModifier = new modifierProduit(codeProduit);
+                formModifier.ShowDialog();
+
+                ChargerProduits();
+            }
+
+        }
+
+        private void btnOuvrirClient_Click(object sender, EventArgs e)
+        {
+            // Instancie le Form ListeClients
+            ListeClients listeClientsForm = new ListeClients();
+
+            //(permet de terminer proprement l'application)
+            listeClientsForm.FormClosed += (s, args) => this.Close();
+
+            // Ouvre le Form Client
+            listeClientsForm.Show();
+            this.Hide();
+        }
+    }
+    }
