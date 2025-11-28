@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dtgClient = new System.Windows.Forms.DataGridView();
-<<<<<<< HEAD
             this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnOuvrirProduit = new System.Windows.Forms.Button();
             this.codeClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,7 +46,6 @@
             this.codePostalLivraisonClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.villeLivraisonClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSupprimer = new System.Windows.Forms.DataGridViewButtonColumn();
-=======
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,7 +66,6 @@
             this.btnClient = new System.Windows.Forms.Button();
             this.gestion_commercialeDataSet1 = new GestionCommerciale.Gestion_commercialeDataSet();
             this.dataSet11 = new GestionCommerciale.DataSet1();
->>>>>>> origin/main
             ((System.ComponentModel.ISupportInitialize)(this.dtgClient)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -92,7 +89,6 @@
             this.dtgClient.TabIndex = 0;
             this.dtgClient.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgClient_CellContentClick);
             //
-<<<<<<< HEAD
             // clientBindingSource
             //
             this.clientBindingSource.DataSource = typeof(GestionCommercialeBO.Client);
@@ -106,7 +102,6 @@
             this.btnOuvrirProduit.Text = "Produit";
             this.btnOuvrirProduit.UseVisualStyleBackColor = true;
             this.btnOuvrirProduit.Click += new System.EventHandler(this.btnOuvrirProduit_Click);
-=======
             // dataGridViewTextBoxColumn1
             //
             this.dataGridViewTextBoxColumn1.DataPropertyName = "CodeClient";
@@ -213,11 +208,9 @@
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseColumnTextForButtonValue = true;
             this.btnSupprimer.Width = 60;
->>>>>>> origin/main
             //
             // bindingSource1
             //
-<<<<<<< HEAD
             this.codeClientDataGridViewTextBoxColumn.DataPropertyName = "CodeClient";
             this.codeClientDataGridViewTextBoxColumn.HeaderText = "Code Client";
             this.codeClientDataGridViewTextBoxColumn.MinimumWidth = 6;
@@ -314,7 +307,6 @@
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseColumnTextForButtonValue = true;
-=======
             this.bindingSource1.DataSource = typeof(GestionCommercialeBO.Client);
             //
             // btnOuvrirProduit
@@ -327,7 +319,6 @@
             this.btnOuvrirProduit.Text = "Produit";
             this.btnOuvrirProduit.UseVisualStyleBackColor = true;
             this.btnOuvrirProduit.Click += new System.EventHandler(this.btnOuvrirProduit_Click);
->>>>>>> origin/main
             //
             // btnClient
             //
@@ -343,20 +334,17 @@
             //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(240)))), ((int)(((byte)(247)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnOuvrirProduit);
             this.Controls.Add(this.dtgClient);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-=======
             this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.btnClient);
+            //this.Controls.Add(this.btnClient);
             this.Controls.Add(this.btnOuvrirProduit);
             this.Controls.Add(this.dtgClient);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> origin/main
             this.Name = "ListeClients";
             this.Text = "ListeClients";
             ((System.ComponentModel.ISupportInitialize)(this.dtgClient)).EndInit();
@@ -383,10 +371,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn rueLivraisonClientDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codePostalLivraisonClientDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn villeLivraisonClientDataGridViewTextBoxColumn;
-<<<<<<< HEAD
-=======
         private System.Windows.Forms.DataGridViewButtonColumn btnSupprimer;
-        private System.Windows.Forms.Button btnOuvrirProduit;
+        //private System.Windows.Forms.Button btnOuvrirProduit;
         private System.Windows.Forms.Button btnClient;
         private Gestion_commercialeDataSet gestion_commercialeDataSet1;
         private DataSet1 dataSet11;
@@ -405,7 +391,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
         private System.Windows.Forms.DataGridViewButtonColumn btnModifier;
->>>>>>> origin/main
-        private System.Windows.Forms.DataGridViewButtonColumn btnSupprimer;
+        //private System.Windows.Forms.DataGridViewButtonColumn btnSupprimer;
     }
 }

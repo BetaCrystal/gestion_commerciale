@@ -300,6 +300,7 @@
             this.Controls.Add(this.btnAjout);
             this.Name = "ajouterClient";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.ajouterClient_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
