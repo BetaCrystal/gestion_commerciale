@@ -24,6 +24,7 @@ namespace GestionCommerciale
 
         private void ListeClients_Load(object sender, EventArgs e)
         {
+            dtgClient.AllowUserToAddRows = false;
             ChargerClients();
         }
         private void ChargerClients()
@@ -64,6 +65,17 @@ namespace GestionCommerciale
                    
                 }
             }
+            // modifier
+            if (dtgClient.Columns[e.ColumnIndex].Name == "btnModifier")
+            {
+                Client client = (Client)dtgClient.Rows[e.RowIndex].DataBoundItem;
+                int codeClient = client.CodeClient;
+
+                modifierClient formModifier = new modifierClient(codeClient);
+                formModifier.ShowDialog();
+
+                ChargerClients();
+            }
         }
 
         private void btnOuvrirProduit_Click(object sender, EventArgs e)
@@ -76,6 +88,14 @@ namespace GestionCommerciale
 
             liste.Show();
             this.Hide();
+        }
+
+        private void btnClient_Click(object sender, EventArgs e)
+        {
+            ajouterClient formAjout = new ajouterClient();
+            formAjout.ShowDialog();
+
+            ChargerClients();
         }
     }
 }

@@ -7,12 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
+<<<<<<< HEAD
 
 /*
  * Cette clasee permet la gestion des produits (affichage, ajout, modification, suppresion)
  * 
  */
 
+=======
+//git test
+>>>>>>> origin/main
 namespace GestionCommercialeDAL
 {
     public class ProduitDAL
