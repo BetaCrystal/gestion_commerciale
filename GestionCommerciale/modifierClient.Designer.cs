@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.btnModifier = new System.Windows.Forms.Button();
-            this.textBoxNom = new System.Windows.Forms.TextBox();
-            this.textBoxNumLivraison = new System.Windows.Forms.TextBox();
-            this.textBoxRueLivraison = new System.Windows.Forms.TextBox();
-            this.textBoxCodeLivraison = new System.Windows.Forms.TextBox();
-            this.textBoxVilleLivraison = new System.Windows.Forms.TextBox();
-            this.textBoxVilleFacturation = new System.Windows.Forms.TextBox();
-            this.textBoxCodeFacturation = new System.Windows.Forms.TextBox();
-            this.textBoxRueFacturation = new System.Windows.Forms.TextBox();
-            this.textBoxNumFacturation = new System.Windows.Forms.TextBox();
-            this.textBoxMail = new System.Windows.Forms.TextBox();
-            this.textBoxFax = new System.Windows.Forms.TextBox();
-            this.textBoxTel = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
             this.btnRetour = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -64,91 +64,91 @@
             this.btnModifier.TabIndex = 12;
             this.btnModifier.Text = "Modifier le client";
             this.btnModifier.UseVisualStyleBackColor = true;
-            this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
+            this.btnModifier.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBoxNom
+            // textBox1
             // 
-            this.textBoxNom.Location = new System.Drawing.Point(99, 69);
-            this.textBoxNom.Name = "textBoxNom";
-            this.textBoxNom.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNom.TabIndex = 1;
+            this.textBox1.Location = new System.Drawing.Point(99, 69);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 1;
             // 
-            // textBoxNumLivraison
+            // textBox2
             // 
-            this.textBoxNumLivraison.Location = new System.Drawing.Point(99, 231);
-            this.textBoxNumLivraison.Name = "textBoxNumLivraison";
-            this.textBoxNumLivraison.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNumLivraison.TabIndex = 9;
+            this.textBox2.Location = new System.Drawing.Point(99, 231);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 9;
             // 
-            // textBoxRueLivraison
+            // textBox3
             // 
-            this.textBoxRueLivraison.Location = new System.Drawing.Point(284, 231);
-            this.textBoxRueLivraison.Name = "textBoxRueLivraison";
-            this.textBoxRueLivraison.Size = new System.Drawing.Size(100, 20);
-            this.textBoxRueLivraison.TabIndex = 10;
+            this.textBox3.Location = new System.Drawing.Point(284, 231);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 10;
             // 
-            // textBoxCodeLivraison
+            // textBox4
             // 
-            this.textBoxCodeLivraison.Location = new System.Drawing.Point(487, 231);
-            this.textBoxCodeLivraison.Name = "textBoxCodeLivraison";
-            this.textBoxCodeLivraison.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCodeLivraison.TabIndex = 11;
+            this.textBox4.Location = new System.Drawing.Point(487, 231);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.TabIndex = 11;
             // 
-            // textBoxVilleLivraison
+            // textBox5
             // 
-            this.textBoxVilleLivraison.Location = new System.Drawing.Point(688, 231);
-            this.textBoxVilleLivraison.Name = "textBoxVilleLivraison";
-            this.textBoxVilleLivraison.Size = new System.Drawing.Size(100, 20);
-            this.textBoxVilleLivraison.TabIndex = 12;
+            this.textBox5.Location = new System.Drawing.Point(688, 231);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 12;
             // 
-            // textBoxVilleFacturation
+            // textBox6
             // 
-            this.textBoxVilleFacturation.Location = new System.Drawing.Point(688, 164);
-            this.textBoxVilleFacturation.Name = "textBoxVilleFacturation";
-            this.textBoxVilleFacturation.Size = new System.Drawing.Size(100, 20);
-            this.textBoxVilleFacturation.TabIndex = 8;
+            this.textBox6.Location = new System.Drawing.Point(688, 164);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 8;
             // 
-            // textBoxCodeFacturation
+            // textBox7
             // 
-            this.textBoxCodeFacturation.Location = new System.Drawing.Point(487, 164);
-            this.textBoxCodeFacturation.Name = "textBoxCodeFacturation";
-            this.textBoxCodeFacturation.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCodeFacturation.TabIndex = 7;
+            this.textBox7.Location = new System.Drawing.Point(487, 164);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 7;
             // 
-            // textBoxRueFacturation
+            // textBox8
             // 
-            this.textBoxRueFacturation.Location = new System.Drawing.Point(284, 164);
-            this.textBoxRueFacturation.Name = "textBoxRueFacturation";
-            this.textBoxRueFacturation.Size = new System.Drawing.Size(100, 20);
-            this.textBoxRueFacturation.TabIndex = 6;
+            this.textBox8.Location = new System.Drawing.Point(284, 164);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 20);
+            this.textBox8.TabIndex = 6;
             // 
-            // textBoxNumFacturation
+            // textBox9
             // 
-            this.textBoxNumFacturation.Location = new System.Drawing.Point(99, 164);
-            this.textBoxNumFacturation.Name = "textBoxNumFacturation";
-            this.textBoxNumFacturation.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNumFacturation.TabIndex = 5;
+            this.textBox9.Location = new System.Drawing.Point(99, 164);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 20);
+            this.textBox9.TabIndex = 5;
             // 
-            // textBoxMail
+            // textBox10
             // 
-            this.textBoxMail.Location = new System.Drawing.Point(630, 69);
-            this.textBoxMail.Name = "textBoxMail";
-            this.textBoxMail.Size = new System.Drawing.Size(100, 20);
-            this.textBoxMail.TabIndex = 4;
+            this.textBox10.Location = new System.Drawing.Point(630, 69);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(100, 20);
+            this.textBox10.TabIndex = 4;
             // 
-            // textBoxFax
+            // textBox11
             // 
-            this.textBoxFax.Location = new System.Drawing.Point(460, 69);
-            this.textBoxFax.Name = "textBoxFax";
-            this.textBoxFax.Size = new System.Drawing.Size(100, 20);
-            this.textBoxFax.TabIndex = 3;
+            this.textBox11.Location = new System.Drawing.Point(460, 69);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(100, 20);
+            this.textBox11.TabIndex = 3;
             // 
-            // textBoxTel
+            // textBox12
             // 
-            this.textBoxTel.Location = new System.Drawing.Point(284, 69);
-            this.textBoxTel.Name = "textBoxTel";
-            this.textBoxTel.Size = new System.Drawing.Size(100, 20);
-            this.textBoxTel.TabIndex = 2;
+            this.textBox12.Location = new System.Drawing.Point(284, 69);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(100, 20);
+            this.textBox12.TabIndex = 2;
             // 
             // btnRetour
             // 
@@ -158,7 +158,6 @@
             this.btnRetour.TabIndex = 13;
             this.btnRetour.Text = "Retour";
             this.btnRetour.UseVisualStyleBackColor = true;
-            this.btnRetour.Click += new System.EventHandler(this.btnRetour_Click);
             // 
             // label1
             // 
@@ -286,22 +285,21 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRetour);
-            this.Controls.Add(this.textBoxTel);
-            this.Controls.Add(this.textBoxFax);
-            this.Controls.Add(this.textBoxMail);
-            this.Controls.Add(this.textBoxNumFacturation);
-            this.Controls.Add(this.textBoxRueFacturation);
-            this.Controls.Add(this.textBoxCodeFacturation);
-            this.Controls.Add(this.textBoxVilleFacturation);
-            this.Controls.Add(this.textBoxVilleLivraison);
-            this.Controls.Add(this.textBoxCodeLivraison);
-            this.Controls.Add(this.textBoxRueLivraison);
-            this.Controls.Add(this.textBoxNumLivraison);
-            this.Controls.Add(this.textBoxNom);
+            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnModifier);
             this.Name = "modifierClient";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.modifierClient_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,18 +308,18 @@
         #endregion
 
         private System.Windows.Forms.Button btnModifier;
-        private System.Windows.Forms.TextBox textBoxNom;
-        private System.Windows.Forms.TextBox textBoxNumLivraison;
-        private System.Windows.Forms.TextBox textBoxRueLivraison;
-        private System.Windows.Forms.TextBox textBoxCodeLivraison;
-        private System.Windows.Forms.TextBox textBoxVilleLivraison;
-        private System.Windows.Forms.TextBox textBoxVilleFacturation;
-        private System.Windows.Forms.TextBox textBoxCodeFacturation;
-        private System.Windows.Forms.TextBox textBoxRueFacturation;
-        private System.Windows.Forms.TextBox textBoxNumFacturation;
-        private System.Windows.Forms.TextBox textBoxMail;
-        private System.Windows.Forms.TextBox textBoxFax;
-        private System.Windows.Forms.TextBox textBoxTel;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Button btnRetour;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
