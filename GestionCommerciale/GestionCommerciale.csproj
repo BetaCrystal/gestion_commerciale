@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AjouterDevis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterDevis.Designer.cs">
+      <DependentUpon>AjouterDevis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Connexion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,8 +99,17 @@
     <Compile Include="modifierProduit.Designer.cs">
       <DependentUpon>modifierProduit.cs</DependentUpon>
     </Compile>
+    <Compile Include="PopupQuantiteProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopupQuantiteProduit.Designer.cs">
+      <DependentUpon>PopupQuantiteProduit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AjouterDevis.resx">
+      <DependentUpon>AjouterDevis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ajouterProduits.resx">
       <DependentUpon>ajouterProduits.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="modifierProduit.resx">
       <DependentUpon>modifierProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopupQuantiteProduit.resx">
+      <DependentUpon>PopupQuantiteProduit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
