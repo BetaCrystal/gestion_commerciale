@@ -60,9 +60,9 @@
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnModifier = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.btnSupprimer = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.btnOuvrirProduit = new System.Windows.Forms.Button();
+            //this.btnSupprimer = new System.Windows.Forms.DataGridViewButtonColumn();
+            //this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            //this.btnOuvrirProduit = new System.Windows.Forms.Button();
             this.btnClient = new System.Windows.Forms.Button();
             this.gestion_commercialeDataSet1 = new GestionCommerciale.Gestion_commercialeDataSet();
             this.dataSet11 = new GestionCommerciale.DataSet1();
@@ -307,7 +307,7 @@
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseColumnTextForButtonValue = true;
-            this.bindingSource1.DataSource = typeof(GestionCommercialeBO.Client);
+            //this.bindingSource1.DataSource = typeof(GestionCommercialeBO.Client);
             //
             // btnOuvrirProduit
             //
@@ -376,7 +376,7 @@
         private System.Windows.Forms.Button btnClient;
         private Gestion_commercialeDataSet gestion_commercialeDataSet1;
         private DataSet1 dataSet11;
-        private System.Windows.Forms.BindingSource bindingSource1;
+        //private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
