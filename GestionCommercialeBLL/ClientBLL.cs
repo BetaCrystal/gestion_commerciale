@@ -7,6 +7,10 @@ using GestionCommercialeDAL;
 using GestionCommercialeBO;
 using static GestionCommercialeDAL.ClientDAL;
 
+/*
+ * Cette classe sert d'intermédiaire entre la DAL et la GUI 
+ */
+
 namespace GestionCommercialeBLL
 {
     public class ClientBLL
@@ -24,6 +28,7 @@ namespace GestionCommercialeBLL
             return clientDAL.GetClients();
         }
 
+        //Suppresion d'un client par son id
         public void SupprimerClient(int codeClient)
         {
             clientDAL.SupprimerClient(codeClient);

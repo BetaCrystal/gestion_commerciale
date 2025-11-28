@@ -31,6 +31,7 @@ namespace GestionCommerciale
             cbxProduit.ValueMember = "code_categorie";
         }
 
+        //Bouton ajouter produit vérifiant les donnés passer
         private void btnAjouterProduit_Click(object sender, EventArgs e)
         {
             string nomProduit = txtNomProduit.Text.Trim();
@@ -71,7 +72,7 @@ namespace GestionCommerciale
             }
         }
         
-
+        //Bouton retour pour fermer le formulaire d'ajout d'un produit
         private void btnRetour_Click(object sender, EventArgs e)
         {
             this.Close();

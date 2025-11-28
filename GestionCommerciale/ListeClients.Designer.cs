@@ -30,6 +30,24 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dtgClient = new System.Windows.Forms.DataGridView();
+<<<<<<< HEAD
+            this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnOuvrirProduit = new System.Windows.Forms.Button();
+            this.codeClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numTelephoneClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numFaxClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adresseMailClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numAdresseFacturationClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rueFacturationClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codePostalFacturationClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.villeFacturationClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numAdresseLivraisonClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rueLivraisonClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codePostalLivraisonClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.villeLivraisonClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSupprimer = new System.Windows.Forms.DataGridViewButtonColumn();
+=======
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +69,7 @@
             this.btnClient = new System.Windows.Forms.Button();
             this.gestion_commercialeDataSet1 = new GestionCommerciale.Gestion_commercialeDataSet();
             this.dataSet11 = new GestionCommerciale.DataSet1();
+>>>>>>> origin/main
             ((System.ComponentModel.ISupportInitialize)(this.dtgClient)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
@@ -91,6 +110,21 @@
             this.dtgClient.TabIndex = 0;
             this.dtgClient.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgClient_CellContentClick);
             // 
+<<<<<<< HEAD
+            // clientBindingSource
+            // 
+            this.clientBindingSource.DataSource = typeof(GestionCommercialeBO.Client);
+            // 
+            // btnOuvrirProduit
+            // 
+            this.btnOuvrirProduit.Location = new System.Drawing.Point(65, 74);
+            this.btnOuvrirProduit.Name = "btnOuvrirProduit";
+            this.btnOuvrirProduit.Size = new System.Drawing.Size(86, 30);
+            this.btnOuvrirProduit.TabIndex = 1;
+            this.btnOuvrirProduit.Text = "Produit";
+            this.btnOuvrirProduit.UseVisualStyleBackColor = true;
+            this.btnOuvrirProduit.Click += new System.EventHandler(this.btnOuvrirProduit_Click);
+=======
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "CodeClient";
@@ -197,9 +231,108 @@
             this.btnSupprimer.Text = "supprimer";
             this.btnSupprimer.UseColumnTextForButtonValue = true;
             this.btnSupprimer.Width = 60;
+>>>>>>> origin/main
             // 
             // bindingSource1
             // 
+<<<<<<< HEAD
+            this.codeClientDataGridViewTextBoxColumn.DataPropertyName = "CodeClient";
+            this.codeClientDataGridViewTextBoxColumn.HeaderText = "Code Client";
+            this.codeClientDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.codeClientDataGridViewTextBoxColumn.Name = "codeClientDataGridViewTextBoxColumn";
+            // 
+            // nomClientDataGridViewTextBoxColumn
+            // 
+            this.nomClientDataGridViewTextBoxColumn.DataPropertyName = "NomClient";
+            this.nomClientDataGridViewTextBoxColumn.HeaderText = "Nom";
+            this.nomClientDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nomClientDataGridViewTextBoxColumn.Name = "nomClientDataGridViewTextBoxColumn";
+            // 
+            // numTelephoneClientDataGridViewTextBoxColumn
+            // 
+            this.numTelephoneClientDataGridViewTextBoxColumn.DataPropertyName = "NumTelephoneClient";
+            this.numTelephoneClientDataGridViewTextBoxColumn.HeaderText = "Num Telephone";
+            this.numTelephoneClientDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.numTelephoneClientDataGridViewTextBoxColumn.Name = "numTelephoneClientDataGridViewTextBoxColumn";
+            // 
+            // numFaxClientDataGridViewTextBoxColumn
+            // 
+            this.numFaxClientDataGridViewTextBoxColumn.DataPropertyName = "NumFaxClient";
+            this.numFaxClientDataGridViewTextBoxColumn.HeaderText = "Num Fax";
+            this.numFaxClientDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.numFaxClientDataGridViewTextBoxColumn.Name = "numFaxClientDataGridViewTextBoxColumn";
+            // 
+            // adresseMailClientDataGridViewTextBoxColumn
+            // 
+            this.adresseMailClientDataGridViewTextBoxColumn.DataPropertyName = "AdresseMailClient";
+            this.adresseMailClientDataGridViewTextBoxColumn.HeaderText = "Adresse Mail";
+            this.adresseMailClientDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.adresseMailClientDataGridViewTextBoxColumn.Name = "adresseMailClientDataGridViewTextBoxColumn";
+            // 
+            // numAdresseFacturationClientDataGridViewTextBoxColumn
+            // 
+            this.numAdresseFacturationClientDataGridViewTextBoxColumn.DataPropertyName = "NumAdresseFacturationClient";
+            this.numAdresseFacturationClientDataGridViewTextBoxColumn.HeaderText = "Num Adresse Facturation";
+            this.numAdresseFacturationClientDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.numAdresseFacturationClientDataGridViewTextBoxColumn.Name = "numAdresseFacturationClientDataGridViewTextBoxColumn";
+            // 
+            // rueFacturationClientDataGridViewTextBoxColumn
+            // 
+            this.rueFacturationClientDataGridViewTextBoxColumn.DataPropertyName = "RueFacturationClient";
+            this.rueFacturationClientDataGridViewTextBoxColumn.HeaderText = "Rue Facturation";
+            this.rueFacturationClientDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.rueFacturationClientDataGridViewTextBoxColumn.Name = "rueFacturationClientDataGridViewTextBoxColumn";
+            // 
+            // codePostalFacturationClientDataGridViewTextBoxColumn
+            // 
+            this.codePostalFacturationClientDataGridViewTextBoxColumn.DataPropertyName = "CodePostalFacturationClient";
+            this.codePostalFacturationClientDataGridViewTextBoxColumn.HeaderText = "Code Postal Facturation";
+            this.codePostalFacturationClientDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.codePostalFacturationClientDataGridViewTextBoxColumn.Name = "codePostalFacturationClientDataGridViewTextBoxColumn";
+            // 
+            // villeFacturationClientDataGridViewTextBoxColumn
+            // 
+            this.villeFacturationClientDataGridViewTextBoxColumn.DataPropertyName = "VilleFacturationClient";
+            this.villeFacturationClientDataGridViewTextBoxColumn.HeaderText = "Ville Facturation";
+            this.villeFacturationClientDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.villeFacturationClientDataGridViewTextBoxColumn.Name = "villeFacturationClientDataGridViewTextBoxColumn";
+            // 
+            // numAdresseLivraisonClientDataGridViewTextBoxColumn
+            // 
+            this.numAdresseLivraisonClientDataGridViewTextBoxColumn.DataPropertyName = "NumAdresseLivraisonClient";
+            this.numAdresseLivraisonClientDataGridViewTextBoxColumn.HeaderText = "Num Adresse Livraison";
+            this.numAdresseLivraisonClientDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.numAdresseLivraisonClientDataGridViewTextBoxColumn.Name = "numAdresseLivraisonClientDataGridViewTextBoxColumn";
+            // 
+            // rueLivraisonClientDataGridViewTextBoxColumn
+            // 
+            this.rueLivraisonClientDataGridViewTextBoxColumn.DataPropertyName = "RueLivraisonClient";
+            this.rueLivraisonClientDataGridViewTextBoxColumn.HeaderText = "Rue Livraison";
+            this.rueLivraisonClientDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.rueLivraisonClientDataGridViewTextBoxColumn.Name = "rueLivraisonClientDataGridViewTextBoxColumn";
+            // 
+            // codePostalLivraisonClientDataGridViewTextBoxColumn
+            // 
+            this.codePostalLivraisonClientDataGridViewTextBoxColumn.DataPropertyName = "CodePostalLivraisonClient";
+            this.codePostalLivraisonClientDataGridViewTextBoxColumn.HeaderText = "Code Postal Livraison";
+            this.codePostalLivraisonClientDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.codePostalLivraisonClientDataGridViewTextBoxColumn.Name = "codePostalLivraisonClientDataGridViewTextBoxColumn";
+            // 
+            // villeLivraisonClientDataGridViewTextBoxColumn
+            // 
+            this.villeLivraisonClientDataGridViewTextBoxColumn.DataPropertyName = "VilleLivraisonClient";
+            this.villeLivraisonClientDataGridViewTextBoxColumn.HeaderText = "Ville Livraison";
+            this.villeLivraisonClientDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.villeLivraisonClientDataGridViewTextBoxColumn.Name = "villeLivraisonClientDataGridViewTextBoxColumn";
+            // 
+            // btnSupprimer
+            // 
+            this.btnSupprimer.HeaderText = "Supprimer";
+            this.btnSupprimer.MinimumWidth = 6;
+            this.btnSupprimer.Name = "btnSupprimer";
+            this.btnSupprimer.Text = "Supprimer";
+            this.btnSupprimer.UseColumnTextForButtonValue = true;
+=======
             this.bindingSource1.DataSource = typeof(GestionCommercialeBO.Client);
             // 
             // btnOuvrirProduit
@@ -212,6 +345,7 @@
             this.btnOuvrirProduit.Text = "Produit";
             this.btnOuvrirProduit.UseVisualStyleBackColor = true;
             this.btnOuvrirProduit.Click += new System.EventHandler(this.btnOuvrirProduit_Click);
+>>>>>>> origin/main
             // 
             // btnClient
             // 
@@ -237,11 +371,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(240)))), ((int)(((byte)(247)))));
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnOuvrirProduit);
+            this.Controls.Add(this.dtgClient);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+=======
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.btnClient);
             this.Controls.Add(this.btnOuvrirProduit);
             this.Controls.Add(this.dtgClient);
             this.Margin = new System.Windows.Forms.Padding(2);
+>>>>>>> origin/main
             this.Name = "ListeClients";
             this.Text = "ListeClients";
             ((System.ComponentModel.ISupportInitialize)(this.dtgClient)).EndInit();
@@ -257,6 +399,7 @@
 
         private System.Windows.Forms.DataGridView dtgClient;
         private System.Windows.Forms.BindingSource clientBindingSource;
+        private System.Windows.Forms.Button btnOuvrirProduit;
         private System.Windows.Forms.DataGridViewTextBoxColumn codeClientDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomClientDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numTelephoneClientDataGridViewTextBoxColumn;
@@ -270,6 +413,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn rueLivraisonClientDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codePostalLivraisonClientDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn villeLivraisonClientDataGridViewTextBoxColumn;
+<<<<<<< HEAD
+=======
         private System.Windows.Forms.Button btnOuvrirProduit;
         private System.Windows.Forms.Button btnClient;
         private Gestion_commercialeDataSet gestion_commercialeDataSet1;
@@ -289,6 +434,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
         private System.Windows.Forms.DataGridViewButtonColumn btnModifier;
+>>>>>>> origin/main
         private System.Windows.Forms.DataGridViewButtonColumn btnSupprimer;
     }
 }

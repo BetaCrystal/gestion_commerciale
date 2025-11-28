@@ -7,6 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ * Cette classe permet de recuperé les categorie présent dans la bdd
+ * utilisé dans notre classe produit
+ */
+
 namespace GestionCommercialeDAL
 {
     public class CategorieDAL
@@ -14,6 +19,7 @@ namespace GestionCommercialeDAL
         private readonly string connectionString =
             ConfigurationManager.ConnectionStrings["GestionCommerciale.Properties.Settings.Gestion_commercialeConnectionString"].ConnectionString;
 
+        //Récupération des categories
         public DataTable GetCategories()
         {
             string query = "SELECT code_categorie, nom_categorie FROM categorie";
