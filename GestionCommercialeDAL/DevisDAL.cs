@@ -14,7 +14,7 @@ namespace GestionCommercialeDAL
         private readonly string connectionString =
                 ConfigurationManager.ConnectionStrings["GestionCommerciale.Properties.Settings.Gestion_commercialeConnectionString"].ConnectionString;
 
-        public List<Devis> GetDevis()
+        /*public List<Devis> GetDevis()
         {
             // Méthode pour récupérer la liste des devis depuis la base de données
             List<Devis> devis = new List<Devis>();
@@ -46,7 +46,7 @@ namespace GestionCommercialeDAL
                 return devis;
             }
 
-        }
+        }*/
 
         public void SupprimerDevis(int codeDevis)
         {

@@ -116,6 +116,7 @@ namespace GestionCommerciale
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Connexion";
             this.Text = "Connexion";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
