@@ -34,5 +34,20 @@ namespace GestionCommercialeBLL
             clientDAL.SupprimerClient(codeClient);
         }
 
+        public void AjouterClient(Client c)
+        {
+            clientDAL.InsertClient(c);
+        }
+
+        public Client GetClientById(int codeClient)
+        {
+            return clientDAL.GetClientById(codeClient);
+        }
+
+        public void UpdateClient(Client c)
+        {
+            clientDAL.UpdateClient(c);
+        }
+
     }
 }

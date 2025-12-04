@@ -48,5 +48,10 @@ namespace GestionCommerciale
                 this.Hide();
             }
         }
+
+        private void textBoxIdentifiant_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

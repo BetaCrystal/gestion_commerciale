@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AjouterDevis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterDevis.Designer.cs">
+      <DependentUpon>AjouterDevis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Connexion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,18 @@
     </Compile>
     <Compile Include="ajouterProduits.Designer.cs">
       <DependentUpon>ajouterProduits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ajouterClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajouterClient.Designer.cs">
+      <DependentUpon>ajouterClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifierClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifierClient.Designer.cs">
+      <DependentUpon>modifierClient.cs</DependentUpon>
     </Compile>
     <Compile Include="Gestion_commercialeDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -93,8 +111,17 @@
     <Compile Include="modifierProduit.Designer.cs">
       <DependentUpon>modifierProduit.cs</DependentUpon>
     </Compile>
+    <Compile Include="PopupQuantiteProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopupQuantiteProduit.Designer.cs">
+      <DependentUpon>PopupQuantiteProduit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AjouterDevis.resx">
+      <DependentUpon>AjouterDevis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ajouterProduits.resx">
       <DependentUpon>ajouterProduits.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,14 +131,23 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ajouterClient.resx">
+      <DependentUpon>ajouterClient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListeClients.resx">
       <DependentUpon>ListeClients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListeProduits.resx">
       <DependentUpon>ListeProduits.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="modifierClient.resx">
+      <DependentUpon>modifierClient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="modifierProduit.resx">
       <DependentUpon>modifierProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopupQuantiteProduit.resx">
+      <DependentUpon>PopupQuantiteProduit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
