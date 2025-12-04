@@ -16,7 +16,7 @@ namespace GestionCommerciale
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AjouterDevis());
+            Application.Run(new Connexion());
         }
     }
 }
