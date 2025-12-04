@@ -97,5 +97,15 @@ namespace GestionCommerciale
 
             ChargerClients();
         }
+
+        private void btnListeDevis_Click(object sender, EventArgs e)
+        {
+            ListeDevis listeDevis = new ListeDevis();
+
+            listeDevis.FormClosed += (s, args) => this.Close();
+
+            listeDevis.Show();
+            this.Hide();
+        }
     }
 }

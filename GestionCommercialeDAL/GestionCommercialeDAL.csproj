@@ -46,6 +46,7 @@
     <Compile Include="CategorieDAL.cs" />
     <Compile Include="ClientDAL.cs" />
     <Compile Include="ConnexionBD.cs" />
+    <Compile Include="ContientDAL.cs" />
     <Compile Include="DevisDAL.cs" />
     <Compile Include="GestionCommercialeDAO.cs" />
     <Compile Include="Gestion_commercialeDataSet.Designer.cs">

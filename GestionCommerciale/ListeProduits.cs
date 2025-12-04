@@ -98,5 +98,15 @@ namespace GestionCommerciale
             listeClientsForm.Show();
             this.Hide();
         }
+
+        private void btnListeDevis_Click(object sender, EventArgs e)
+        {
+            ListeDevis listeDevisForm = new ListeDevis();
+
+            listeDevisForm.FormClosed += (s, args) => this.Close();
+
+            listeDevisForm.Show();
+            this.Hide();
+        }
     }
     }

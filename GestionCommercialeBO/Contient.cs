@@ -45,5 +45,5 @@ namespace GestionCommercialeBO
             this.quantiteProduit = quantiteProduit;
         }
 
-        }
+    }
 }

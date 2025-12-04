@@ -14,9 +14,9 @@ namespace GestionCommercialeBO
         private float tauxTVA;
         private float tauxRemiseGlobal;
         private float montantHTHorsRemise;
-        private float montantHTAvecRemise;
+        /*private float montantHTAvecRemise;
         private float montantTTC;
-        private float montantTVA;
+        private float montantTVA;*/
         private Client client;
         private Statut statut;
 
@@ -56,7 +56,7 @@ namespace GestionCommercialeBO
             set { montantHTHorsRemise = value; }
         }
 
-        public float MontantHTAvecRemise
+        /*public float MontantHTAvecRemise
         {
             get { return montantHTAvecRemise; }
             set { montantHTAvecRemise = montantHTHorsRemise * tauxRemiseGlobal; }
@@ -72,7 +72,7 @@ namespace GestionCommercialeBO
         {
             get { return montantTVA; }
             set { montantTVA = montantHTHorsRemise * (1 - tauxTVA); }
-        }
+        }*/
 
         public Client Client
         {
@@ -101,9 +101,9 @@ namespace GestionCommercialeBO
             this.tauxTVA = tauxTVA;
             this.tauxRemiseGlobal = tauxRemiseGlobal;
             this.montantHTHorsRemise = montantHTHorsRemise;
-            this.montantHTAvecRemise = montantHTHorsRemise * tauxRemiseGlobal;
+            /*this.montantHTAvecRemise = montantHTHorsRemise * tauxRemiseGlobal;
             this.montantTVA = montantHTHorsRemise * (1 - tauxTVA);
-            this.montantTTC = (montantHTHorsRemise - montantTVA) * tauxRemiseGlobal;
+            this.montantTTC = (montantHTHorsRemise - montantTVA) * tauxRemiseGlobal;*/
             this.client = client;
             this.statut = statut;
         }

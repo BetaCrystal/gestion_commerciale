@@ -32,5 +32,29 @@ namespace GestionCommerciale
             this.devisTableAdapter.Fill(this.gestion_commercialeDataSet.Devis);
 
         }
+
+        private void btnListeProduits_Click(object sender, EventArgs e)
+        {
+            ListeProduits listeProduits = new ListeProduits();
+
+            listeProduits.FormClosed += (s, args) => this.Close();
+
+            listeProduits.Show();
+            this.Hide();
+        }
+
+        private void btnListeClients_Click(object sender, EventArgs e)
+        {
+            ListeClients listeClients = new ListeClients();
+
+            listeClients.FormClosed += (s, args) => this.Close();
+            listeClients.Show();
+            this.Hide();
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
