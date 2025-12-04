@@ -82,6 +82,12 @@
     <Compile Include="ajouterClient.Designer.cs">
       <DependentUpon>ajouterClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListeDevis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListeDevis.Designer.cs">
+      <DependentUpon>ListeDevis.cs</DependentUpon>
+    </Compile>
     <Compile Include="modifierClient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListeClients.resx">
       <DependentUpon>ListeClients.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListeDevis.resx">
+      <DependentUpon>ListeDevis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListeProduits.resx">
       <DependentUpon>ListeProduits.cs</DependentUpon>

@@ -42,8 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Categorie.cs" />
+    <Compile Include="Statut.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="Connexion.cs" />
+    <Compile Include="Devis.cs" />
     <Compile Include="Produit.cs" />
     <Compile Include="Session.cs" />
     <Compile Include="Utilisateur.cs" />
