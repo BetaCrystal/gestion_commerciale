@@ -82,6 +82,11 @@
     <Compile Include="ajouterClient.Designer.cs">
       <DependentUpon>ajouterClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gestion_commercialeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gestion_commercialeDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ListeDevis.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +194,17 @@
     </None>
     <None Include="Gestion_commercialeDataSet.xss">
       <DependentUpon>Gestion_commercialeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Gestion_commercialeDataSet1.xsc">
+      <DependentUpon>Gestion_commercialeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Gestion_commercialeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gestion_commercialeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gestion_commercialeDataSet1.xss">
+      <DependentUpon>Gestion_commercialeDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\DataSources\GestionCommercialeBO.Categorie.datasource" />
     <None Include="Properties\DataSources\GestionCommercialeBO.Client.datasource" />
