@@ -55,6 +55,13 @@ namespace GestionCommerciale
                 return;
             }
 
+            if (string.IsNullOrWhiteSpace(numLivraison))
+            {
+                MessageBox.Show("Veuillez saisir le numéro de l'adresse de livraison.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+
             if (string.IsNullOrWhiteSpace(numFacturation) ||
                 string.IsNullOrWhiteSpace(rueFacturation) ||
                 string.IsNullOrWhiteSpace(codeFacturation) ||
@@ -89,6 +96,27 @@ namespace GestionCommerciale
                 VilleLivraisonClient = villeLivraison
             };
 
+            // Vérification rapide : afficher toutes les données du client
+            
+            /* Debug : afficher toutes les valeurs
+            MessageBox.Show(
+                $"Nom: {textBoxNom.Text}\n" +
+                $"Tel: {textBoxTel.Text}\n" +
+                $"Fax: {textBoxFax.Text}\n" +
+                $"Mail: {textBoxMail.Text}\n" +
+                $"NumFact: {textBoxNumFacturation.Text}\n" +
+                $"RueFact: {textBoxRueFacturation.Text}\n" +
+                $"CodeFact: {textBoxCodeFacturation.Text}\n" +
+                $"VilleFact: {textBoxVilleFacturation.Text}\n" +
+                $"NumLivraison: {textBoxNumLivraison.Text}\n" +
+                $"RueLivraison: {textBoxRueLivraison.Text}\n" +
+                $"CodeLivraison: {textBoxCodeLivraison.Text}\n" +
+                $"VilleLivraison: {textBoxVilleLivraison.Text}",
+                "Valeurs du formulaire"
+            );
+            */
+
+
             try
             {
                 ClientBLL clientBLL = new ClientBLL();
@@ -101,5 +129,11 @@ namespace GestionCommerciale
                 MessageBox.Show("Une erreur est survenue lors de l'ajout du client : " + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void ajouterClient_Load(object sender, EventArgs e)
+        {
+            // Rien pour l'instant, ou tu peux mettre du code d'initialisation
+        }
+
     }
 }

@@ -101,6 +101,8 @@ namespace GestionCommercialeDAL
                 @NumAdresseFacturationClient, @RueFacturationClient, @CodePostalFacturationClient, @VilleFacturationClient,
                 @NumAdresseLivraisonClient, @RueLivraisonClient, @CodePostalLivraisonClient, @VilleLivraisonClient
             )";
+            
+
             using (SqlConnection conn = new SqlConnection(connectionString))
             using (SqlCommand cmd = new SqlCommand(query, conn))
             {

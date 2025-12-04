@@ -77,7 +77,7 @@ namespace GestionCommercialeBO
         public string NumAdresseLivraisonClient
         {
             get { return numAdresseLivraisonClient; }
-            set {numAdresseFacturationClient = value; }
+            set { numAdresseLivraisonClient = value; }
         }
         public string RueLivraisonClient
         {
