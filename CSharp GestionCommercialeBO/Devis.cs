@@ -1,8 +1,4 @@
-ï»¿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 
 namespace GestionCommercialeBO
 {
@@ -14,9 +10,6 @@ namespace GestionCommercialeBO
         private float tauxTVA;
         private float tauxRemiseGlobal;
         private float montantHTHorsRemise;
-        /*private float montantHTAvecRemise;
-        private float montantTTC;
-        private float montantTVA;*/
         private Client client;
         private Statut statut;
 
@@ -56,24 +49,6 @@ namespace GestionCommercialeBO
             set { montantHTHorsRemise = value; }
         }
 
-        /*public float MontantHTAvecRemise
-        {
-            get { return montantHTAvecRemise; }
-            set { montantHTAvecRemise = montantHTHorsRemise * tauxRemiseGlobal; }
-        }
-
-        public float MontantTTC
-        {
-            get { return montantTTC; }
-            set { montantTTC = (montantHTHorsRemise - montantTVA) * tauxRemiseGlobal; }
-        }
-
-        public float MontantTVA
-        {
-            get { return montantTVA; }
-            set { montantTVA = montantHTHorsRemise * (1 - tauxTVA); }
-        }*/
-
         public Client Client
         {
             get { return client; }
@@ -86,14 +61,14 @@ namespace GestionCommercialeBO
             set { statut = value; }
         }
 
-        public Devis(int codeDevis, 
-         DateTime dateDevis,
-         string statutDevis,
-         float tauxTVA,
-         float tauxRemiseGlobal,
-         float montantHTHorsRemise,
-         Client client,
-         Statut statut)
+        public Devis(int codeDevis,
+                     DateTime dateDevis,
+                     string statutDevis,
+                     float tauxTVA,
+                     float tauxRemiseGlobal,
+                     float montantHTHorsRemise,
+                     Client client,
+                     Statut statut)
         {
             this.codeDevis = codeDevis;
             this.dateDevis = dateDevis;
@@ -101,11 +76,38 @@ namespace GestionCommercialeBO
             this.tauxTVA = tauxTVA;
             this.tauxRemiseGlobal = tauxRemiseGlobal;
             this.montantHTHorsRemise = montantHTHorsRemise;
-            /*this.montantHTAvecRemise = montantHTHorsRemise * tauxRemiseGlobal;
-            this.montantTVA = montantHTHorsRemise * (1 - tauxTVA);
-            this.montantTTC = (montantHTHorsRemise - montantTVA) * tauxRemiseGlobal;*/
             this.client = client;
             this.statut = statut;
+        }
+
+        // Propriétés additionnelles pour le binding (robustes)
+        public int ClientId
+        {
+            get { return client != null ? client.CodeClient : 0; }
+        }
+
+        public int StatutId
+        {
+            get { return statut != null ? statut.CodeStatut : 0; }
+        }
+
+        // Vous pouvez aussi exposer des valeurs lisibles :
+        public string ClientAffichage
+        {
+            get
+            {
+                // si Client a NomClient
+                return client != null ? client.NomClient : string.Empty;
+            }
+        }
+
+        public string StatutAffichage
+        {
+            get
+            {
+                // si Statut a LibelleStatut ou similaire
+                return statut != null ? statut.LibelleStatut : string.Empty;
+            }
         }
     }
 }

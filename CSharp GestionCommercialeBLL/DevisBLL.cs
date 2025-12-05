@@ -1,11 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using GestionCommercialeDAL;
 using GestionCommercialeBO;
-using static GestionCommercialeDAL.DevisDAL;
 
 namespace GestionCommercialeBLL
 {
@@ -18,7 +14,7 @@ namespace GestionCommercialeBLL
             _devisDal = new DevisDAL();
         }
 
-        // Récupérer tous les devis
+        // R�cup�rer tous les devis
         public List<Devis> ChargerDevis()
         {
             return _devisDal.GetDevis();
@@ -32,8 +28,7 @@ namespace GestionCommercialeBLL
 
         public Devis GetDevisById(int codeDevis)
         {
-            // Recherche simple via la liste (ou ajouter méthode DAL si besoin)
-            return ChargerDevis().Find(d => d.CodeDevis == codeDevis);
+            return ChargerDevis().Find(devis => devis.CodeDevis == codeDevis);
         }
     }
 }

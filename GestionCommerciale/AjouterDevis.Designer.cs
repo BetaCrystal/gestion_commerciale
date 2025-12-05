@@ -155,7 +155,7 @@
             this.chkProduits.Size = new System.Drawing.Size(204, 139);
             this.chkProduits.TabIndex = 0;
             this.chkProduits.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.chkProduits_ItemCheck);
-            this.chkProduits.SelectedIndexChanged += new System.EventHandler(this.chkProduits_SelectedIndexChanged);
+            //this.chkProduits.SelectedIndexChanged += new System.EventHandler(this.chkProduits_SelectedIndexChanged);
             // 
             // grpTotaux
             // 

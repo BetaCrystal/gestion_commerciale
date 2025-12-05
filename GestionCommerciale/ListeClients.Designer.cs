@@ -108,7 +108,7 @@
             this.villeLivraisonClientDataGridViewTextBoxColumn1});
             this.dtgClient.DataSource = this.clientBindingSource;
             this.dtgClient.Location = new System.Drawing.Point(0, 98);
-            this.dtgClient.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtgClient.Margin = new System.Windows.Forms.Padding(2);
             this.dtgClient.Name = "dtgClient";
             this.dtgClient.RowHeadersWidth = 51;
             this.dtgClient.RowTemplate.Height = 24;
@@ -219,7 +219,7 @@
             // btnOuvrirProduit
             // 
             this.btnOuvrirProduit.Location = new System.Drawing.Point(49, 60);
-            this.btnOuvrirProduit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOuvrirProduit.Margin = new System.Windows.Forms.Padding(2);
             this.btnOuvrirProduit.Name = "btnOuvrirProduit";
             this.btnOuvrirProduit.Size = new System.Drawing.Size(64, 24);
             this.btnOuvrirProduit.TabIndex = 1;
@@ -465,7 +465,7 @@
             // btnAjouterClient
             // 
             this.btnAjouterClient.Location = new System.Drawing.Point(186, 240);
-            this.btnAjouterClient.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAjouterClient.Margin = new System.Windows.Forms.Padding(2);
             this.btnAjouterClient.Name = "btnAjouterClient";
             this.btnAjouterClient.Size = new System.Drawing.Size(56, 19);
             this.btnAjouterClient.TabIndex = 2;
@@ -494,7 +494,7 @@
             this.Controls.Add(this.btnOuvrirProduit);
             this.Controls.Add(this.dtgClient);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ListeClients";
             this.Text = "ListeClients";
             ((System.ComponentModel.ISupportInitialize)(this.dtgClient)).EndInit();

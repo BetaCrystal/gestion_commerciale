@@ -30,19 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvDevis = new System.Windows.Forms.DataGridView();
-            this.devisBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gestioncommercialeDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gestion_commercialeDataSet = new GestionCommerciale.Gestion_commercialeDataSet();
-            this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet1 = new GestionCommerciale.DataSet1();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet11 = new GestionCommerciale.DataSet1();
-            this.devisTableAdapter = new GestionCommerciale.Gestion_commercialeDataSetTableAdapters.DevisTableAdapter();
-            this.contientBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.contientTableAdapter = new GestionCommerciale.Gestion_commercialeDataSetTableAdapters.ContientTableAdapter();
-            this.btnListeProduits = new System.Windows.Forms.Button();
-            this.btnListeClients = new System.Windows.Forms.Button();
-            this.btnAjouterDevis = new System.Windows.Forms.Button();
             this.codedevisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datedevisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tauxtvadevisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,6 +44,19 @@
             this.codestatutDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnModifierDevis = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnSupprimerDevis = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.devisBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gestioncommercialeDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gestion_commercialeDataSet = new GestionCommerciale.Gestion_commercialeDataSet();
+            this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet1 = new GestionCommerciale.DataSet1();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet11 = new GestionCommerciale.DataSet1();
+            this.devisTableAdapter = new GestionCommerciale.Gestion_commercialeDataSetTableAdapters.DevisTableAdapter();
+            this.contientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.contientTableAdapter = new GestionCommerciale.Gestion_commercialeDataSetTableAdapters.ContientTableAdapter();
+            this.btnListeProduits = new System.Windows.Forms.Button();
+            this.btnListeClients = new System.Windows.Forms.Button();
+            this.btnAjouterDevis = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDevis)).BeginInit();
@@ -95,79 +95,7 @@
             this.dgvDevis.Name = "dgvDevis";
             this.dgvDevis.Size = new System.Drawing.Size(487, 150);
             this.dgvDevis.TabIndex = 0;
-            this.dgvDevis.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // devisBindingSource
-            // 
-            this.devisBindingSource.DataMember = "Devis";
-            this.devisBindingSource.DataSource = this.gestioncommercialeDataSetBindingSource;
-            // 
-            // gestioncommercialeDataSetBindingSource
-            // 
-            this.gestioncommercialeDataSetBindingSource.DataSource = this.gestion_commercialeDataSet;
-            this.gestioncommercialeDataSetBindingSource.Position = 0;
-            // 
-            // gestion_commercialeDataSet
-            // 
-            this.gestion_commercialeDataSet.DataSetName = "Gestion_commercialeDataSet";
-            this.gestion_commercialeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataSet1BindingSource
-            // 
-            this.dataSet1BindingSource.DataSource = this.dataSet1;
-            this.dataSet1BindingSource.Position = 0;
-            // 
-            // dataSet1
-            // 
-            this.dataSet1.DataSetName = "DataSet1";
-            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataSet11
-            // 
-            this.dataSet11.DataSetName = "DataSet1";
-            this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // devisTableAdapter
-            // 
-            this.devisTableAdapter.ClearBeforeFill = true;
-            // 
-            // contientBindingSource
-            // 
-            this.contientBindingSource.DataMember = "Contient";
-            this.contientBindingSource.DataSource = this.gestioncommercialeDataSetBindingSource;
-            // 
-            // contientTableAdapter
-            // 
-            this.contientTableAdapter.ClearBeforeFill = true;
-            // 
-            // btnListeProduits
-            // 
-            this.btnListeProduits.Location = new System.Drawing.Point(46, 54);
-            this.btnListeProduits.Name = "btnListeProduits";
-            this.btnListeProduits.Size = new System.Drawing.Size(75, 23);
-            this.btnListeProduits.TabIndex = 2;
-            this.btnListeProduits.Text = "Produits";
-            this.btnListeProduits.UseVisualStyleBackColor = true;
-            this.btnListeProduits.Click += new System.EventHandler(this.btnListeProduits_Click);
-            // 
-            // btnListeClients
-            // 
-            this.btnListeClients.Location = new System.Drawing.Point(137, 54);
-            this.btnListeClients.Name = "btnListeClients";
-            this.btnListeClients.Size = new System.Drawing.Size(75, 23);
-            this.btnListeClients.TabIndex = 3;
-            this.btnListeClients.Text = "Clients";
-            this.btnListeClients.UseVisualStyleBackColor = true;
-            this.btnListeClients.Click += new System.EventHandler(this.btnListeClients_Click);
-            // 
-            // btnAjouterDevis
-            // 
-            this.btnAjouterDevis.Location = new System.Drawing.Point(204, 343);
-            this.btnAjouterDevis.Name = "btnAjouterDevis";
-            this.btnAjouterDevis.Size = new System.Drawing.Size(98, 34);
-            this.btnAjouterDevis.TabIndex = 4;
-            this.btnAjouterDevis.Text = "Ajouter un devis";
-            this.btnAjouterDevis.UseVisualStyleBackColor = true;
+            this.dgvDevis.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDevis_CellContentClick);
             // 
             // codedevisDataGridViewTextBoxColumn
             // 
@@ -248,6 +176,78 @@
             // 
             this.btnSupprimerDevis.HeaderText = "Supprimer";
             this.btnSupprimerDevis.Name = "btnSupprimerDevis";
+            // 
+            // devisBindingSource
+            // 
+            this.devisBindingSource.DataMember = "Devis";
+            this.devisBindingSource.DataSource = this.gestioncommercialeDataSetBindingSource;
+            // 
+            // gestioncommercialeDataSetBindingSource
+            // 
+            this.gestioncommercialeDataSetBindingSource.DataSource = this.gestion_commercialeDataSet;
+            this.gestioncommercialeDataSetBindingSource.Position = 0;
+            // 
+            // gestion_commercialeDataSet
+            // 
+            this.gestion_commercialeDataSet.DataSetName = "Gestion_commercialeDataSet";
+            this.gestion_commercialeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataSet1BindingSource
+            // 
+            this.dataSet1BindingSource.DataSource = this.dataSet1;
+            this.dataSet1BindingSource.Position = 0;
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataSet11
+            // 
+            this.dataSet11.DataSetName = "DataSet1";
+            this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // devisTableAdapter
+            // 
+            this.devisTableAdapter.ClearBeforeFill = true;
+            // 
+            // contientBindingSource
+            // 
+            this.contientBindingSource.DataMember = "Contient";
+            this.contientBindingSource.DataSource = this.gestioncommercialeDataSetBindingSource;
+            // 
+            // contientTableAdapter
+            // 
+            this.contientTableAdapter.ClearBeforeFill = true;
+            // 
+            // btnListeProduits
+            // 
+            this.btnListeProduits.Location = new System.Drawing.Point(46, 54);
+            this.btnListeProduits.Name = "btnListeProduits";
+            this.btnListeProduits.Size = new System.Drawing.Size(75, 23);
+            this.btnListeProduits.TabIndex = 2;
+            this.btnListeProduits.Text = "Produits";
+            this.btnListeProduits.UseVisualStyleBackColor = true;
+            this.btnListeProduits.Click += new System.EventHandler(this.btnListeProduits_Click);
+            // 
+            // btnListeClients
+            // 
+            this.btnListeClients.Location = new System.Drawing.Point(137, 54);
+            this.btnListeClients.Name = "btnListeClients";
+            this.btnListeClients.Size = new System.Drawing.Size(75, 23);
+            this.btnListeClients.TabIndex = 3;
+            this.btnListeClients.Text = "Clients";
+            this.btnListeClients.UseVisualStyleBackColor = true;
+            this.btnListeClients.Click += new System.EventHandler(this.btnListeClients_Click);
+            // 
+            // btnAjouterDevis
+            // 
+            this.btnAjouterDevis.Location = new System.Drawing.Point(204, 343);
+            this.btnAjouterDevis.Name = "btnAjouterDevis";
+            this.btnAjouterDevis.Size = new System.Drawing.Size(98, 34);
+            this.btnAjouterDevis.TabIndex = 4;
+            this.btnAjouterDevis.Text = "Ajouter un devis";
+            this.btnAjouterDevis.UseVisualStyleBackColor = true;
             // 
             // listView1
             // 
