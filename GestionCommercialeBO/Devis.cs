@@ -20,6 +20,8 @@ namespace GestionCommercialeBO
         private Client client;
         private Statut statut;
 
+        public List<Contient> Lignes { get; set; } = new List<Contient>();
+
         public int CodeDevis
         {
             get { return codeDevis; }
@@ -107,5 +109,46 @@ namespace GestionCommercialeBO
             this.client = client;
             this.statut = statut;
         }
+
+        /*public void RecalculerMontantsFromLignes()
+        {
+            float sum = 0f;
+            if (Lignes != null)
+            {
+                foreach (var ligne in Lignes)
+                {
+                    // Priorité : si Contient a une référence Produit avec prix, utilisez-la.
+                    float prixUnitaire = 0f;
+                    try
+                    {
+                        if (ligne.Produit != null)
+                        {
+                            // adapter le nom de la propriété prix si besoin (ex: PrixVenteHT)
+                            prixUnitaire = ligne.Produit.PrixVenteHT;
+                        }
+                        else
+                        {
+                            // fallback sur une propriété PrixUnitaire dans Contient
+                            prixUnitaire = ligne.PrixUnitaire;
+                        }
+                    }
+                    catch
+                    {
+                        prixUnitaire = ligne.PrixUnitaire;
+                    }
+
+                    sum += prixUnitaire * (float)ligne.Quantite;
+                }
+            }
+
+            montantHTHorsRemise = sum;
+        }
+
+        // Propriétés calculées exposées pour le binding
+        public float MontantHTAvecRemise => (montantHTHorsRemise * (1f - tauxRemiseGlobal));
+
+        public float MontantTVA => (MontantHTAvecRemise * tauxTVA);
+
+        public float MontantTTC => (MontantHTAvecRemise + MontantTVA);*/
     }
 }

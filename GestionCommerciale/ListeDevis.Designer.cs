@@ -30,6 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvDevis = new System.Windows.Forms.DataGridView();
+            this.devisBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gestioncommercialeDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gestion_commercialeDataSet = new GestionCommerciale.Gestion_commercialeDataSet();
+            this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet1 = new GestionCommerciale.DataSet1();
+            this.dataSet11 = new GestionCommerciale.DataSet1();
+            this.devisTableAdapter = new GestionCommerciale.Gestion_commercialeDataSetTableAdapters.DevisTableAdapter();
+            this.contientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.contientTableAdapter = new GestionCommerciale.Gestion_commercialeDataSetTableAdapters.ContientTableAdapter();
+            this.btnListeProduits = new System.Windows.Forms.Button();
+            this.btnListeClients = new System.Windows.Forms.Button();
+            this.btnAjouterDevis = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.codedevisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datedevisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tauxtvadevisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,33 +55,16 @@
             this.nom_statut = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codeclientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codestatutDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnModifierDevis = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Modifier = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnSupprimerDevis = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.devisBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gestioncommercialeDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gestion_commercialeDataSet = new GestionCommerciale.Gestion_commercialeDataSet();
-            this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet1 = new GestionCommerciale.DataSet1();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet11 = new GestionCommerciale.DataSet1();
-            this.devisTableAdapter = new GestionCommerciale.Gestion_commercialeDataSetTableAdapters.DevisTableAdapter();
-            this.contientBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.contientTableAdapter = new GestionCommerciale.Gestion_commercialeDataSetTableAdapters.ContientTableAdapter();
-            this.btnListeProduits = new System.Windows.Forms.Button();
-            this.btnListeClients = new System.Windows.Forms.Button();
-            this.btnAjouterDevis = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDevis)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.devisBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gestioncommercialeDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gestion_commercialeDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contientBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvDevis
@@ -88,7 +84,7 @@
             this.nom_statut,
             this.codeclientDataGridViewTextBoxColumn,
             this.codestatutDataGridViewTextBoxColumn,
-            this.btnModifierDevis,
+            this.Modifier,
             this.btnSupprimerDevis});
             this.dgvDevis.DataSource = this.devisBindingSource;
             this.dgvDevis.Location = new System.Drawing.Point(12, 130);
@@ -96,86 +92,6 @@
             this.dgvDevis.Size = new System.Drawing.Size(487, 150);
             this.dgvDevis.TabIndex = 0;
             this.dgvDevis.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDevis_CellContentClick);
-            // 
-            // codedevisDataGridViewTextBoxColumn
-            // 
-            this.codedevisDataGridViewTextBoxColumn.DataPropertyName = "code_devis";
-            this.codedevisDataGridViewTextBoxColumn.HeaderText = "code_devis";
-            this.codedevisDataGridViewTextBoxColumn.Name = "codedevisDataGridViewTextBoxColumn";
-            this.codedevisDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // datedevisDataGridViewTextBoxColumn
-            // 
-            this.datedevisDataGridViewTextBoxColumn.DataPropertyName = "date_devis";
-            this.datedevisDataGridViewTextBoxColumn.HeaderText = "date_devis";
-            this.datedevisDataGridViewTextBoxColumn.Name = "datedevisDataGridViewTextBoxColumn";
-            // 
-            // tauxtvadevisDataGridViewTextBoxColumn
-            // 
-            this.tauxtvadevisDataGridViewTextBoxColumn.DataPropertyName = "taux_tva_devis";
-            this.tauxtvadevisDataGridViewTextBoxColumn.HeaderText = "taux_tva_devis";
-            this.tauxtvadevisDataGridViewTextBoxColumn.Name = "tauxtvadevisDataGridViewTextBoxColumn";
-            // 
-            // montanttotalhtdevisDataGridViewTextBoxColumn
-            // 
-            this.montanttotalhtdevisDataGridViewTextBoxColumn.DataPropertyName = "montant_total_ht_devis";
-            this.montanttotalhtdevisDataGridViewTextBoxColumn.HeaderText = "montant_total_ht_devis";
-            this.montanttotalhtdevisDataGridViewTextBoxColumn.Name = "montanttotalhtdevisDataGridViewTextBoxColumn";
-            // 
-            // montant_ht_avec_remise
-            // 
-            this.montant_ht_avec_remise.HeaderText = "montant_ht_avec_remise";
-            this.montant_ht_avec_remise.Name = "montant_ht_avec_remise";
-            // 
-            // tauxremiseglobaldevisDataGridViewTextBoxColumn
-            // 
-            this.tauxremiseglobaldevisDataGridViewTextBoxColumn.DataPropertyName = "taux_remise_global_devis";
-            this.tauxremiseglobaldevisDataGridViewTextBoxColumn.HeaderText = "taux_remise_global_devis";
-            this.tauxremiseglobaldevisDataGridViewTextBoxColumn.Name = "tauxremiseglobaldevisDataGridViewTextBoxColumn";
-            // 
-            // montant_tva
-            // 
-            this.montant_tva.HeaderText = "montant_TVA";
-            this.montant_tva.Name = "montant_tva";
-            // 
-            // montant_ttc
-            // 
-            this.montant_ttc.HeaderText = "montant_TTC";
-            this.montant_ttc.Name = "montant_ttc";
-            // 
-            // nom_client
-            // 
-            this.nom_client.HeaderText = "nom_client";
-            this.nom_client.Name = "nom_client";
-            // 
-            // nom_statut
-            // 
-            this.nom_statut.HeaderText = "statut";
-            this.nom_statut.Name = "nom_statut";
-            // 
-            // codeclientDataGridViewTextBoxColumn
-            // 
-            this.codeclientDataGridViewTextBoxColumn.DataPropertyName = "code_client";
-            this.codeclientDataGridViewTextBoxColumn.HeaderText = "code_client";
-            this.codeclientDataGridViewTextBoxColumn.Name = "codeclientDataGridViewTextBoxColumn";
-            this.codeclientDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // codestatutDataGridViewTextBoxColumn
-            // 
-            this.codestatutDataGridViewTextBoxColumn.DataPropertyName = "code_statut";
-            this.codestatutDataGridViewTextBoxColumn.HeaderText = "code_statut";
-            this.codestatutDataGridViewTextBoxColumn.Name = "codestatutDataGridViewTextBoxColumn";
-            this.codestatutDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // btnModifierDevis
-            // 
-            this.btnModifierDevis.HeaderText = "Modifier";
-            this.btnModifierDevis.Name = "btnModifierDevis";
-            // 
-            // btnSupprimerDevis
-            // 
-            this.btnSupprimerDevis.HeaderText = "Supprimer";
-            this.btnSupprimerDevis.Name = "btnSupprimerDevis";
             // 
             // devisBindingSource
             // 
@@ -259,6 +175,88 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
+            // codedevisDataGridViewTextBoxColumn
+            // 
+            this.codedevisDataGridViewTextBoxColumn.DataPropertyName = "CodeDevis";
+            this.codedevisDataGridViewTextBoxColumn.HeaderText = "code_devis";
+            this.codedevisDataGridViewTextBoxColumn.Name = "codedevisDataGridViewTextBoxColumn";
+            this.codedevisDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // datedevisDataGridViewTextBoxColumn
+            // 
+            this.datedevisDataGridViewTextBoxColumn.DataPropertyName = "DateDevis";
+            this.datedevisDataGridViewTextBoxColumn.HeaderText = "date_devis";
+            this.datedevisDataGridViewTextBoxColumn.Name = "datedevisDataGridViewTextBoxColumn";
+            // 
+            // tauxtvadevisDataGridViewTextBoxColumn
+            // 
+            this.tauxtvadevisDataGridViewTextBoxColumn.DataPropertyName = "TauxTVA";
+            this.tauxtvadevisDataGridViewTextBoxColumn.HeaderText = "taux_tva_devis";
+            this.tauxtvadevisDataGridViewTextBoxColumn.Name = "tauxtvadevisDataGridViewTextBoxColumn";
+            // 
+            // montanttotalhtdevisDataGridViewTextBoxColumn
+            // 
+            this.montanttotalhtdevisDataGridViewTextBoxColumn.DataPropertyName = "MontantHTHorsRemise";
+            this.montanttotalhtdevisDataGridViewTextBoxColumn.HeaderText = "montant_total_ht_devis";
+            this.montanttotalhtdevisDataGridViewTextBoxColumn.Name = "montanttotalhtdevisDataGridViewTextBoxColumn";
+            // 
+            // montant_ht_avec_remise
+            // 
+            this.montant_ht_avec_remise.HeaderText = "montant_ht_avec_remise";
+            this.montant_ht_avec_remise.Name = "montant_ht_avec_remise";
+            // 
+            // tauxremiseglobaldevisDataGridViewTextBoxColumn
+            // 
+            this.tauxremiseglobaldevisDataGridViewTextBoxColumn.DataPropertyName = "TauxRemiseGlobal";
+            this.tauxremiseglobaldevisDataGridViewTextBoxColumn.HeaderText = "taux_remise_global_devis";
+            this.tauxremiseglobaldevisDataGridViewTextBoxColumn.Name = "tauxremiseglobaldevisDataGridViewTextBoxColumn";
+            // 
+            // montant_tva
+            // 
+            this.montant_tva.HeaderText = "montant_TVA";
+            this.montant_tva.Name = "montant_tva";
+            // 
+            // montant_ttc
+            // 
+            this.montant_ttc.HeaderText = "montant_TTC";
+            this.montant_ttc.Name = "montant_ttc";
+            // 
+            // nom_client
+            // 
+            this.nom_client.HeaderText = "nom_client";
+            this.nom_client.Name = "nom_client";
+            // 
+            // nom_statut
+            // 
+            this.nom_statut.HeaderText = "statut";
+            this.nom_statut.Name = "nom_statut";
+            // 
+            // codeclientDataGridViewTextBoxColumn
+            // 
+            this.codeclientDataGridViewTextBoxColumn.DataPropertyName = "code_client";
+            this.codeclientDataGridViewTextBoxColumn.HeaderText = "code_client";
+            this.codeclientDataGridViewTextBoxColumn.Name = "codeclientDataGridViewTextBoxColumn";
+            this.codeclientDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // codestatutDataGridViewTextBoxColumn
+            // 
+            this.codestatutDataGridViewTextBoxColumn.DataPropertyName = "code_statut";
+            this.codestatutDataGridViewTextBoxColumn.HeaderText = "code_statut";
+            this.codestatutDataGridViewTextBoxColumn.Name = "codestatutDataGridViewTextBoxColumn";
+            this.codestatutDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // Modifier
+            // 
+            this.Modifier.DataPropertyName = "Modifier";
+            this.Modifier.HeaderText = "Modifier";
+            this.Modifier.Name = "Modifier";
+            // 
+            // btnSupprimerDevis
+            // 
+            this.btnSupprimerDevis.DataPropertyName = "btnSupprimerDevis";
+            this.btnSupprimerDevis.HeaderText = "Supprimer";
+            this.btnSupprimerDevis.Name = "btnSupprimerDevis";
+            // 
             // ListeDevis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -278,10 +276,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gestion_commercialeDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.contientBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -291,7 +287,6 @@
         private System.Windows.Forms.DataGridView dgvDevis;
         private System.Windows.Forms.BindingSource dataSet1BindingSource;
         private DataSet1 dataSet1;
-        private System.Windows.Forms.BindingSource bindingSource1;
         private DataSet1 dataSet11;
         private System.Windows.Forms.BindingSource gestioncommercialeDataSetBindingSource;
         private Gestion_commercialeDataSet gestion_commercialeDataSet;
@@ -302,6 +297,7 @@
         private System.Windows.Forms.Button btnListeProduits;
         private System.Windows.Forms.Button btnListeClients;
         private System.Windows.Forms.Button btnAjouterDevis;
+        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn codedevisDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn datedevisDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tauxtvadevisDataGridViewTextBoxColumn;
@@ -314,9 +310,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nom_statut;
         private System.Windows.Forms.DataGridViewTextBoxColumn codeclientDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codestatutDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewButtonColumn btnModifierDevis;
+        private System.Windows.Forms.DataGridViewButtonColumn Modifier;
         private System.Windows.Forms.DataGridViewButtonColumn btnSupprimerDevis;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.BindingSource bindingSource2;
     }
 }
