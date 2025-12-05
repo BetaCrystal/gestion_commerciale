@@ -44,8 +44,11 @@
     <Compile Include="Categorie.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="Connexion.cs" />
+    <Compile Include="ContientTemp.cs" />
+    <Compile Include="Devis.cs" />
     <Compile Include="Produit.cs" />
     <Compile Include="Session.cs" />
+    <Compile Include="Statut.cs" />
     <Compile Include="Utilisateur.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
