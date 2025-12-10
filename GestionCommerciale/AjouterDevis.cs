@@ -53,6 +53,9 @@ namespace GestionCommerciale
             cmbClients.ValueMember = "CodeClient";
             cmbClients.SelectedValue = devis.CodeClient;
 
+            //Date du devis
+            dtpDateDevis.Value = devis.DateDevis;
+
             // Charger la liste des statuts et sélectionner celui du devis
             cmbStatut.DataSource = devisBLL.GetStatuts();
             cmbStatut.DisplayMember = "NomStatut";
@@ -197,15 +200,17 @@ namespace GestionCommerciale
                 // Récupère le statut choisi
                 int codeStatutSelectionne = (int)cmbStatut.SelectedValue;
 
+                DateTime dateSelectionnee = dtpDateDevis.Value;
+
                 // Vérifie si on ajoute un nouveau devis ou on modifie un existant
                 if (codeDevisEnCours == null)
                 {
-                    int codeDevis = devisBLL.CreerDevis(clientSelectionne.CodeClient, produitsSelectionnes, codeStatutSelectionne);
+                    int codeDevis = devisBLL.CreerDevis(clientSelectionne.CodeClient, produitsSelectionnes, codeStatutSelectionne, dateSelectionnee);
                     MessageBox.Show($"Devis créé avec succès (Code: {codeDevis}).", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    devisBLL.ModifierDevis(codeDevisEnCours.Value, clientSelectionne.CodeClient, produitsSelectionnes, codeStatutSelectionne);
+                    devisBLL.ModifierDevis(codeDevisEnCours.Value, clientSelectionne.CodeClient, produitsSelectionnes, codeStatutSelectionne, dateSelectionnee);
                     MessageBox.Show($"Devis modifié avec succès (Code: {codeDevisEnCours.Value}).", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
@@ -221,7 +226,8 @@ namespace GestionCommerciale
         {
             if (produitsSelectionnes.Count == 0)
             {
-                lblTotalTTC.Text = "0,00 €";
+                lblTotalTTC.Text = "Total TTC : 0,00 €";
+                lblTotalHT.Text = "Montant total HT : 0,00 €";
                 return;
             }
 
@@ -238,10 +244,11 @@ namespace GestionCommerciale
             }
 
             // Calcul TVA
-            double tauxTVA = 20; // ou récupère depuis un champ si tu as NumericUpDown
+            double tauxTVA = 20; 
             decimal totalTTC = totalHT * (1 + (decimal)tauxTVA / 100);
 
-            lblTotalTTC.Text = $"{totalTTC:C}";
+            lblTotalTTC.Text = $"Total TTC : {totalTTC:C}";
+            lblTotalHT.Text = $"Montant total HT : {totalHT:C}";
         }
 
     }

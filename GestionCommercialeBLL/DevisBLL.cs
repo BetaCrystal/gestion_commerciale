@@ -16,7 +16,7 @@ namespace GestionCommercialeBLL
         /// <summary>
         /// Crée un devis complet (entête + lignes produits).
         /// </summary>
-        public int CreerDevis(int codeClient, List<ContientTemp> produitsSelectionnes, int codeStatut)
+        public int CreerDevis(int codeClient, List<ContientTemp> produitsSelectionnes, int codeStatut, DateTime dateDevis)
         {
             // Calcul automatique du montant total HT du devis
             decimal montantTotalHT = 0;
@@ -31,7 +31,7 @@ namespace GestionCommercialeBLL
             // Création de l’objet Devis
             Devis devis = new Devis
             {
-                DateDevis = DateTime.Now,
+                DateDevis = dateDevis,
                 TauxTVADevis = 20, // Par défaut (tu pourras ajuster avec ton NumericUpDown)
                 MontantTotalHTDevis = (double)montantTotalHT,
                 TauxRemiseGlobalDevis = 0, // à changer si tu as un champ Remise globale
@@ -62,7 +62,7 @@ namespace GestionCommercialeBLL
             return devisDAL.GetStatuts();
         }
 
-        public void ModifierDevis(int codeDevis, int codeClient, List<ContientTemp> produitsSelectionnes, int codeStatut)
+        public void ModifierDevis(int codeDevis, int codeClient, List<ContientTemp> produitsSelectionnes, int codeStatut, DateTime dateDevis)
         {
             // Calcul automatique du montant total HT du devis
             decimal montantTotalHT = 0;
@@ -78,6 +78,7 @@ namespace GestionCommercialeBLL
             {
                 CodeDevis = codeDevis,
                 CodeClient = codeClient,
+                DateDevis = dateDevis,
                 MontantTotalHTDevis = (double)montantTotalHT,
                 TauxTVADevis = 20,
                 TauxRemiseGlobalDevis = 0,

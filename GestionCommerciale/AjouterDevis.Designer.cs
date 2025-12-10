@@ -73,6 +73,11 @@
             this.nudTauxTVA.Name = "nudTauxTVA";
             this.nudTauxTVA.Size = new System.Drawing.Size(120, 22);
             this.nudTauxTVA.TabIndex = 5;
+            this.nudTauxTVA.Value = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
             // 
             // lblTauxTVA
             // 
@@ -191,9 +196,9 @@
             this.lblMontantTVA.AutoSize = true;
             this.lblMontantTVA.Location = new System.Drawing.Point(9, 66);
             this.lblMontantTVA.Name = "lblMontantTVA";
-            this.lblMontantTVA.Size = new System.Drawing.Size(84, 16);
+            this.lblMontantTVA.Size = new System.Drawing.Size(113, 16);
             this.lblMontantTVA.TabIndex = 1;
-            this.lblMontantTVA.Text = "Montant TVA";
+            this.lblMontantTVA.Text = "Montant TVA 20%";
             // 
             // lblTotalHT
             // 

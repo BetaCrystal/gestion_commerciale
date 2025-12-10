@@ -159,7 +159,8 @@ namespace GestionCommercialeDAL
         {
             string query = @"
         UPDATE Devis
-        SET code_client = @CodeClient,
+        SET date_devis = @DateDevis,
+            code_client = @CodeClient,
             montant_total_ht_devis = @MontantHT,
             taux_tva_devis = @TauxTVA,
             taux_remise_global_devis = @Remise,
@@ -169,6 +170,7 @@ namespace GestionCommercialeDAL
             using (SqlConnection conn = new SqlConnection(connectionString))
             using (SqlCommand cmd = new SqlCommand(query, conn))
             {
+                cmd.Parameters.AddWithValue("@DateDevis", devis.DateDevis);
                 cmd.Parameters.AddWithValue("@CodeClient", devis.CodeClient);
                 cmd.Parameters.AddWithValue("@MontantHT", devis.MontantTotalHTDevis);
                 cmd.Parameters.AddWithValue("@TauxTVA", devis.TauxTVADevis);
