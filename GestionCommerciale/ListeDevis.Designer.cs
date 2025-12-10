@@ -223,11 +223,13 @@
             // 
             // nom_client
             // 
+            this.nom_client.DataPropertyName = "ClientNom";
             this.nom_client.HeaderText = "nom_client";
             this.nom_client.Name = "nom_client";
             // 
             // nom_statut
             // 
+            this.nom_statut.DataPropertyName = "StatutNom";
             this.nom_statut.HeaderText = "statut";
             this.nom_statut.Name = "nom_statut";
             // 

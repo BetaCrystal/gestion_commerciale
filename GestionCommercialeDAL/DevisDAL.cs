@@ -60,7 +60,7 @@ namespace GestionCommercialeDAL
                     int ordCodeClient = reader.GetOrdinal("code_client");
                     int ordClientNom = reader.GetOrdinal("client_nom");
                     int ordCodeStatut = reader.GetOrdinal("code_statut");
-                    int ordStatutLibelle = reader.GetOrdinal("statut_nom");
+                    int ordStatutNom = reader.GetOrdinal("statut_nom");
 
                     while (reader.Read())
                     {
@@ -80,29 +80,41 @@ namespace GestionCommercialeDAL
                         // Nouveau code :
                         var statut = new Statut(
                             !reader.IsDBNull(ordCodeStatut) ? reader.GetInt32(ordCodeStatut) : 0,
-                            !reader.IsDBNull(ordStatutLibelle) ? reader.GetString(ordStatutLibelle) : string.Empty
+                            !reader.IsDBNull(ordStatutNom) ? reader.GetString(ordStatutNom) : string.Empty
                         );
                         if (!reader.IsDBNull(ordCodeStatut)) statut.CodeStatut = reader.GetInt32(ordCodeStatut);
-                        if (!reader.IsDBNull(ordStatutLibelle)) try { statut.NomStatut = reader.GetString(ordStatutLibelle); } catch { }
+                        if (!reader.IsDBNull(ordStatutNom)) try { statut.NomStatut = reader.GetString(ordStatutNom); } catch { }
                         if (!reader.IsDBNull(ordCodeStatut))
                         {
                             statut.CodeStatut = reader.GetInt32(ordCodeStatut);
                         }
-                        if (!reader.IsDBNull(ordStatutLibelle))
+                        if (!reader.IsDBNull(ordStatutNom))
                         {
-                            try { statut.NomStatut = reader.GetString(ordStatutLibelle); } catch { /* si propriété différente, ignorer */ }
+                            try { statut.NomStatut = reader.GetString(ordStatutNom); } catch { /* si propriété différente, ignorer */ }
                         }
 
                         var d = new Devis(
                             codeDevis: !reader.IsDBNull(ordCodeDevis) ? reader.GetInt32(ordCodeDevis) : 0,
                             dateDevis: !reader.IsDBNull(ordDate) ? reader.GetDateTime(ordDate) : default(DateTime),
-                            statutDevis: (reader.IsDBNull(ordStatutLibelle) ? string.Empty : (reader.GetString(ordStatutLibelle) ?? string.Empty)),
+                            statutDevis: (reader.IsDBNull(ordStatutNom) ? string.Empty : (reader.GetString(ordStatutNom) ?? string.Empty)),
                             tauxTVA: !reader.IsDBNull(ordTva) ? (float)reader.GetDouble(ordTva) : 0f,
                             tauxRemiseGlobal: !reader.IsDBNull(ordRemise) ? (float)reader.GetDouble(ordRemise) : 0f,
                             montantHTHorsRemise: !reader.IsDBNull(ordMontant) ? (float)reader.GetDouble(ordMontant) : 0f,
                             client: client,
                             statut: statut
                         );
+
+                        // remplir les lignes du devis
+                        try
+                        {
+                            var contientDal = new ContientDAL();
+                            var lignes = contientDal.GetLignesByDevis(d.CodeDevis);
+                            d.Lignes = lignes; // exige que Devis.Lignes existe et soit public List<Contient>
+                        }
+                        catch (Exception)
+                        {
+                            // fallback silencieux : laisser Lignes null/empty
+                        }
 
                         devis.Add(d);
                     }

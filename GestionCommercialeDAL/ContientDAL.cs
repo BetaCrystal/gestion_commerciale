@@ -11,54 +11,51 @@ namespace GestionCommercialeDAL
 {
     public class ContientDAL
     {
-        private readonly string connectionString =
-        ConfigurationManager.ConnectionStrings["GestionCommerciale.Properties.Settings.Gestion_commercialeConnectionString"].ConnectionString;
+        private readonly string connectionString;
 
-        public List<Contient> GetContientByDevis(int codeDevis)
+        public ContientDAL()
         {
-            List<Contient> contientList = new List<Contient>();
-            string query = @"
-                SELECT code_devis, code_produit, quantite_produit, remise_produit
-                FROM Contient
-                WHERE code_devis = @codeDevis";
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            using (SqlCommand cmd = new SqlCommand(query, conn))
+            var cs = ConfigurationManager.ConnectionStrings["GestionCommerciale.Properties.Settings.Gestion_commercialeConnectionString"];
+            if (cs == null) throw new InvalidOperationException("Chaîne de connexion introuvable.");
+            connectionString = cs.ConnectionString;
+        }
+
+        public List<Contient> GetLignesByDevis(int codeDevis)
+        {
+            var lignes = new List<Contient>();
+            string query = @"SELECT code_produit, quantite_produit, remise_produit FROM Contient WHERE code_devis = @codeDevis";
+
+            using (var conn = new SqlConnection(connectionString))
+            using (var cmd = new SqlCommand(query, conn))
             {
                 cmd.Parameters.AddWithValue("@codeDevis", codeDevis);
                 conn.Open();
-                using (SqlDataReader reader = cmd.ExecuteReader())
+                using (var reader = cmd.ExecuteReader())
                 {
+                    var produitDal = new ProduitDAL(); // supposez que ProduitDAL existe avec GetProduitById
                     while (reader.Read())
                     {
-                        // Correction : respecter l'ordre des colonnes et utiliser le constructeur approprié
-                        var codeDevisFromDb = reader.GetInt32(0);
-                        var codeProduitFromDb = reader.GetInt32(1);
-                        var quantiteProduitFromDb = reader.GetInt32(2);
-                        var remiseProduitFromDb = (float)reader.GetDouble(3);
+                        int codeProduit = reader.IsDBNull(0) ? 0 : reader.GetInt32(0);
+                        int quantite = reader.IsDBNull(1) ? 0 : reader.GetInt32(1);
+                        float remise = reader.IsDBNull(2) ? 0f : (float)reader.GetDouble(2); // adapter selon type en base
 
-                        var produit = new Produit { CodeProduit = codeProduitFromDb };
-                        var devis = new Devis(
-                            codeDevisFromDb,
-                            default(DateTime),
-                            string.Empty,
-                            0f,
-                            0f,
-                            0f,
-                            null,
-                            null //remplacer les valeurs par celles dans la ligne du data grid view
-                        );
+                        Produit produit = null;
+                        try
+                        {
+                            produit = produitDal.GetProduitById(codeProduit); // méthode à implémenter si nécessaire
+                        }
+                        catch
+                        {
+                            produit = new Produit() { CodeProduit = codeProduit };
+                        }
 
-                        contientList.Add(new Contient(
-                            produit,
-                            devis,
-                            remiseProduitFromDb,
-                            quantiteProduitFromDb
-                        ));
+                        var contient = new Contient(produit, null, remise, quantite);
+                        lignes.Add(contient);
                     }
                 }
             }
-            return contientList;
-        }
 
+            return lignes;
+        }
     }
 }

@@ -147,17 +147,32 @@ namespace GestionCommerciale
             {
                 foreach (var ligne in devis.Lignes)
                 {
-                    decimal prix = ligne.Produit.PrixVenteHT; // erreur de typage decimal et float (?)
+                    if (ligne == null) continue;
+                    var produit = ligne.Produit;
+                    float prix = 0f;
+                    if (produit != null)
+                    {
+                        // adaptez le type selon Produit.PrixVenteHT (float/double/decimal)
+                        prix = Convert.ToSingle(produit.PrixVenteHT);
+                    }
                     int qte = ligne.QuantiteProduit;
-                    float remiseProduit = ligne.RemiseProduit;
-                    float prixApresRemiseProduit = (float)prix * (1f - remiseProduit);
+                    float remiseProduit = ligne.RemiseProduit; // vérifier si en base c'est 10 => 10% => diviser par 100
+                                                               // si remise est en pourcentage (10), convertissez: if (remiseProduit > 1f) remiseProduit /= 100f;
+                    if (remiseProduit > 1f) remiseProduit /= 100f;
+
+                    float prixApresRemiseProduit = prix * (1f - remiseProduit);
                     ht += prixApresRemiseProduit * qte;
                 }
             }
 
-            // applique la remise globale et la TVA du devis
-            float htAvecRemise = ht * (1f - devis.TauxRemiseGlobal);
-            float tva = htAvecRemise * devis.TauxTVA;
+            // idem pour taux global et TVA : vérifier s'ils sont en pourcentages
+            float tauxRemiseGlobal = devis.TauxRemiseGlobal;
+            if (tauxRemiseGlobal > 1f) tauxRemiseGlobal /= 100f;
+            float tauxTVA = devis.TauxTVA;
+            if (tauxTVA > 1f) tauxTVA /= 100f;
+
+            float htAvecRemise = ht * (1f - tauxRemiseGlobal);
+            float tva = htAvecRemise * tauxTVA;
             float ttc = htAvecRemise + tva;
 
             var colName = dgvDevis.Columns[e.ColumnIndex].Name;

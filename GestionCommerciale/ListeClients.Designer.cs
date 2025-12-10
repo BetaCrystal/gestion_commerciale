@@ -542,7 +542,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
         private System.Windows.Forms.DataGridViewButtonColumn btnModifier;
-        private System.Windows.Forms.DataGridViewButtonColumn btnSupprimer;
+        //private System.Windows.Forms.DataGridViewButtonColumn btnSupprimer;
         private System.Windows.Forms.DataGridViewButtonColumn Modifier;
         private System.Windows.Forms.DataGridViewTextBoxColumn codeClientDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomClientDataGridViewTextBoxColumn1;

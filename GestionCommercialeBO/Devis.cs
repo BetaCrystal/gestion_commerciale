@@ -88,6 +88,17 @@ namespace GestionCommercialeBO
             set { statut = value; }
         }
 
+        // Récupérer le nom du client et le nom du statut pour les afficher dans la datagridview
+        public string ClientNom
+        {
+            get { return client != null ? (client.NomClient ?? string.Empty) : string.Empty; }
+        }
+
+        public string StatutNom
+        {
+            get { return statut != null ? (statut.NomStatut ?? string.Empty) : string.Empty; }
+        }
+
         public Devis(int codeDevis, 
          DateTime dateDevis,
          string statutDevis,
