@@ -24,6 +24,10 @@
             this.colCategorie = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Modifier = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Supprimer = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.codeProduitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.libelleProduitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prixVenteHTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categorieProduitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet1 = new GestionCommerciale.DataSet1();
@@ -35,6 +39,8 @@
             this.prixVenteHTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categorieProduitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnListeDevis = new System.Windows.Forms.Button();
+            this.btnListeDevis = new System.Windows.Forms.Button();
+            this.btnSyntheseClients = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgProduit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
@@ -180,9 +186,104 @@
             this.btnListeDevis.UseVisualStyleBackColor = true;
             this.btnListeDevis.Click += new System.EventHandler(this.btnListeDevis_Click);
             // 
+            // codeProduitDataGridViewTextBoxColumn
+            // 
+            this.codeProduitDataGridViewTextBoxColumn.DataPropertyName = "CodeProduit";
+            this.codeProduitDataGridViewTextBoxColumn.HeaderText = "CodeProduit";
+            this.codeProduitDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.codeProduitDataGridViewTextBoxColumn.Name = "codeProduitDataGridViewTextBoxColumn";
+            this.codeProduitDataGridViewTextBoxColumn.Visible = false;
+            this.codeProduitDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // libelleProduitDataGridViewTextBoxColumn
+            // 
+            this.libelleProduitDataGridViewTextBoxColumn.DataPropertyName = "LibelleProduit";
+            this.libelleProduitDataGridViewTextBoxColumn.HeaderText = "LibelleProduit";
+            this.libelleProduitDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.libelleProduitDataGridViewTextBoxColumn.Name = "libelleProduitDataGridViewTextBoxColumn";
+            this.libelleProduitDataGridViewTextBoxColumn.Visible = false;
+            this.libelleProduitDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // prixVenteHTDataGridViewTextBoxColumn
+            // 
+            this.prixVenteHTDataGridViewTextBoxColumn.DataPropertyName = "PrixVenteHT";
+            this.prixVenteHTDataGridViewTextBoxColumn.HeaderText = "PrixVenteHT";
+            this.prixVenteHTDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.prixVenteHTDataGridViewTextBoxColumn.Name = "prixVenteHTDataGridViewTextBoxColumn";
+            this.prixVenteHTDataGridViewTextBoxColumn.Visible = false;
+            this.prixVenteHTDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // categorieProduitDataGridViewTextBoxColumn
+            // 
+            this.categorieProduitDataGridViewTextBoxColumn.DataPropertyName = "CategorieProduit";
+            this.categorieProduitDataGridViewTextBoxColumn.HeaderText = "CategorieProduit";
+            this.categorieProduitDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.categorieProduitDataGridViewTextBoxColumn.Name = "categorieProduitDataGridViewTextBoxColumn";
+            this.categorieProduitDataGridViewTextBoxColumn.Visible = false;
+            this.categorieProduitDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(GestionCommercialeBO.Produit);
+            // 
+            // dataSet1BindingSource
+            // 
+            this.dataSet1BindingSource.DataSource = this.dataSet1;
+            this.dataSet1BindingSource.Position = 0;
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btnProduit
+            // 
+            this.btnProduit.Location = new System.Drawing.Point(310, 301);
+            this.btnProduit.Name = "btnProduit";
+            this.btnProduit.Size = new System.Drawing.Size(182, 48);
+            this.btnProduit.TabIndex = 1;
+            this.btnProduit.Text = "Ajouter un Produit";
+            this.btnProduit.UseVisualStyleBackColor = true;
+            this.btnProduit.Click += new System.EventHandler(this.btnProduit_Click);
+            // 
+            // categorieTableAdapter1
+            // 
+            this.categorieTableAdapter1.ClearBeforeFill = true;
+            // 
+            // btnOuvrirClient
+            // 
+            this.btnOuvrirClient.Location = new System.Drawing.Point(74, 50);
+            this.btnOuvrirClient.Name = "btnOuvrirClient";
+            this.btnOuvrirClient.Size = new System.Drawing.Size(84, 25);
+            this.btnOuvrirClient.TabIndex = 2;
+            this.btnOuvrirClient.Text = "Client";
+            this.btnOuvrirClient.UseVisualStyleBackColor = true;
+            this.btnOuvrirClient.Click += new System.EventHandler(this.btnOuvrirClient_Click);
+            // 
+            // btnListeDevis
+            // 
+            this.btnListeDevis.Location = new System.Drawing.Point(177, 50);
+            this.btnListeDevis.Name = "btnListeDevis";
+            this.btnListeDevis.Size = new System.Drawing.Size(86, 30);
+            this.btnListeDevis.TabIndex = 3;
+            this.btnListeDevis.Text = "Devis";
+            this.btnListeDevis.UseVisualStyleBackColor = true;
+            this.btnListeDevis.Click += new System.EventHandler(this.btnListeDevis_Click);
+            // 
+            // btnSyntheseClients
+            // 
+            this.btnSyntheseClients.Location = new System.Drawing.Point(283, 50);
+            this.btnSyntheseClients.Name = "btnSyntheseClients";
+            this.btnSyntheseClients.Size = new System.Drawing.Size(120, 30);
+            this.btnSyntheseClients.TabIndex = 4;
+            this.btnSyntheseClients.Text = "Synthèse Client";
+            this.btnSyntheseClients.UseVisualStyleBackColor = true;
+            this.btnSyntheseClients.Click += new System.EventHandler(this.btnSyntheseClients_Click);
+            // 
             // ListeProduits
             // 
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSyntheseClients);
             this.Controls.Add(this.btnListeDevis);
             this.Controls.Add(this.btnOuvrirClient);
             this.Controls.Add(this.btnProduit);
@@ -207,6 +308,7 @@
         private Gestion_commercialeDataSetTableAdapters.CategorieTableAdapter categorieTableAdapter1;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.Button btnOuvrirClient;
+        private System.Windows.Forms.Button btnListeDevis;
         private System.Windows.Forms.DataGridViewTextBoxColumn colLibelle;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPrix;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCategorie;
@@ -217,5 +319,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn prixVenteHTDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn categorieProduitDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnListeDevis;
+        private System.Windows.Forms.Button btnSyntheseClients;
     }
 }

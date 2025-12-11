@@ -36,6 +36,8 @@
             this.cmbClients = new System.Windows.Forms.ComboBox();
             this.lblClient = new System.Windows.Forms.Label();
             this.grpProduits = new System.Windows.Forms.GroupBox();
+            this.cmbStatut = new System.Windows.Forms.ComboBox();
+            this.lblStatut = new System.Windows.Forms.Label();
             this.lblInfosProduit = new System.Windows.Forms.Label();
             this.chkProduits = new System.Windows.Forms.CheckedListBox();
             this.grpTotaux = new System.Windows.Forms.GroupBox();
@@ -74,6 +76,11 @@
             this.nudTauxTVA.Name = "nudTauxTVA";
             this.nudTauxTVA.Size = new System.Drawing.Size(90, 20);
             this.nudTauxTVA.TabIndex = 5;
+            this.nudTauxTVA.Value = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
             // 
             // lblTauxTVA
             // 
@@ -124,6 +131,8 @@
             // 
             // grpProduits
             // 
+            this.grpProduits.Controls.Add(this.cmbStatut);
+            this.grpProduits.Controls.Add(this.lblStatut);
             this.grpProduits.Controls.Add(this.lblInfosProduit);
             this.grpProduits.Controls.Add(this.chkProduits);
             this.grpProduits.Location = new System.Drawing.Point(267, 51);
@@ -134,6 +143,23 @@
             this.grpProduits.TabIndex = 1;
             this.grpProduits.TabStop = false;
             this.grpProduits.Text = "Produits du devis";
+            // 
+            // cmbStatut
+            // 
+            this.cmbStatut.FormattingEnabled = true;
+            this.cmbStatut.Location = new System.Drawing.Point(229, 256);
+            this.cmbStatut.Name = "cmbStatut";
+            this.cmbStatut.Size = new System.Drawing.Size(121, 24);
+            this.cmbStatut.TabIndex = 3;
+            // 
+            // lblStatut
+            // 
+            this.lblStatut.AutoSize = true;
+            this.lblStatut.Location = new System.Drawing.Point(141, 256);
+            this.lblStatut.Name = "lblStatut";
+            this.lblStatut.Size = new System.Drawing.Size(40, 16);
+            this.lblStatut.TabIndex = 2;
+            this.lblStatut.Text = "Statut";
             // 
             // lblInfosProduit
             // 
@@ -187,9 +213,9 @@
             this.lblMontantTVA.Location = new System.Drawing.Point(7, 54);
             this.lblMontantTVA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMontantTVA.Name = "lblMontantTVA";
-            this.lblMontantTVA.Size = new System.Drawing.Size(70, 13);
+            this.lblMontantTVA.Size = new System.Drawing.Size(113, 16);
             this.lblMontantTVA.TabIndex = 1;
-            this.lblMontantTVA.Text = "Montant TVA";
+            this.lblMontantTVA.Text = "Montant TVA 20%";
             // 
             // lblTotalHT
             // 
@@ -210,6 +236,7 @@
             this.btnAjouterDevis.TabIndex = 3;
             this.btnAjouterDevis.Text = "Ajouter";
             this.btnAjouterDevis.UseVisualStyleBackColor = true;
+            this.btnAjouterDevis.Click += new System.EventHandler(this.btnAjouterDevis_Click);
             // 
             // btnAnnuler
             // 
@@ -264,5 +291,7 @@
         private System.Windows.Forms.Label lblTotalHT;
         private System.Windows.Forms.Button btnAjouterDevis;
         private System.Windows.Forms.Button btnAnnuler;
+        private System.Windows.Forms.ComboBox cmbStatut;
+        private System.Windows.Forms.Label lblStatut;
     }
 }

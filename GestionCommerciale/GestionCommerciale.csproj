@@ -82,6 +82,11 @@
     <Compile Include="ajouterClient.Designer.cs">
       <DependentUpon>ajouterClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListeDevisTemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListeDevisTemp.Designer.cs">
+      <DependentUpon>ListeDevisTemp.cs</DependentUpon>
     <Compile Include="Gestion_commercialeDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -116,6 +121,12 @@
     <Compile Include="ListeProduits.Designer.cs">
       <DependentUpon>ListeProduits.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModifierListeDevis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifierListeDevis.Designer.cs">
+      <DependentUpon>ModifierListeDevis.cs</DependentUpon>
+    </Compile>
     <Compile Include="modifierProduit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +141,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SyntheseClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SyntheseClients.Designer.cs">
+      <DependentUpon>SyntheseClients.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AjouterDevis.resx">
       <DependentUpon>AjouterDevis.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,11 +169,17 @@
     <EmbeddedResource Include="ListeDevis.resx">
       <DependentUpon>ListeDevis.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ListeDevisTemp.resx">
+      <DependentUpon>ListeDevisTemp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListeProduits.resx">
       <DependentUpon>ListeProduits.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modifierClient.resx">
       <DependentUpon>modifierClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifierListeDevis.resx">
+      <DependentUpon>ModifierListeDevis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modifierProduit.resx">
       <DependentUpon>modifierProduit.cs</DependentUpon>
@@ -173,6 +196,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SyntheseClients.resx">
+      <DependentUpon>SyntheseClients.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>

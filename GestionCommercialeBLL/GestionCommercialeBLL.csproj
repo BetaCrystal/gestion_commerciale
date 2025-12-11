@@ -45,6 +45,7 @@
     <Compile Include="CategorieBLL.cs" />
     <Compile Include="DevisBLL.cs" />
     <Compile Include="ClientBLL.cs" />
+    <Compile Include="DevisBLL.cs" />
     <Compile Include="GestionUtilisateurs.cs" />
     <Compile Include="Gestion_commercialeDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -53,6 +54,7 @@
     </Compile>
     <Compile Include="ProduitBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SyntheseClientBLL.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
