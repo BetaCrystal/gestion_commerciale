@@ -77,6 +77,7 @@
             this.gestion_commercialeDataSet1 = new GestionCommerciale.Gestion_commercialeDataSet();
             this.dataSet11 = new GestionCommerciale.DataSet1();
             this.btnListeDevis = new System.Windows.Forms.Button();
+            this.btnSyntheseClient = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgClient)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gestion_commercialeDataSet1)).BeginInit();
@@ -475,12 +476,23 @@
             this.btnListeDevis.UseVisualStyleBackColor = true;
             this.btnListeDevis.Click += new System.EventHandler(this.btnListeDevis_Click);
             // 
+            // btnSyntheseClient
+            // 
+            this.btnSyntheseClient.Location = new System.Drawing.Point(287, 74);
+            this.btnSyntheseClient.Name = "btnSyntheseClient";
+            this.btnSyntheseClient.Size = new System.Drawing.Size(121, 29);
+            this.btnSyntheseClient.TabIndex = 3;
+            this.btnSyntheseClient.Text = "Synthèse Client";
+            this.btnSyntheseClient.UseVisualStyleBackColor = true;
+            this.btnSyntheseClient.Click += new System.EventHandler(this.btnSyntheseClient_Click);
+            // 
             // ListeClients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(240)))), ((int)(((byte)(247)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSyntheseClient);
             this.Controls.Add(this.btnListeDevis);
             this.Controls.Add(this.btnOuvrirProduit);
             this.Controls.Add(this.dtgClient);
@@ -548,6 +560,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn villeLivraisonClientDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewButtonColumn btnSupprimer;
         private System.Windows.Forms.Button btnListeDevis;
+        private System.Windows.Forms.Button btnSyntheseClient;
         //private System.Windows.Forms.DataGridViewButtonColumn btnSupprimer;
     }
 }

@@ -61,6 +61,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="SyntheseClientDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GestionCommercialeBO\GestionCommercialeBO.csproj">

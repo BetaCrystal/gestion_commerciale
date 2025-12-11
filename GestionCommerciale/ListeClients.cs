@@ -105,5 +105,15 @@ namespace GestionCommerciale
             listeDevisTemp.Show();
             this.Hide();
         }
+
+        private void btnSyntheseClient_Click(object sender, EventArgs e)
+        {
+            SyntheseClients syntheseClients = new SyntheseClients();
+
+            syntheseClients.FormClosed += (s, args) => this.Close();
+
+            syntheseClients.Show();
+            this.Hide();
+        }
     }
 }

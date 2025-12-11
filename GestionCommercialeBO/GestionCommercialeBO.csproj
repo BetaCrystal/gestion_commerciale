@@ -49,6 +49,7 @@
     <Compile Include="Produit.cs" />
     <Compile Include="Session.cs" />
     <Compile Include="Statut.cs" />
+    <Compile Include="SyntheseClient.cs" />
     <Compile Include="Utilisateur.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
