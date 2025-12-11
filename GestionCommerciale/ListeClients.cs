@@ -8,6 +8,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace GestionCommerciale
@@ -50,6 +51,8 @@ namespace GestionCommerciale
                     MessageBoxIcon.Question
                 );
 
+                
+
                 if (result == DialogResult.Yes)
                 {
                     try
@@ -76,6 +79,18 @@ namespace GestionCommerciale
 
                 ChargerClients();
             }
+            /*using (var formModifier = new modifierClient(codeClient))
+            {
+                var result = formModifier.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    // Recharge la liste depuis la BLL
+                    ChargerClients();
+
+                    // Si vous utilisez un BindingSource du designer, forcer le refresh
+                    // this.devisBindingSource.ResetBindings(false); // adapter le nom du bindingSource si nécessaire
+                }
+            }*/
         }
 
         private void btnOuvrirProduit_Click(object sender, EventArgs e)
