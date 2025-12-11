@@ -5,11 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using GestionCommercialeDAL;
 using GestionCommercialeBO;
+using static GestionCommercialeDAL.DevisDAL;
 
 namespace GestionCommercialeBLL
 {
     public class DevisBLL
     {
+        private readonly DevisDAL _devisDal;
         private readonly DevisDAL devisDAL = new DevisDAL();
         private readonly ContientDAL contientDAL = new ContientDAL();
 
@@ -18,6 +20,25 @@ namespace GestionCommercialeBLL
         /// </summary>
         public int CreerDevis(int codeClient, List<ContientTemp> produitsSelectionnes, int codeStatut, DateTime dateDevis)
         {
+            _devisDal = new DevisDAL();
+        }
+
+        // Récupérer tous les devis
+        public List<Devis> ChargerDevis()
+        {
+            return _devisDal.GetDevis();
+        }
+
+        // Suppression d'un devis par son id
+        public void SupprimerDevis(int codeDevis)
+        {
+            _devisDal.SupprimerDevis(codeDevis);
+        }
+
+        public Devis GetDevisById(int codeDevis)
+        {
+            // Recherche simple via la liste (ou ajouter méthode DAL si besoin)
+            return ChargerDevis().Find(d => d.CodeDevis == codeDevis);
             // Calcul automatique du montant total HT du devis
             decimal montantTotalHT = 0;
             foreach (var p in produitsSelectionnes)

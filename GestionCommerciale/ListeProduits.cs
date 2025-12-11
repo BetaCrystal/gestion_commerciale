@@ -101,6 +101,11 @@ namespace GestionCommerciale
 
         private void btnListeDevis_Click(object sender, EventArgs e)
         {
+            ListeDevis listeDevisForm = new ListeDevis();
+
+            listeDevisForm.FormClosed += (s, args) => this.Close();
+
+            listeDevisForm.Show();
             ListeDevisTemp listeDevisTemp = new ListeDevisTemp();
 
             listeDevisTemp.FormClosed += (s, args) => this.Close();

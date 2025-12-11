@@ -21,11 +21,13 @@ namespace GestionCommercialeBO
         private float tauxTVA;
         private float tauxRemiseGlobal;
         private float montantHTHorsRemise;
-        private float montantHTAvecRemise;
+        /*private float montantHTAvecRemise;
         private float montantTTC;
-        private float montantTVA;
+        private float montantTVA;*/
         private Client client;
         private Statut statut;
+
+        public List<Contient> Lignes { get; set; } = new List<Contient>();
 
         public int CodeDevis
         {
@@ -125,7 +127,7 @@ namespace GestionCommercialeBO
             set { montantHTHorsRemise = value; }
         }
 
-        public float MontantHTAvecRemise
+        /*public float MontantHTAvecRemise
         {
             get { return montantHTAvecRemise; }
             set { montantHTAvecRemise = montantHTHorsRemise * tauxRemiseGlobal; }
@@ -141,7 +143,7 @@ namespace GestionCommercialeBO
         {
             get { return montantTVA; }
             set { montantTVA = montantHTHorsRemise * (1 - tauxTVA); }
-        }
+        }*/
 
         public Client Client
         {
@@ -153,6 +155,17 @@ namespace GestionCommercialeBO
         {
             get { return statut; }
             set { statut = value; }
+        }
+
+        // Récupérer le nom du client et le nom du statut pour les afficher dans la datagridview
+        public string ClientNom
+        {
+            get { return client != null ? (client.NomClient ?? string.Empty) : string.Empty; }
+        }
+
+        public string StatutNom
+        {
+            get { return statut != null ? (statut.NomStatut ?? string.Empty) : string.Empty; }
         }
 
         public Devis(int codeDevis, 
@@ -170,12 +183,52 @@ namespace GestionCommercialeBO
             this.tauxTVA = tauxTVA;
             this.tauxRemiseGlobal = tauxRemiseGlobal;
             this.montantHTHorsRemise = montantHTHorsRemise;
-            this.montantHTAvecRemise = montantHTHorsRemise * tauxRemiseGlobal;
+            /*this.montantHTAvecRemise = montantHTHorsRemise * tauxRemiseGlobal;
             this.montantTVA = montantHTHorsRemise * (1 - tauxTVA);
-            this.montantTTC = (montantHTHorsRemise - montantTVA) * tauxRemiseGlobal;
+            this.montantTTC = (montantHTHorsRemise - montantTVA) * tauxRemiseGlobal;*/
             this.client = client;
             this.statut = statut;
         }
 
+        /*public void RecalculerMontantsFromLignes()
+        {
+            float sum = 0f;
+            if (Lignes != null)
+            {
+                foreach (var ligne in Lignes)
+                {
+                    // Priorité : si Contient a une référence Produit avec prix, utilisez-la.
+                    float prixUnitaire = 0f;
+                    try
+                    {
+                        if (ligne.Produit != null)
+                        {
+                            // adapter le nom de la propriété prix si besoin (ex: PrixVenteHT)
+                            prixUnitaire = ligne.Produit.PrixVenteHT;
+                        }
+                        else
+                        {
+                            // fallback sur une propriété PrixUnitaire dans Contient
+                            prixUnitaire = ligne.PrixUnitaire;
+                        }
+                    }
+                    catch
+                    {
+                        prixUnitaire = ligne.PrixUnitaire;
+                    }
+
+                    sum += prixUnitaire * (float)ligne.Quantite;
+                }
+            }
+
+            montantHTHorsRemise = sum;
+        }
+
+        // Propriétés calculées exposées pour le binding
+        public float MontantHTAvecRemise => (montantHTHorsRemise * (1f - tauxRemiseGlobal));
+
+        public float MontantTVA => (MontantHTAvecRemise * tauxTVA);
+
+        public float MontantTTC => (MontantHTAvecRemise + MontantTVA);*/
     }
 }

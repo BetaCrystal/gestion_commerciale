@@ -61,6 +61,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="StatutDAL.cs" />
     <Compile Include="SyntheseClientDAL.cs" />
   </ItemGroup>
   <ItemGroup>
