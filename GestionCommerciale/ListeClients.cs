@@ -68,6 +68,8 @@ namespace GestionCommerciale
             // modifier
             if (dtgClient.Columns[e.ColumnIndex].Name == "Modifier")
             {
+                client = (Client)dtgClient.Rows[e.RowIndex].DataBoundItem;
+                codeClient = client.CodeClient;
 
                 modifierClient formModifier = new modifierClient(codeClient);
                 formModifier.ShowDialog();
@@ -88,7 +90,7 @@ namespace GestionCommerciale
             this.Hide();
         }
 
-        private void btnClient_Click(object sender, EventArgs e)
+        private void btnAjouterClient_Click(object sender, EventArgs e)
         {
             ajouterClient formAjout = new ajouterClient();
             formAjout.ShowDialog();
