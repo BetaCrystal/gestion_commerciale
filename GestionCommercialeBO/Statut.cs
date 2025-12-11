@@ -25,5 +25,11 @@ namespace GestionCommercialeBO
             this.codeStatut = codeStatut;
             this.nomStatut = nomStatut;
         }
+
+        public override string ToString()
+        {
+            return nomStatut;
+        }
     }
+
 }
