@@ -6,7 +6,6 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GestionCommercialeBO;
 
 namespace GestionCommercialeDAL
 {
@@ -130,7 +129,7 @@ namespace GestionCommercialeDAL
 
             return devis;
         }
-        public List<Devis> ChargerDevis()
+        /*public List<Devis> ChargerDevis()
         {
             var liste = new List<Devis>();
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -138,13 +137,7 @@ namespace GestionCommercialeDAL
                 @"SELECT d.code_devis, d.code_client, c.nom_client
           FROM Devis d
           JOIN Client c ON d.code_client = c.code_client", conn))
-            {
-
-namespace GestionCommercialeDAL
-{
-    public class DevisDAL
-    {
-        private readonly string connectionString;
+            {*/
 
         public DevisDAL()
         {
@@ -154,143 +147,6 @@ namespace GestionCommercialeDAL
                 throw new InvalidOperationException("Chaîne de connexion introuvable : vérifiez le nom dans App.config (ConfigurationManager.ConnectionStrings).");
             }
             connectionString = cs.ConnectionString;
-        }
-
-        // Retourne la liste des devis, avec informations client et statut si disponibles
-        public List<Devis> GetDevis()
-        {
-            var devis = new List<Devis>();
-
-            // Requête qui récupère les ids et, si disponibles, le nom du client et le libellé du statut
-            string query = @"
-                    SELECT 
-                        d.code_devis,
-                        d.date_devis,
-                        d.taux_tva_devis,
-                        d.montant_total_ht_devis,
-                        d.taux_remise_global_devis,
-                        d.code_client,
-                        c.nom_client AS client_nom,
-                        d.code_statut,
-                        s.nom_statut AS statut_nom
-                    FROM Devis d
-                    LEFT JOIN Client c ON d.code_client = c.code_client
-                    LEFT JOIN Statut s ON d.code_statut = s.code_statut
-                    ORDER BY d.code_devis;";
-
-            using (var conn = new SqlConnection(connectionString))
-            using (var cmd = new SqlCommand(query, conn))
-            {
-                conn.Open();
-                using (var reader = cmd.ExecuteReader())
-                {
-                    // obtenir ordinals pour sécurité et performance
-                    int ordCodeDevis = reader.GetOrdinal("code_devis");
-                    int ordDate = reader.GetOrdinal("date_devis");
-                    int ordTva = reader.GetOrdinal("taux_tva_devis");
-                    int ordMontant = reader.GetOrdinal("montant_total_ht_devis");
-                    int ordRemise = reader.GetOrdinal("taux_remise_global_devis");
-                    int ordCodeClient = reader.GetOrdinal("code_client");
-                    int ordClientNom = reader.GetOrdinal("client_nom");
-                    int ordCodeStatut = reader.GetOrdinal("code_statut");
-                    int ordStatutNom = reader.GetOrdinal("statut_nom");
-
-                    while (reader.Read())
-                    {
-                        var client = new Client();
-                        if (!reader.IsDBNull(ordCodeClient))
-                        liste.Add(new Devis
-                        {
-                            CodeDevis = (int)reader["code_devis"],
-                            CodeClient = (int)reader["code_client"],
-                            NomClient = reader["nom_client"].ToString()
-                        });
-                    }
-                }
-            }
-            return liste;
-        }
-
-        public void ModifierDevis(Devis devis)
-        {
-            string query = @"
-        UPDATE Devis
-        SET date_devis = @DateDevis,
-            code_client = @CodeClient,
-            montant_total_ht_devis = @MontantHT,
-            taux_tva_devis = @TauxTVA,
-            taux_remise_global_devis = @Remise,
-            code_statut = @CodeStatut
-        WHERE code_devis = @CodeDevis";
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            using (SqlCommand cmd = new SqlCommand(query, conn))
-            {
-                cmd.Parameters.AddWithValue("@DateDevis", devis.DateDevis);
-                cmd.Parameters.AddWithValue("@CodeClient", devis.CodeClient);
-                cmd.Parameters.AddWithValue("@MontantHT", devis.MontantTotalHTDevis);
-                cmd.Parameters.AddWithValue("@TauxTVA", devis.TauxTVADevis);
-                cmd.Parameters.AddWithValue("@Remise", devis.TauxRemiseGlobalDevis);
-                cmd.Parameters.AddWithValue("@CodeStatut", devis.CodeStatut);
-                cmd.Parameters.AddWithValue("@CodeDevis", devis.CodeDevis);
-
-                        devis.Add(new Devis
-                        {
-                            client.CodeClient = reader.GetInt32(ordCodeClient);
-                        }
-                        if (!reader.IsDBNull(ordClientNom))
-                        {
-                            // Assigne le nom si la propriété existe dans Client
-                            try { client.NomClient = reader.GetString(ordClientNom); } catch { /* si propriété différente, ignorer */ }
-                        }
-
-                        // Remplacez toutes les instanciations de Statut par le constructeur adéquat
-                        // Ancien code : var statut = new Statut();
-                        // Nouveau code :
-                        var statut = new Statut(
-                            !reader.IsDBNull(ordCodeStatut) ? reader.GetInt32(ordCodeStatut) : 0,
-                            !reader.IsDBNull(ordStatutNom) ? reader.GetString(ordStatutNom) : string.Empty
-                        );
-                        if (!reader.IsDBNull(ordCodeStatut)) statut.CodeStatut = reader.GetInt32(ordCodeStatut);
-                        if (!reader.IsDBNull(ordStatutNom)) try { statut.NomStatut = reader.GetString(ordStatutNom); } catch { }
-                        if (!reader.IsDBNull(ordCodeStatut))
-                        {
-                            statut.CodeStatut = reader.GetInt32(ordCodeStatut);
-                        }
-                        if (!reader.IsDBNull(ordStatutNom))
-                        {
-                            try { statut.NomStatut = reader.GetString(ordStatutNom); } catch { /* si propriété différente, ignorer */ }
-                        }
-
-                        var d = new Devis(
-                            codeDevis: !reader.IsDBNull(ordCodeDevis) ? reader.GetInt32(ordCodeDevis) : 0,
-                            dateDevis: !reader.IsDBNull(ordDate) ? reader.GetDateTime(ordDate) : default(DateTime),
-                            statutDevis: (reader.IsDBNull(ordStatutNom) ? string.Empty : (reader.GetString(ordStatutNom) ?? string.Empty)),
-                            tauxTVA: !reader.IsDBNull(ordTva) ? (float)reader.GetDouble(ordTva) : 0f,
-                            tauxRemiseGlobal: !reader.IsDBNull(ordRemise) ? (float)reader.GetDouble(ordRemise) : 0f,
-                            montantHTHorsRemise: !reader.IsDBNull(ordMontant) ? (float)reader.GetDouble(ordMontant) : 0f,
-                            client: client,
-                            statut: statut
-                        );
-
-                        // remplir les lignes du devis
-                        try
-                        {
-                            var contientDal = new ContientDAL();
-                            var lignes = contientDal.GetLignesByDevis(d.CodeDevis);
-                            d.Lignes = lignes; // exige que Devis.Lignes existe et soit public List<Contient>
-                        }
-                        catch (Exception)
-                        {
-                            // fallback silencieux : laisser Lignes null/empty
-                        }
-
-                        devis.Add(d);
-                    }
-                }
-            }
-
-            return devis;
         }
 
         // Récupère un devis par son id (null si non trouvé)
@@ -361,6 +217,61 @@ namespace GestionCommercialeDAL
             }
         }
 
+        // Retourne la liste des devis, avec informations client et statut si disponibles
+        public List<Devis> GetDevis()
+        {
+            var devis = new List<Devis>();
+
+            // Requête qui récupère les ids et, si disponibles, le nom du client et le libellé du statut
+            string query = @"
+                    SELECT 
+                        d.code_devis,
+                        d.date_devis,
+                        d.taux_tva_devis,
+                        d.montant_total_ht_devis,
+                        d.taux_remise_global_devis,
+                        d.code_client,
+                        c.nom_client AS client_nom,
+                        d.code_statut,
+                        s.nom_statut AS statut_nom
+                    FROM Devis d
+                    LEFT JOIN Client c ON d.code_client = c.code_client
+                    LEFT JOIN Statut s ON d.code_statut = s.code_statut
+                    ORDER BY d.code_devis;";
+
+            using (var conn = new SqlConnection(connectionString))
+            using (var cmd = new SqlCommand(query, conn))
+            {
+                conn.Open();
+                using (var reader = cmd.ExecuteReader())
+                {
+                    // obtenir ordinals pour sécurité et performance
+                    int ordCodeDevis = reader.GetOrdinal("code_devis");
+                    int ordDate = reader.GetOrdinal("date_devis");
+                    int ordTva = reader.GetOrdinal("taux_tva_devis");
+                    int ordMontant = reader.GetOrdinal("montant_total_ht_devis");
+                    int ordRemise = reader.GetOrdinal("taux_remise_global_devis");
+                    int ordCodeClient = reader.GetOrdinal("code_client");
+                    int ordClientNom = reader.GetOrdinal("client_nom");
+                    int ordCodeStatut = reader.GetOrdinal("code_statut");
+                    int ordStatutNom = reader.GetOrdinal("statut_nom");
+
+                    while (reader.Read())
+                    {
+                        var client = new Client();
+                        if (!reader.IsDBNull(ordCodeClient))
+                            liste.Add(new Devis
+                            {
+                                CodeDevis = (int)reader["code_devis"],
+                                CodeClient = (int)reader["code_client"],
+                                NomClient = reader["nom_client"].ToString()
+                            });
+                    }
+                }
+            }
+            return liste;
+        }
+
         // Supprime d'abord les lignes de Contient liées, puis le devis
         public void SupprimerDevis(int codeDevis)
         {
@@ -383,5 +294,98 @@ namespace GestionCommercialeDAL
                 cmd.ExecuteNonQuery();
             }
         }
+
+        public void ModifierDevis(Devis devis)
+        {
+            string query = @"
+        UPDATE Devis
+        SET date_devis = @DateDevis,
+            code_client = @CodeClient,
+            montant_total_ht_devis = @MontantHT,
+            taux_tva_devis = @TauxTVA,
+            taux_remise_global_devis = @Remise,
+            code_statut = @CodeStatut
+        WHERE code_devis = @CodeDevis";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            {
+                cmd.Parameters.AddWithValue("@DateDevis", devis.DateDevis);
+                cmd.Parameters.AddWithValue("@CodeClient", devis.CodeClient);
+                cmd.Parameters.AddWithValue("@MontantHT", devis.MontantTotalHTDevis);
+                cmd.Parameters.AddWithValue("@TauxTVA", devis.TauxTVADevis);
+                cmd.Parameters.AddWithValue("@Remise", devis.TauxRemiseGlobalDevis);
+                cmd.Parameters.AddWithValue("@CodeStatut", devis.CodeStatut);
+                cmd.Parameters.AddWithValue("@CodeDevis", devis.CodeDevis);
+
+                devis.Add(new Devis
+                {
+                    client.CodeClient = reader.GetInt32(ordCodeClient);
+                });
+                if (!reader.IsDBNull(ordClientNom))
+                {
+                    // Assigne le nom si la propriété existe dans Client
+                    try { client.NomClient = reader.GetString(ordClientNom); } catch { /* si propriété différente, ignorer */ }
+                }
+
+                // Remplacez toutes les instanciations de Statut par le constructeur adéquat
+                // Ancien code : var statut = new Statut();
+                // Nouveau code :
+                var statut = new Statut(
+                    !reader.IsDBNull(ordCodeStatut) ? reader.GetInt32(ordCodeStatut) : 0,
+                    !reader.IsDBNull(ordStatutNom) ? reader.GetString(ordStatutNom) : string.Empty
+                );
+                if (!reader.IsDBNull(ordCodeStatut)) statut.CodeStatut = reader.GetInt32(ordCodeStatut);
+                if (!reader.IsDBNull(ordStatutNom)) try { statut.NomStatut = reader.GetString(ordStatutNom); } catch { }
+                if (!reader.IsDBNull(ordCodeStatut))
+                {
+                    statut.CodeStatut = reader.GetInt32(ordCodeStatut);
+                }
+                if (!reader.IsDBNull(ordStatutNom))
+                {
+                    try { statut.NomStatut = reader.GetString(ordStatutNom); } catch { /* si propriété différente, ignorer */ }
+                }
+
+                var d = new Devis(
+                    codeDevis: !reader.IsDBNull(ordCodeDevis) ? reader.GetInt32(ordCodeDevis) : 0,
+                    dateDevis: !reader.IsDBNull(ordDate) ? reader.GetDateTime(ordDate) : default(DateTime),
+                    statutDevis: (reader.IsDBNull(ordStatutNom) ? string.Empty : (reader.GetString(ordStatutNom) ?? string.Empty)),
+                    tauxTVA: !reader.IsDBNull(ordTva) ? (float)reader.GetDouble(ordTva) : 0f,
+                    tauxRemiseGlobal: !reader.IsDBNull(ordRemise) ? (float)reader.GetDouble(ordRemise) : 0f,
+                    montantHTHorsRemise: !reader.IsDBNull(ordMontant) ? (float)reader.GetDouble(ordMontant) : 0f,
+                    client: client,
+                    statut: statut
+                );
+
+                // remplir les lignes du devis
+                try
+                {
+                    var contientDal = new ContientDAL();
+                    var lignes = contientDal.GetLignesByDevis(d.CodeDevis);
+                    d.Lignes = lignes; // exige que Devis.Lignes existe et soit public List<Contient>
+                }
+                catch (Exception)
+                {
+                    // fallback silencieux : laisser Lignes null/empty
+                }
+
+                devis.Add(d);
+
+
+            }
+            return devis;
+        }
     }
 }
+
+
+
+
+
+        
+    
+
+
+        
+    
+
